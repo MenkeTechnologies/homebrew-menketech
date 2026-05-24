@@ -26,7 +26,6 @@ Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnol
 - [\[0x01\] Formulas](#0x01-formulas)
 - [\[0x02\] Platform Support](#0x02-platform-support)
 - [\[0x03\] Auto-Update Mechanism](#0x03-auto-update-mechanism)
-- [\[0x04\] Migrating from `homebrew-stryke`](#0x04-migrating-from-homebrew-stryke)
 - [\[0xFF\] License](#0xff-license)
 
 ---
@@ -94,20 +93,6 @@ Each formula here is updated automatically by the source repo's `Release` workfl
 3. The `homebrew` job downloads the tarballs, computes `sha256sum` per file, and overwrites the matching `Formula/<name>.rb` here with the new version + sha256s. Pushed via `HOMEBREW_TAP_TOKEN` (a GitHub PAT with `contents:write` on this repo, set as a secret on each source repo).
 
 Formula updates show up as commits authored by `github-actions[bot]`.
-
----
-
-## [0x04] MIGRATING FROM `homebrew-stryke`
-
-The original `MenkeTechnologies/homebrew-stryke` tap holds a `stryke` formula only. This `menketech` tap supersedes it with all 7 CLI tools under one tap. To migrate:
-
-```bash
-brew untap MenkeTechnologies/stryke    # optional cleanup
-brew tap MenkeTechnologies/menketech
-brew install stryke
-```
-
-The `homebrew-stryke` tap remains functional for backward compatibility; new installs should use `menketech`.
 
 ---
 
