@@ -8,7 +8,7 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-7-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-8-cyan.svg)](Formula/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
@@ -36,6 +36,7 @@ Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnol
 brew tap MenkeTechnologies/menketech
 brew install stryke      # the language: stryke + s + st
 brew install zshrs       # the shell: zshrs + zd
+brew install zshrs-all   # full install: zshrs + zd + zshrs-recorder + zshrs-daemon (conflicts with zshrs)
 brew install lsofrs      # rust lsof: lsofrs + lsf
 brew install iftoprs     # rust iftop: iftoprs
 brew install awkrs       # rust awk: awkrs + aw
@@ -60,6 +61,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 |---|---|---|---|
 | [`stryke`](Formula/stryke.rb) | [strykelang](https://github.com/MenkeTechnologies/strykelang) | `stryke` `s` `st` | tracks strykelang release tags |
 | [`zshrs`](Formula/zshrs.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs` `zd` | tracks zshrs release tags |
+| [`zshrs-all`](Formula/zshrs-all.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs` `zd` `zshrs-recorder` `zshrs-daemon` | tracks zshrs release tags (conflicts with `zshrs`) |
 | [`lsofrs`](Formula/lsofrs.rb) | [lsofrs](https://github.com/MenkeTechnologies/lsofrs) | `lsofrs` `lsf` | tracks lsofrs release tags |
 | [`iftoprs`](Formula/iftoprs.rb) | [iftoprs](https://github.com/MenkeTechnologies/iftoprs) | `iftoprs` | tracks iftoprs release tags |
 | [`awkrs`](Formula/awkrs.rb) | [awkrs](https://github.com/MenkeTechnologies/awkrs) | `awkrs` `aw` | tracks awkrs release tags |
@@ -74,6 +76,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 |---|:---:|:---:|:---:|:---:|
 | `stryke` | ✓ | ✓ | ✓ | ✓ (since zshrs 0.11.14) |
 | `zshrs` | ✓ | ✓ | ✓ | — (3-target release) |
+| `zshrs-all` | ✓ | ✓ | ✓ | — (3-target release) |
 | `lsofrs` | ✓ | ✓ | ✓ | — |
 | `iftoprs` | ✓ | ✓ | ✓ | — |
 | `awkrs` | ✓ | ✓ | ✓ | — |
