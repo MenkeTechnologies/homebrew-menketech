@@ -34,6 +34,51 @@ formulas.each do |path|
     warn "FAIL  #{path.basename}: no install (bin.install / libexec.install / bottle do)"
     fail_count += 1
   end
+
+  # --- HTTPS-only urls. Homebrew's `brew audit --strict` rejects http:.
+  src.scan(/^\s*url\s+"([^"]+)"/) do |(u)|
+    unless u.start_with?("https://")
+      warn "FAIL  #{path.basename}: non-HTTPS url #{u}"
+      fail_count += 1
+    end
+  end
+
+  # --- sha256 must be 64 lowercase-hex chars AND not all zeros
+  # (a placeholder-style "0"*64 hash trivially matches any tarball
+  # only if Homebrew's verifier is broken — but it's a red flag and
+  # historically has shipped accidentally).
+  src.scan(/^\s*sha256\s+"([^"]+)"/) do |(h)|
+    unless h.match?(/\A[0-9a-f]{64}\z/)
+      warn "FAIL  #{path.basename}: invalid sha256 (#{h.length} chars, not 64 lowercase hex): #{h[0, 16]}…"
+      fail_count += 1
+    end
+    if h == "0" * 64 || h == "" || h.match?(/\A0+\z/)
+      warn "FAIL  #{path.basename}: zero-pattern sha256 (placeholder)"
+      fail_count += 1
+    end
+  end
+
+  # --- Version must appear inside every url. Homebrew downloads from
+  # github releases keyed by tag; a url that doesn't embed the version
+  # string is sourcing the wrong tarball and `brew install foo@1.2`
+  # silently picks the latest tag.
+  version_str = src[/^\s*version\s+"([^"]+)"/, 1]
+  if version_str
+    src.scan(/^\s*url\s+"([^"]+)"/) do |(u)|
+      unless u.include?(version_str)
+        warn "FAIL  #{path.basename}: url does not embed version #{version_str.inspect} (#{u})"
+        fail_count += 1
+      end
+    end
+  end
+
+  # --- Every formula needs a `test do` block. `brew test foo` is how
+  # Homebrew validates the bottle actually runs — a formula without one
+  # ships broken to users with zero CI signal.
+  unless src.match?(/^\s*test\s+do\s*$/)
+    warn "FAIL  #{path.basename}: missing `test do` block"
+    fail_count += 1
+  end
 end
 
 readme = root.join("README.md")
