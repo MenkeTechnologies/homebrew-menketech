@@ -2,23 +2,23 @@ class Temprs < Formula
   desc "Temporary file stack manager — atomic flock-protected master record"
   homepage "https://github.com/MenkeTechnologies/temprs"
   license "MIT"
-  version "2.9.8"
+  version "2.9.9"
 
   on_macos do
   on_arm do
-    url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.8/temprs-v2.9.8-aarch64-apple-darwin.tar.gz"
-    sha256 "4e2620635b7499b36ae808661b3e10fba2babecf7420c351adc056743e962c1a"
+    url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.9/temprs-v2.9.9-aarch64-apple-darwin.tar.gz"
+    sha256 "b98b008a41ea3e3d9fd7b1b6f6ea0fb1b2292c0849b2bbde0a75e213a410e44a"
   end
   on_intel do
-    url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.8/temprs-v2.9.8-x86_64-apple-darwin.tar.gz"
-    sha256 "fa14619536d8b3694b5807d95bf75fbd00dd61d972f89a6f0ffb8ffd8d93bf33"
+    url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.9/temprs-v2.9.9-x86_64-apple-darwin.tar.gz"
+    sha256 "f3566fd8d3f6623cee01debeaba0a3d3229978cf6d3a542ee2b3181aac9b1146"
   end
   end
 
   on_linux do
   on_intel do
-    url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.8/temprs-v2.9.8-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "1ab93679f60c89f0c7c51a2997f1372f55d414bd43d4f3a8b24d4f047e2a318a"
+    url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.9/temprs-v2.9.9-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "55df313fec56bb7eec85d3b951f6260fb321b1c9dd13834b77e7d1e87235012b"
   end
   end
 
