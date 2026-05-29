@@ -2,20 +2,20 @@ class Awkrs < Formula
   desc "AWK in Rust — bytecode VM + Cranelift JIT + persistent rkyv bytecode cache"
   homepage "https://github.com/MenkeTechnologies/awkrs"
   license "MIT"
-  version "0.4.9"
+  version "0.4.10"
 
   on_macos do
   on_arm do
-    url "https://github.com/MenkeTechnologies/awkrs/releases/download/v0.4.9/awkrs-v0.4.9-aarch64-apple-darwin.tar.gz"
-    sha256 "927353b6cf210af2a34e2decdc205d840952c21f93640fa3d01d73af97ad6512"
+    url "https://github.com/MenkeTechnologies/awkrs/releases/download/v0.4.10/awkrs-v0.4.10-aarch64-apple-darwin.tar.gz"
+    sha256 "ffe65106d2808972b67650513ab021fb665bcc373dacbdb521b0d8de0d7c10aa"
   end
   # x86_64 macOS not supported — see release.yml matrix.
   end
 
   on_linux do
   on_intel do
-    url "https://github.com/MenkeTechnologies/awkrs/releases/download/v0.4.9/awkrs-v0.4.9-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "79977dcbc49a17181c92f44da67d7b175a697bc3f76a73ddf2aee496a9e6f875"
+    url "https://github.com/MenkeTechnologies/awkrs/releases/download/v0.4.10/awkrs-v0.4.10-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "88b2b6dcae1f23af953dc71ab8882785df24425d53c1a121ff507fa3dd83eeeb"
   end
   end
 
