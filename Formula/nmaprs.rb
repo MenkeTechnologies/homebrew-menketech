@@ -2,23 +2,23 @@ class Nmaprs < Formula
   desc "Parallel network scanner with nmap-compatible CLI (Rust)"
   homepage "https://github.com/MenkeTechnologies/nmaprs"
   license "MIT"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
   on_arm do
-    url "https://github.com/MenkeTechnologies/nmaprs/releases/download/v0.1.3/nmaprs-v0.1.3-aarch64-apple-darwin.tar.gz"
-    sha256 "0d305f3bf7b15a0a7c245f4b8db532af4312651bd286d54aacc60528b76d1b91"
+    url "https://github.com/MenkeTechnologies/nmaprs/releases/download/v0.1.4/nmaprs-v0.1.4-aarch64-apple-darwin.tar.gz"
+    sha256 "04770c1134d2ceca873e95286ebeb7ffa72921218e8120437825f9adb61e1dc7"
   end
   on_intel do
-    url "https://github.com/MenkeTechnologies/nmaprs/releases/download/v0.1.3/nmaprs-v0.1.3-x86_64-apple-darwin.tar.gz"
-    sha256 "96144e5b275f0cf3be4430c7a92f7d44c24c9b67aa63baa4a955e87c86eddd3b"
+    url "https://github.com/MenkeTechnologies/nmaprs/releases/download/v0.1.4/nmaprs-v0.1.4-x86_64-apple-darwin.tar.gz"
+    sha256 "e3ae45ec4330b31926625eea9e11ac0626eb088c5fe290af4acb70101a43b5f8"
   end
   end
 
   on_linux do
   on_intel do
-    url "https://github.com/MenkeTechnologies/nmaprs/releases/download/v0.1.3/nmaprs-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "eaf07034e521496d57895a065f3d9a7c132f91b16a32653c040485274ce74247"
+    url "https://github.com/MenkeTechnologies/nmaprs/releases/download/v0.1.4/nmaprs-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "12e36555818ad20cfe29a2da7c11f3d82cc3ef2e154dab208bf0d1e1281046df"
   end
   end
 
