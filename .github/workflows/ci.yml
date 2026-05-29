@@ -113,3 +113,17 @@ jobs:
             done < "$f"
           done
           exit $fail
+
+  formula-consistency:
+    name: Formula consistency contract (class/desc/install/badge)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Run tests/formula-consistency.rb
+        # Pin every formula's class-name matches filename, desc/
+        # homepage/version/license all present, an install block
+        # exists, and the README's `formulas-N` badge matches the
+        # actual count. Matches the local script so contributors
+        # can run `ruby tests/formula-consistency.rb` and reproduce.
+        run: ruby tests/formula-consistency.rb
