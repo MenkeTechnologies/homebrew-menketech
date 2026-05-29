@@ -2,23 +2,23 @@ class Iftoprs < Formula
   desc "Real-time bandwidth monitor — Rust iftop clone with ratatui TUI, 31 themes"
   homepage "https://github.com/MenkeTechnologies/iftoprs"
   license "MIT"
-  version "2.22.4"
+  version "2.22.5"
 
   on_macos do
   on_arm do
-    url "https://github.com/MenkeTechnologies/iftoprs/releases/download/v2.22.4/iftoprs-v2.22.4-aarch64-apple-darwin.tar.gz"
-    sha256 "7c3eaa590df47081ef545efd0a09b8c4edb39d9ecdcffd8174a7f0e866837bae"
+    url "https://github.com/MenkeTechnologies/iftoprs/releases/download/v2.22.5/iftoprs-v2.22.5-aarch64-apple-darwin.tar.gz"
+    sha256 "d533bd910e3610daab1c5cde0decf69b819c8d69d3b752f85d051b6c7d33a938"
   end
   on_intel do
-    url "https://github.com/MenkeTechnologies/iftoprs/releases/download/v2.22.4/iftoprs-v2.22.4-x86_64-apple-darwin.tar.gz"
-    sha256 "68a041f780fd840803230aa0e74eaf7d0c41cc8d28802ac38104fe8e4c490dcd"
+    url "https://github.com/MenkeTechnologies/iftoprs/releases/download/v2.22.5/iftoprs-v2.22.5-x86_64-apple-darwin.tar.gz"
+    sha256 "c61d06ebadd8d1ca8c7cbe8cd7ead3745f516f5e2e70acc502cb203dbae4e877"
   end
   end
 
   on_linux do
   on_intel do
-    url "https://github.com/MenkeTechnologies/iftoprs/releases/download/v2.22.4/iftoprs-v2.22.4-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "3891263b833970cab2a9b5b70fb006bacea4cada528270a1ffdf9e8dbac38512"
+    url "https://github.com/MenkeTechnologies/iftoprs/releases/download/v2.22.5/iftoprs-v2.22.5-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "31a240884f67e5b50ff9e9ebb560c04b1d336ebb9585de0be00c3c670ce88a59"
   end
   end
 
