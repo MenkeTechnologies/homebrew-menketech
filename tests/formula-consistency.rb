@@ -79,6 +79,53 @@ formulas.each do |path|
     warn "FAIL  #{path.basename}: missing `test do` block"
     fail_count += 1
   end
+
+  # --- `desc` must be ≤ 80 chars (Homebrew's brew audit cap; longer
+  # descs fail FormulaAuditor#audit_desc). A description that exceeds
+  # this won't ship to a tap. Source:
+  # https://github.com/Homebrew/brew/blob/master/Library/Homebrew/formula_auditor.rb
+  desc = src[/^\s*desc\s+"([^"]+)"/, 1]
+  if desc && desc.length > 80
+    warn "FAIL  #{path.basename}: desc length #{desc.length} > 80 (brew audit cap): #{desc.inspect}"
+    fail_count += 1
+  end
+
+  # --- `test do` block must reference `bin` so it actually invokes the
+  # installed artifact. A `test do` that runs a shell command without
+  # touching `bin/` or `#{bin}` is a smoke-test against the host shell,
+  # not the installed binary, and shouldn't count as a brew test.
+  test_block = src[/^\s*test\s+do\s*$.*?^\s*end\s*$/m]
+  if test_block && !test_block.match?(/\bbin\b/)
+    warn "FAIL  #{path.basename}: test block doesn't reference `bin` — not actually testing the installed binary"
+    fail_count += 1
+  end
+
+  # --- Every `bin.install` argument must be a non-empty quoted string
+  # of valid binary-name chars [A-Za-z0-9_+.-]. A `bin.install` with an
+  # invalid binary name silently produces a broken install.
+  src.scan(/^\s*bin\.install\s+"([^"]*)"/) do |(b)|
+    if b.empty?
+      warn "FAIL  #{path.basename}: empty bin.install argument"
+      fail_count += 1
+    elsif !b.match?(/\A[A-Za-z0-9_+.-]+\z/)
+      warn "FAIL  #{path.basename}: bin.install #{b.inspect} contains unsafe chars"
+      fail_count += 1
+    end
+  end
+
+  # --- Each `on_arm`/`on_intel` block that has a `url` must also have a
+  # `sha256`. Homebrew won't install a binary tarball without checksum
+  # verification — a url without a paired sha256 is a half-edit that
+  # tests fine locally (sha is downloaded once) but fails CI bottles.
+  src.scan(/^\s*on_(?:arm|intel)\s+do\b(.*?)^\s*end\s*$/m) do |match|
+    block = match[0]
+    has_url = block.match?(/^\s*url\s+"/)
+    has_sha = block.match?(/^\s*sha256\s+"/)
+    if has_url && !has_sha
+      warn "FAIL  #{path.basename}: on_arm/on_intel block has url but no sha256"
+      fail_count += 1
+    end
+  end
 end
 
 readme = root.join("README.md")

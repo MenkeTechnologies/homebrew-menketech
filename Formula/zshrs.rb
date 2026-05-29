@@ -1,5 +1,5 @@
 class Zshrs < Formula
-  desc "The first compiled Unix shell — drop-in zsh replacement with bytecode JIT, AOP, worker pool"
+  desc "First compiled Unix shell — drop-in zsh with bytecode JIT, AOP, worker pool"
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   version "0.11.22"
