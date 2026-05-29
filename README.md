@@ -8,13 +8,13 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-8-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-10-cyan.svg)](Formula/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
-> *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs tp` — done."*
+> *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs tp storageshower powerliners` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `awkrs` / `nmaprs` / `temprs`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -42,9 +42,11 @@ brew install iftoprs     # rust iftop: iftoprs
 brew install awkrs       # rust awk: awkrs + aw
 brew install nmaprs      # rust nmap: nmaprs + nms
 brew install temprs      # tempfile stack manager: temprs + tp
+brew install storageshower # cyberpunk disk-usage TUI: storageshower
+brew install powerliners # rust powerline port: powerliners
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs awkrs nmaprs temprs
+brew install stryke zshrs lsofrs iftoprs awkrs nmaprs temprs storageshower powerliners
 ```
 
 Upgrades:
@@ -67,6 +69,8 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`awkrs`](Formula/awkrs.rb) | [awkrs](https://github.com/MenkeTechnologies/awkrs) | `awkrs` `aw` | tracks awkrs release tags |
 | [`nmaprs`](Formula/nmaprs.rb) | [nmaprs](https://github.com/MenkeTechnologies/nmaprs) | `nmaprs` `nms` | tracks nmaprs release tags |
 | [`temprs`](Formula/temprs.rb) | [temprs](https://github.com/MenkeTechnologies/temprs) | `temprs` `tp` | tracks temprs release tags |
+| [`storageshower`](Formula/storageshower.rb) | [storageshower](https://github.com/MenkeTechnologies/storageshower) | `storageshower` | tracks storageshower release tags |
+| [`powerliners`](Formula/powerliners.rb) | [powerliners](https://github.com/MenkeTechnologies/powerliners) | `powerliners` | tracks powerliners release tags |
 
 ---
 
@@ -82,6 +86,8 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | `awkrs` | ✓ | ✓ | ✓ | — |
 | `nmaprs` | ✓ | ✓ | ✓ | — |
 | `temprs` | ✓ | ✓ | ✓ | — |
+| `storageshower` | — | ✓ | ✓ | — (2-target release) |
+| `powerliners` | — | ✓ | ✓ | — (2-target release) |
 
 aarch64-linux support coverage will grow as upstream release matrices add the target.
 
