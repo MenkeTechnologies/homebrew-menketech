@@ -3,23 +3,23 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.11.20"
+  version "0.11.21"
 
   on_macos do
   on_arm do
-    url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.20/zshrs-all-v0.11.20-aarch64-apple-darwin.tar.gz"
-    sha256 "f404eba2c9de4954deb99b5088c88acc8e4bfa90fc3be25ae7a109be72b97756"
+    url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.21/zshrs-all-v0.11.21-aarch64-apple-darwin.tar.gz"
+    sha256 "5965b84c0d385970ad84db5d1052bd040dfaef0238c6747cb1dd47a687bffadb"
   end
   on_intel do
-    url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.20/zshrs-all-v0.11.20-x86_64-apple-darwin.tar.gz"
-    sha256 "1db3eb2cc07e641e678df9169a97b902d6ff4cd00d579e1bf3bbfdd314ee217f"
+    url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.21/zshrs-all-v0.11.21-x86_64-apple-darwin.tar.gz"
+    sha256 "6bd25d77da63890082d074bd25d9a49065c53f9ed7b836f9c699cc403aa70824"
   end
   end
 
   on_linux do
   on_intel do
-    url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.20/zshrs-all-v0.11.20-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "98eb0a948d1f81c132ab5a7b0c092d440b0af3496dda255a11cf3a40e5a7ef9f"
+    url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.21/zshrs-all-v0.11.21-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "73b80752bb23f6f1a63d6fea4649d2c343e48d77d99280c7c012f473f3d0d8c1"
   end
   end
 
