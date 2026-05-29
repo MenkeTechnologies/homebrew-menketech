@@ -12,7 +12,7 @@
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
-> *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs tp storageshower powerliners` — done."*
+> *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners` — done."*
 
 Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners`, the formula here gets a fresh version + sha256 sums for every platform.
 
