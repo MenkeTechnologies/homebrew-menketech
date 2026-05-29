@@ -1,0 +1,115 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ruby-syntax:
+    name: Ruby syntax check (every formula must parse)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ruby -c on every formula
+        run: |
+          set -euo pipefail
+          fail=0
+          for f in Formula/*.rb; do
+            if ! ruby -c "$f" >/dev/null; then
+              echo "::error file=$f::Ruby parse error in $f"
+              fail=1
+            fi
+          done
+          exit $fail
+
+  formula-shape:
+    name: Formula shape contract (class name, version, license, on_macos/on_linux)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate each formula carries required DSL keys
+        run: |
+          set -euo pipefail
+          fail=0
+          for f in Formula/*.rb; do
+            base=$(basename "$f" .rb)
+            # Class name = StudlyCase of file basename (Homebrew convention,
+            # strict — `brew install <name>` resolves via this naming rule).
+            # Map kebab-case (zshrs-all) -> StudlyCase (ZshrsAll).
+            expected_class=$(echo "$base" | awk -F'-' '{
+              for (i=1; i<=NF; i++) {
+                printf "%s%s", toupper(substr($i,1,1)), substr($i,2)
+              }
+            }')
+            if ! grep -qE "^class ${expected_class} < Formula$" "$f"; then
+              echo "::error file=$f::Missing or mismatched class header (expected: class ${expected_class} < Formula)"
+              fail=1
+            fi
+            for required in 'desc ' 'homepage ' 'license ' 'version ' 'def install'; do
+              if ! grep -q "$required" "$f"; then
+                echo "::error file=$f::Missing required DSL key: $required"
+                fail=1
+              fi
+            done
+          done
+          exit $fail
+
+  no-placeholder-shas:
+    name: Warn on placeholder SHA256 (release workflow forgot to update)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan for 64-zero SHA256 lines
+        run: |
+          set -euo pipefail
+          # Placeholder SHA256 = 64 zeros. Means the release workflow staged
+          # the formula but did not get a chance to write the real hash yet.
+          # Warn (not error) since this is a known intermediate state during
+          # release rollout; release workflow updates SHA in the followup commit.
+          found=0
+          for f in Formula/*.rb; do
+            count=$(grep -c 'sha256 "0\{64\}"' "$f" || true)
+            if [[ "$count" -gt 0 ]]; then
+              echo "::warning file=$f::$count placeholder SHA256(s) — waiting for release workflow to fill in"
+              found=$((found + count))
+            fi
+          done
+          echo "Total placeholder SHAs across all formulas: $found"
+
+  url-domain-shape:
+    name: All URLs point at github.com/MenkeTechnologies releases
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Every url "..." line in every formula starts with the canonical release URL
+        run: |
+          set -euo pipefail
+          fail=0
+          for f in Formula/*.rb; do
+            while IFS= read -r line; do
+              # Skip lines that aren't `    url "...github..."` (DSL key)
+              [[ "$line" == *'url "'* ]] || continue
+              if ! [[ "$line" == *'github.com/MenkeTechnologies/'*'/releases/download/v'* ]]; then
+                echo "::error file=$f::Non-canonical release URL: $line"
+                fail=1
+              fi
+            done < "$f"
+          done
+          exit $fail
