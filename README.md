@@ -83,7 +83,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | `zshrs-all` | ✓ | ✓ | ✓ | — (3-target release) |
 | `lsofrs` | ✓ | ✓ | ✓ | — |
 | `iftoprs` | ✓ | ✓ | ✓ | — |
-| `awkrs` | ✓ | ✓ | ✓ | — |
+| `awkrs` | — | ✓ | ✓ | — (2-target release) |
 | `nmaprs` | ✓ | ✓ | ✓ | — |
 | `temprs` | ✓ | ✓ | ✓ | — |
 | `storageshower` | — | ✓ | ✓ | — (2-target release) |
