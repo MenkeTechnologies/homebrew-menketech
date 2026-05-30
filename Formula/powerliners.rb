@@ -2,20 +2,20 @@ class Powerliners < Formula
   desc "1:1 Rust port of powerline-status — daemon + client + config + render + lint"
   homepage "https://github.com/MenkeTechnologies/powerliners"
   license "MIT"
-  version "0.2.4"
+  version "0.2.7"
 
   on_macos do
   on_arm do
-    url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.4/powerliners-v0.2.4-aarch64-apple-darwin.tar.gz"
-    sha256 "f96a920a8b958acef5d27c7572938c76ff1454c2ab327c3a5b40378922bd4060"
+    url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.7/powerliners-v0.2.7-aarch64-apple-darwin.tar.gz"
+    sha256 "840cf8c4b53e56475ac22525f7e20a220d0dcf8df1765cbda0cf9ee60a7a0834"
   end
   # x86_64 macOS not supported — see release.yml matrix.
   end
 
   on_linux do
   on_intel do
-    url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.4/powerliners-v0.2.4-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "80799b163feb6a13171157f826a055afb434fd52968adb422899b978c94424bf"
+    url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.7/powerliners-v0.2.7-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "0c181b445efa9d9d57133edf88509f78924605ebaaa344d495849223ec429917"
   end
   end
 
