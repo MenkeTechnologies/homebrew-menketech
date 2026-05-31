@@ -2,25 +2,32 @@ class Storageshower < Formula
   desc "Cyberpunk disk-usage TUI in Rust (ratatui + sysinfo, drill-down + theme editor)"
   homepage "https://github.com/MenkeTechnologies/storageshower"
   license "MIT"
-  version "0.28.5"
+  version "0.28.7"
 
   on_macos do
-  on_arm do
-    url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.5/storageshower-v0.28.5-aarch64-apple-darwin.tar.gz"
-    sha256 "a460bbc4f30d1104e062f9c0d462cb2db305f274c40995d5915e20cbd0fe749f"
-  end
-  # x86_64 macOS not supported — see release.yml matrix.
+    on_arm do
+      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.7/storageshower-v0.28.7-aarch64-apple-darwin.tar.gz"
+      sha256 "9ae3037e43beca6dcfa36869502050fcf897af598c0d66d5214fef9a7d951c2d"
+    end
+    on_intel do
+      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.7/storageshower-v0.28.7-x86_64-apple-darwin.tar.gz"
+      sha256 "93c566f369063818690d424308e22ec7a77c0417261c3ef98fa21cb3043cbd44"
+    end
   end
 
   on_linux do
-  on_intel do
-    url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.5/storageshower-v0.28.5-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "e236b7a4d74c34cfe434a82906bd38a08ddc2ebc3494354ba73d09f10f2a7613"
-  end
+    on_intel do
+      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.7/storageshower-v0.28.7-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "8662e1c9e803e5a31c8d8724ceb24cd6461f214d196829e05b19a324c3a6f154"
+    end
+    on_arm do
+      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.7/storageshower-v0.28.7-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "51213bf11dd813c79039c2080e2ca72eff66546b7baf63096b5e2e27c4e1a778"
+    end
   end
 
   def install
-  bin.install "storageshower"
+    bin.install "storageshower"
   end
 
   test do
