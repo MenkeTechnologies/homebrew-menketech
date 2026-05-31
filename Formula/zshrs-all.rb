@@ -3,35 +3,39 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.11.22"
+  version "0.11.26"
 
   on_macos do
-  on_arm do
-    url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.22/zshrs-all-v0.11.22-aarch64-apple-darwin.tar.gz"
-    sha256 "703eac02983fe03970964ac8cab810a23d175e48523a5ccea0fda88e33a8fe88"
-  end
-  on_intel do
-    url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.22/zshrs-all-v0.11.22-x86_64-apple-darwin.tar.gz"
-    sha256 "4dbe003a3bfcd08dc059164b807cc6722c9500d26cb5861e384eb77bfa61e3c7"
-  end
+    on_arm do
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.26/zshrs-all-v0.11.26-aarch64-apple-darwin.tar.gz"
+      sha256 "16076e456e0c3d8e894d24fcfcfb9123fa1d177dd2d9ff8eb3eafecb623a0050"
+    end
+    on_intel do
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.26/zshrs-all-v0.11.26-x86_64-apple-darwin.tar.gz"
+      sha256 "2aaa8a96c1bc02358cb46cb0c6f7ac1d5ee380d333a7b2e6221ac841afdae684"
+    end
   end
 
   on_linux do
-  on_intel do
-    url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.22/zshrs-all-v0.11.22-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "0ec8c1da3782cedb638ff4dcaff5a3cffbead0538942940e17b732ba7c502a44"
-  end
+    on_intel do
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.26/zshrs-all-v0.11.26-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f99591d6c3ef5849852cba98a849c4e2de35afc954e4ce7e945dede8c046bac5"
+    end
+    on_arm do
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.26/zshrs-all-v0.11.26-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "26d7888d497dbc65b2da99521c8f278ffe6a9f675c5f9497bbc0d9dcb89abaf1"
+    end
   end
 
   def install
-  bin.install "zshrs"
-  bin.install "zd"
-  bin.install "zshrs-recorder"
-  bin.install "zshrs-daemon"
+    bin.install "zshrs"
+    bin.install "zd"
+    bin.install "zshrs-recorder"
+    bin.install "zshrs-daemon"
   end
 
   test do
-    assert_match "hi", shell_output("#{bin}/zshrs -c \'echo hi\'")
+    assert_match "hi", shell_output("#{bin}/zshrs -c 'echo hi'")
     assert_predicate bin/"zshrs-recorder", :exist?
     assert_predicate bin/"zshrs-daemon", :exist?
   end
