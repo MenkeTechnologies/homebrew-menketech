@@ -102,14 +102,24 @@ jobs:
         run: |
           set -euo pipefail
           fail=0
+          # Canonical patterns:
+          #   …/releases/download/v<ver>/…           (single-binary repos: stryke, awkrs, …)
+          #   …/releases/download/<prefix>-v<ver>/…  (multi-binary parent repo: zpwrchrome
+          #                                          hosts both the extension and the
+          #                                          browserpass-host-rs sidecar under
+          #                                          tag prefixes like `host-v0.9.5`)
           for f in Formula/*.rb; do
             while IFS= read -r line; do
               # Skip lines that aren't `    url "...github..."` (DSL key)
               [[ "$line" == *'url "'* ]] || continue
-              if ! [[ "$line" == *'github.com/MenkeTechnologies/'*'/releases/download/v'* ]]; then
-                echo "::error file=$f::Non-canonical release URL: $line"
-                fail=1
+              if [[ "$line" == *'github.com/MenkeTechnologies/'*'/releases/download/v'* ]]; then
+                continue
               fi
+              if [[ "$line" =~ github\.com/MenkeTechnologies/[^/]+/releases/download/[a-zA-Z0-9_-]+-v[0-9] ]]; then
+                continue
+              fi
+              echo "::error file=$f::Non-canonical release URL: $line"
+              fail=1
             done < "$f"
           done
           exit $fail
