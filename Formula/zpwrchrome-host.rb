@@ -2,27 +2,27 @@ class ZpwrchromeHost < Formula
   desc "Native messaging host for zpwrchrome — UNIX pass + segmented downloader + OTP"
   homepage "https://github.com/MenkeTechnologies/zpwrchrome"
   license "MIT"
-  version "0.9.5"
+  version "0.9.6"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.5/zpwrchrome-host-v0.9.5-aarch64-apple-darwin.tar.gz"
-      sha256 "8fb1419efc7cb012614d76928f2fe8d66ce4d65b87674dfa1d081e04c05838f7"
+      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.6/zpwrchrome-host-v0.9.6-aarch64-apple-darwin.tar.gz"
+      sha256 "e495d75b0321551a5b76b01f0cd977520fde1d9e034a1abf7f13c5f6f455123d"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.5/zpwrchrome-host-v0.9.5-x86_64-apple-darwin.tar.gz"
-      sha256 "7eb7fb8765afeef4333e4ff6733da4f6a480634c624ef6dfad9a9159adedab5c"
+      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.6/zpwrchrome-host-v0.9.6-x86_64-apple-darwin.tar.gz"
+      sha256 "08ddad0a87165e5cc74c4a5953f4a0be946b6f11a9f45509669f341f81b79a07"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.5/zpwrchrome-host-v0.9.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "914d9ec5dd3e4d5dc38db946eb91bddef2b45b071e2b5313bf89d27a1563afe6"
+      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.6/zpwrchrome-host-v0.9.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d60a745fb008390a39ba808ec14baa1580bc6a12e9a35bce5e52b6e75fa72b49"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.5/zpwrchrome-host-v0.9.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "249ae18b32e662f6ad58fc0d41aa332954f11f2067994efd17c00d7676ce895a"
+      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.6/zpwrchrome-host-v0.9.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2514b3f5fc17851eb05199d72167acb0ad5baa6697c6d0851ad063b8d4adb508"
     end
   end
 
