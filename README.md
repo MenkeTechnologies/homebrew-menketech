@@ -8,13 +8,13 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-10-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-11-cyan.svg)](Formula/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
-> *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners` — done."*
+> *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -44,9 +44,10 @@ brew install nmaprs      # rust nmap: nmaprs + nms
 brew install temprs      # tempfile stack manager: temprs + tp
 brew install storageshower # cyberpunk disk-usage TUI: storageshower
 brew install powerliners # rust powerline port: powerliners
+brew install zpwrchrome-host # native messaging host for the zpwrchrome Chrome extension: zpwrchrome-host
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs awkrs nmaprs temprs storageshower powerliners
+brew install stryke zshrs lsofrs iftoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host
 ```
 
 Upgrades:
@@ -71,6 +72,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`temprs`](Formula/temprs.rb) | [temprs](https://github.com/MenkeTechnologies/temprs) | `temprs` `tp` | tracks temprs release tags |
 | [`storageshower`](Formula/storageshower.rb) | [storageshower](https://github.com/MenkeTechnologies/storageshower) | `storageshower` | tracks storageshower release tags |
 | [`powerliners`](Formula/powerliners.rb) | [powerliners](https://github.com/MenkeTechnologies/powerliners) | `powerliners` | tracks powerliners release tags |
+| [`zpwrchrome-host`](Formula/zpwrchrome-host.rb) | [zpwrchrome](https://github.com/MenkeTechnologies/zpwrchrome) | `zpwrchrome-host` | tracks zpwrchrome `host-v*` release tags |
 
 ---
 
@@ -88,6 +90,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | `temprs` | ✓ | ✓ | ✓ | — |
 | `storageshower` | — | ✓ | ✓ | — (2-target release) |
 | `powerliners` | — | ✓ | ✓ | — (2-target release) |
+| `zpwrchrome-host` | ✓ | ✓ | ✓ | ✓ |
 
 aarch64-linux support coverage will grow as upstream release matrices add the target.
 
@@ -95,7 +98,7 @@ aarch64-linux support coverage will grow as upstream release matrices add the ta
 
 ## [0x03] AUTO-UPDATE MECHANISM
 
-Each formula here is updated automatically by the source repo's `Release` workflow (`.github/workflows/release.yml`). When a `v*` tag is pushed on the source repo:
+Each formula here is updated automatically by the source repo's `Release` workflow (`.github/workflows/release.yml`, or `release-host.yml` for `zpwrchrome-host`). When a release tag is pushed on the source repo (`v*` for most tools, `host-v*` for `zpwrchrome-host` since the host crate ships independently of the Chrome extension's own `v*` tags):
 
 1. The `build` job produces per-target `*.tar.gz` binary archives + uploads as workflow artifacts.
 2. The `publish` job creates a GitHub Release with the tarballs attached.
