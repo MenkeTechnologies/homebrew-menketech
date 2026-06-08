@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.11.26"
+  version "0.11.39"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.26/zshrs-all-v0.11.26-aarch64-apple-darwin.tar.gz"
-      sha256 "16076e456e0c3d8e894d24fcfcfb9123fa1d177dd2d9ff8eb3eafecb623a0050"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.39/zshrs-all-v0.11.39-aarch64-apple-darwin.tar.gz"
+      sha256 "c52200db923a8cb58c1d4a9346830a52f828450f31cf4a2226847b529e6bcbe0"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.26/zshrs-all-v0.11.26-x86_64-apple-darwin.tar.gz"
-      sha256 "2aaa8a96c1bc02358cb46cb0c6f7ac1d5ee380d333a7b2e6221ac841afdae684"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.39/zshrs-all-v0.11.39-x86_64-apple-darwin.tar.gz"
+      sha256 "bc626780f2787a4a2772a8d23793f8f2b5cac44051b35fb83feb27a1f2484c3a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.26/zshrs-all-v0.11.26-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f99591d6c3ef5849852cba98a849c4e2de35afc954e4ce7e945dede8c046bac5"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.39/zshrs-all-v0.11.39-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b9eb5240f68111eec7a1ad9aedf9a26cd050c1744ec6ee0baa909557ffe7655a"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.26/zshrs-all-v0.11.26-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "26d7888d497dbc65b2da99521c8f278ffe6a9f675c5f9497bbc0d9dcb89abaf1"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.39/zshrs-all-v0.11.39-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4b8184ed17f415ac78651544e445c34bf9fe61c01367e86334d16abf55201cb0"
     end
   end
 
