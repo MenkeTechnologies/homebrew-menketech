@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.11.39"
+  version "0.11.40"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.39/zshrs-all-v0.11.39-aarch64-apple-darwin.tar.gz"
-      sha256 "c52200db923a8cb58c1d4a9346830a52f828450f31cf4a2226847b529e6bcbe0"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.40/zshrs-all-v0.11.40-aarch64-apple-darwin.tar.gz"
+      sha256 "79d2a4cb732393c234db4eba4e4e2be92df0510b6cd6bd6dabda031efaad8f43"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.39/zshrs-all-v0.11.39-x86_64-apple-darwin.tar.gz"
-      sha256 "bc626780f2787a4a2772a8d23793f8f2b5cac44051b35fb83feb27a1f2484c3a"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.40/zshrs-all-v0.11.40-x86_64-apple-darwin.tar.gz"
+      sha256 "ff00d300eef591aec9b7249381ecf2cdd9b6092614a5eebad1e56a71676a00b0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.39/zshrs-all-v0.11.39-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b9eb5240f68111eec7a1ad9aedf9a26cd050c1744ec6ee0baa909557ffe7655a"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.40/zshrs-all-v0.11.40-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ff27bb54c7c2524d5b94e14435cd07953803b137d1b18f10e22ed8ebe816bc29"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.39/zshrs-all-v0.11.39-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4b8184ed17f415ac78651544e445c34bf9fe61c01367e86334d16abf55201cb0"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.11.40/zshrs-all-v0.11.40-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a4daf02cd575df842cbd0b53e90fce7443b466f9254156db9058109a7e08bf59"
     end
   end
 
