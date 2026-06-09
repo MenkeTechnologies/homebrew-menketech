@@ -2,27 +2,27 @@ class Stryke < Formula
   desc "The 2nd fastest dynamic language — parallel Perl 5 interpreter in Rust"
   homepage "https://github.com/MenkeTechnologies/strykelang"
   license "MIT"
-  version "0.16.33"
+  version "0.16.34"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.16.33/stryke-v0.16.33-aarch64-apple-darwin.tar.gz"
-      sha256 "43b6be342b06c851dac04f27abde1983fc4c13e3fe358879a633ffa5beaf9b82"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.16.34/stryke-v0.16.34-aarch64-apple-darwin.tar.gz"
+      sha256 "7018db73b9b8a83838c02cf47b6edf557a764bf417e5105c3ace24188da2e72c"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.16.33/stryke-v0.16.33-x86_64-apple-darwin.tar.gz"
-      sha256 "7dbf14dc2a29e295b2297d39accc055c7a64fd44b44ca91fd69af1fe9d1a5b2c"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.16.34/stryke-v0.16.34-x86_64-apple-darwin.tar.gz"
+      sha256 "3a2e079244d1b52921dff4e67d64a1d46f4a033eb2904ae582b9293938fab610"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.16.33/stryke-v0.16.33-aarch64-unknown-linux-gnu.tar.gz"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.16.34/stryke-v0.16.34-aarch64-unknown-linux-gnu.tar.gz"
       sha256 ""
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.16.33/stryke-v0.16.33-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2dffbb4b465d8a7c56c994b6c389cb7fbd9486d096b9917daa899a2cc1008b65"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.16.34/stryke-v0.16.34-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "880a5baebaf76da509f593245b82c3d17aff04fa6b55a6763145410fc941f6d1"
     end
   end
 
