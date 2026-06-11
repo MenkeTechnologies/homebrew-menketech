@@ -80,19 +80,19 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 
 | Formula | x86_64-darwin | aarch64-darwin | x86_64-linux | aarch64-linux |
 |---|:---:|:---:|:---:|:---:|
-| `stryke` | ✓ | ✓ | ✓ | ✓ (since zshrs 0.11.14) |
-| `zshrs` | ✓ | ✓ | ✓ | — (3-target release) |
-| `zshrs-all` | ✓ | ✓ | ✓ | — (3-target release) |
-| `lsofrs` | ✓ | ✓ | ✓ | — |
-| `iftoprs` | ✓ | ✓ | ✓ | — |
-| `awkrs` | — | ✓ | ✓ | — (2-target release) |
-| `nmaprs` | ✓ | ✓ | ✓ | — |
-| `temprs` | ✓ | ✓ | ✓ | — |
-| `storageshower` | — | ✓ | ✓ | — (2-target release) |
-| `powerliners` | — | ✓ | ✓ | — (2-target release) |
+| `stryke` | ✓ | ✓ | ✓ | ✓ |
+| `zshrs` | ✓ | ✓ | ✓ | ✓ |
+| `zshrs-all` | ✓ | ✓ | ✓ | ✓ |
+| `lsofrs` | ✓ | ✓ | ✓ | ✓ |
+| `iftoprs` | ✓ | ✓ | ✓ | ✓ |
+| `awkrs` | — (3-target release) | ✓ | ✓ | ✓ |
+| `nmaprs` | ✓ | ✓ | ✓ | ✓ |
+| `temprs` | ✓ | ✓ | ✓ | ✓ |
+| `storageshower` | ✓ | ✓ | ✓ | ✓ |
+| `powerliners` | ✓ | ✓ | ✓ | ✓ |
 | `zpwrchrome-host` | ✓ | ✓ | ✓ | ✓ |
 
-aarch64-linux support coverage will grow as upstream release matrices add the target.
+Every formula ships aarch64-linux; `awkrs` is the only formula without an x86_64-darwin bottle.
 
 ---
 
