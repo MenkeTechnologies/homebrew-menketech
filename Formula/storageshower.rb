@@ -34,4 +34,8 @@ class Storageshower < Formula
     # TUI binary — --version is the contract we test (no interactive launch in CI).
     assert_match version.to_s, shell_output("#{bin}/storageshower --version 2>&1", 0..2)
   end
+
+  # Static musl tarballs also published at this release:
+  #   storageshower-v0.28.7-x86_64-unknown-linux-musl.tar.gz  sha256: b1de8cf6d68297ecf60723ca6c7e0481213ad2d076b81a0a45cc8bc6cccd3003
+  #   storageshower-v0.28.7-aarch64-unknown-linux-musl.tar.gz  sha256: e5041158044e94f26e601dab749291aaaad6bddb73abc026bd7095132869f254
 end
