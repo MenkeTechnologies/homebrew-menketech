@@ -7,7 +7,7 @@ cask "audio-haxor" do
   desc "Scanner and manager for VST/VST3/AU/CLAP plugins, samples and DAW projects"
   homepage "https://github.com/MenkeTechnologies/Audio-Haxor"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "AUDIO_HAXOR.app"
 
