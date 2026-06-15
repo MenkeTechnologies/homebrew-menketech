@@ -1,28 +1,28 @@
 class ZpwrchromeHost < Formula
-  desc "Native messaging host for zpwrchrome — Unix pass + segmented downloader + OTP"
+  desc "Native messaging host for zpwrchrome — UNIX pass + segmented downloader + OTP"
   homepage "https://github.com/MenkeTechnologies/zpwrchrome"
   license "MIT"
-  version "0.9.6"
+  version "0.9.9"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.6/zpwrchrome-host-v0.9.6-aarch64-apple-darwin.tar.gz"
-      sha256 "e495d75b0321551a5b76b01f0cd977520fde1d9e034a1abf7f13c5f6f455123d"
+      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.9/zpwrchrome-host-v0.9.9-aarch64-apple-darwin.tar.gz"
+      sha256 "af431020b85806b38a4f29567c103cc095b23ccd4e0acef3150ef77be3160b36"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.6/zpwrchrome-host-v0.9.6-x86_64-apple-darwin.tar.gz"
-      sha256 "08ddad0a87165e5cc74c4a5953f4a0be946b6f11a9f45509669f341f81b79a07"
+      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.9/zpwrchrome-host-v0.9.9-x86_64-apple-darwin.tar.gz"
+      sha256 "f6eee37d8c691bdacdd0add7e6d0a1bdd603c1603c839248478c2866b4a058dd"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.6/zpwrchrome-host-v0.9.6-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d60a745fb008390a39ba808ec14baa1580bc6a12e9a35bce5e52b6e75fa72b49"
+      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.9/zpwrchrome-host-v0.9.9-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0230eb8e8cda9e22f043dc50ee4529da8d151326e1baca425bbeb73bc0091969"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.6/zpwrchrome-host-v0.9.6-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2514b3f5fc17851eb05199d72167acb0ad5baa6697c6d0851ad063b8d4adb508"
+      url "https://github.com/MenkeTechnologies/zpwrchrome/releases/download/host-v0.9.9/zpwrchrome-host-v0.9.9-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9333a44b5b1e01e7fc853526be80ab4a86ad3367ceb6ef60ec49555361e5f864"
     end
   end
 
