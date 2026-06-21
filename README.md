@@ -43,7 +43,7 @@ brew install awkrs       # rust awk: awkrs + aw
 brew install nmaprs      # rust nmap: nmaprs + nms
 brew install temprs      # tempfile stack manager: temprs + tp
 brew install storageshower # cyberpunk disk-usage TUI: storageshower
-brew install powerliners # rust powerline port: powerliners
+brew install powerliners # rust powerline port: powerline + powerline-daemon + powerline-config + powerline-render + powerline-lint
 brew install zpwrchrome-host # native messaging host for the zpwrchrome Chrome extension: zpwrchrome-host
 
 # or install everything in one go
@@ -71,7 +71,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`nmaprs`](Formula/nmaprs.rb) | [nmaprs](https://github.com/MenkeTechnologies/nmaprs) | `nmaprs` `nms` | tracks nmaprs release tags |
 | [`temprs`](Formula/temprs.rb) | [temprs](https://github.com/MenkeTechnologies/temprs) | `temprs` `tp` | tracks temprs release tags |
 | [`storageshower`](Formula/storageshower.rb) | [storageshower](https://github.com/MenkeTechnologies/storageshower) | `storageshower` | tracks storageshower release tags |
-| [`powerliners`](Formula/powerliners.rb) | [powerliners](https://github.com/MenkeTechnologies/powerliners) | `powerliners` | tracks powerliners release tags |
+| [`powerliners`](Formula/powerliners.rb) | [powerliners](https://github.com/MenkeTechnologies/powerliners) | `powerline` `powerline-daemon` `powerline-config` `powerline-render` `powerline-lint` | tracks powerliners release tags |
 | [`zpwrchrome-host`](Formula/zpwrchrome-host.rb) | [zpwrchrome](https://github.com/MenkeTechnologies/zpwrchrome) | `zpwrchrome-host` | tracks zpwrchrome `host-v*` release tags |
 
 ---
