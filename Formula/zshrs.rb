@@ -2,27 +2,27 @@ class Zshrs < Formula
   desc "First compiled Unix shell — drop-in zsh with bytecode JIT, AOP, worker pool"
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
-  version "0.12.0"
+  version "0.12.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.0/zshrs-v0.12.0-aarch64-apple-darwin.tar.gz"
-      sha256 "4b661c083afdc99c4950416c858ac5b002e282abeffb004819bd9b89ec198f99"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.1/zshrs-v0.12.1-aarch64-apple-darwin.tar.gz"
+      sha256 "88e43066f8400651dbd08f8fed9ec5ed98e1237b456b7b13f8f7bbecf363abed"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.0/zshrs-v0.12.0-x86_64-apple-darwin.tar.gz"
-      sha256 "10cf166d74175dc561d091dacd1a6d9a98bd07015b1e2dc5acf0ba524267b1a3"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.1/zshrs-v0.12.1-x86_64-apple-darwin.tar.gz"
+      sha256 "8a17d112a8b05661633a0dbd5647d842428d86d6440e168f5ce1d6389508e770"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.0/zshrs-v0.12.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "58a4d2dbdff7b0b505f70cc181c83d015dc3652cf9fe6349fb39a6d34a6830ef"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.1/zshrs-v0.12.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d007cfa36f0608f04065f6a73f29e707ea6237bae525c9053e381c74157dd1e4"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.0/zshrs-v0.12.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0aebf4af373faf0abe965d032940320f1de378d44c953ac0238808ecda9874ca"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.1/zshrs-v0.12.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "04a98e342d29882de699c1ba315dda71bcfd0f495d595bc77591d6afbcc89f66"
     end
   end
 
