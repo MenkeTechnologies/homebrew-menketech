@@ -8,13 +8,13 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-13-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-14-cyan.svg)](Formula/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -47,9 +47,10 @@ brew install powerliners # rust powerline port: powerline + powerline-daemon + p
 brew install zpwrchrome-host # native messaging host for the zpwrchrome Chrome extension: zpwrchrome-host
 brew install zemacs      # modal text editor on the Helix engine: zemacs
 brew install elisprs     # Emacs Lisp on the fusevm bytecode VM (AOT + rkyv cache): elisp
+brew install vimlrs      # rust Vimscript (VimL) interpreter: vimlrs
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host zemacs elisprs
+brew install stryke zshrs lsofrs iftoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs
 ```
 
 Upgrades:
@@ -77,6 +78,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`zpwrchrome-host`](Formula/zpwrchrome-host.rb) | [zpwrchrome](https://github.com/MenkeTechnologies/zpwrchrome) | `zpwrchrome-host` | tracks zpwrchrome `host-v*` release tags |
 | [`zemacs`](Formula/zemacs.rb) | [zemacs](https://github.com/MenkeTechnologies/zemacs) | `zemacs` | tracks zemacs release tags |
 | [`elisprs`](Formula/elisprs.rb) | [elisprs](https://github.com/MenkeTechnologies/elisprs) | `elisp` | tracks elisprs release tags |
+| [`vimlrs`](Formula/vimlrs.rb) | [vimlrs](https://github.com/MenkeTechnologies/vimlrs) | `vimlrs` | tracks vimlrs release tags |
 
 ---
 
@@ -97,6 +99,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | `zpwrchrome-host` | ✓ | ✓ | ✓ | ✓ |
 | `zemacs` | ✓ | ✓ | ✓ | ✓ |
 | `elisprs` | — (5-target release) | ✓ | ✓ | ✓ |
+| `vimlrs` | ✓ | ✓ | ✓ | ✓ |
 
 Every formula ships aarch64-linux; `awkrs` and `elisprs` are the formulas without an x86_64-darwin bottle.
 
