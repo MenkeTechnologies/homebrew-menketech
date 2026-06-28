@@ -1,5 +1,5 @@
 class Vimlrs < Formula
-  desc "Faithful Rust port of the Vimscript (VimL) interpreter, from the Neovim C eval engine"
+  desc "Vimscript (VimL) interpreter in Rust, ported from Neovim's C eval engine"
   homepage "https://github.com/MenkeTechnologies/vimlrs"
   license "MIT"
   version "0.1.0"
