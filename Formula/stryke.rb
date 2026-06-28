@@ -2,27 +2,27 @@ class Stryke < Formula
   desc "The 2nd fastest dynamic language — parallel Perl 5 interpreter in Rust"
   homepage "https://github.com/MenkeTechnologies/strykelang"
   license "MIT"
-  version "0.17.32"
+  version "0.17.33"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.32/stryke-v0.17.32-aarch64-apple-darwin.tar.gz"
-      sha256 "dd86e4a57ef4d9977402c8c6e6919c7c625f7880da62b9bcf33d77cdedc20385"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.33/stryke-v0.17.33-aarch64-apple-darwin.tar.gz"
+      sha256 "c6fafcb777eead0466a2f09d16f41386bf89b0ac27795b7270f58f33cc7a6fff"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.32/stryke-v0.17.32-x86_64-apple-darwin.tar.gz"
-      sha256 "69b29f574edfdffd41d5a5926e86608a56035fffb710b487ba187acea83a8f25"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.33/stryke-v0.17.33-x86_64-apple-darwin.tar.gz"
+      sha256 "584e2fc3520de9f99fbfb61aa07f2994734b433da21e4172114101818fe6688f"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.32/stryke-v0.17.32-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7f06bcbfe6a6086c29c3b67d520cf3d6d3933f0c0a67147a16864e5f768e874d"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.33/stryke-v0.17.33-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2bd8b4daffef66372da10881d5768150a1067e756d374f12f6321cdc18dfa616"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.32/stryke-v0.17.32-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "41a4b56a7c6a60a8637e622e87de437431bc4468b0013269257afb750db9f5ec"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.33/stryke-v0.17.33-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "026dc3dc3a46556d97acb36e3c80bcd6875ae128919ec94dcc8ad746507ef297"
     end
   end
 
