@@ -1,8 +1,9 @@
-class ZshrsAll < Formula
-  desc "Full zshrs install — shell + zd client + recorder + daemon"
+class ZshrsDaemon < Formula
+  desc "zshrs daemon + zd client only — for users of other shells (bash/fish/zsh)"
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
-  conflicts_with "zshrs", because: "both install zshrs and zd"
+  conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
+  conflicts_with "zshrs", because: "both install zd"
   version "0.12.6"
 
   on_macos do
@@ -28,15 +29,12 @@ class ZshrsAll < Formula
   end
 
   def install
-    bin.install "zshrs"
-    bin.install "zd"
-    bin.install "zshrs-recorder"
     bin.install "zshrs-daemon"
+    bin.install "zd"
   end
 
   test do
-    assert_match "hi", shell_output("#{bin}/zshrs -c 'echo hi'")
-    assert_predicate bin/"zshrs-recorder", :exist?
-    assert_predicate bin/"zshrs-daemon", :exist?
+    assert_match "zshrs-daemon #{version}", shell_output("#{bin}/zshrs-daemon --version")
+    assert_match "zd #{version}", shell_output("#{bin}/zd --version")
   end
 end
