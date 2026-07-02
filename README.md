@@ -14,7 +14,7 @@
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -37,8 +37,10 @@ brew tap MenkeTechnologies/menketech
 brew install stryke      # the language: stryke + s + st
 brew install zshrs       # the shell: zshrs + zd
 brew install zshrs-all   # full install: zshrs + zd + zshrs-recorder + zshrs-daemon (conflicts with zshrs)
+brew install zshrs-daemon # zshrs daemon + zd only, for non-zshrs shells (conflicts with zshrs / zshrs-all)
 brew install lsofrs      # rust lsof: lsofrs + lsf
 brew install iftoprs     # rust iftop: iftoprs
+brew install htoprs      # rust htop: interactive process viewer
 brew install awkrs       # rust awk: awkrs + aw
 brew install nmaprs      # rust nmap: nmaprs + nms
 brew install temprs      # tempfile stack manager: temprs + tp
@@ -50,7 +52,7 @@ brew install elisprs     # Emacs Lisp on the fusevm bytecode VM (AOT + rkyv cach
 brew install vimlrs      # rust Vimscript (VimL) interpreter: vimlrs
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs
+brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs
 ```
 
 Upgrades:
@@ -68,8 +70,10 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`stryke`](Formula/stryke.rb) | [strykelang](https://github.com/MenkeTechnologies/strykelang) | `stryke` `s` `st` | tracks strykelang release tags |
 | [`zshrs`](Formula/zshrs.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs` `zd` | tracks zshrs release tags |
 | [`zshrs-all`](Formula/zshrs-all.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs` `zd` `zshrs-recorder` `zshrs-daemon` | tracks zshrs release tags (conflicts with `zshrs`) |
+| [`zshrs-daemon`](Formula/zshrs-daemon.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs-daemon` `zd` | tracks zshrs release tags (conflicts with `zshrs` / `zshrs-all`) |
 | [`lsofrs`](Formula/lsofrs.rb) | [lsofrs](https://github.com/MenkeTechnologies/lsofrs) | `lsofrs` `lsf` | tracks lsofrs release tags |
 | [`iftoprs`](Formula/iftoprs.rb) | [iftoprs](https://github.com/MenkeTechnologies/iftoprs) | `iftoprs` | tracks iftoprs release tags |
+| [`htoprs`](Formula/htoprs.rb) | [htoprs](https://github.com/MenkeTechnologies/htoprs) | `htoprs` | tracks htoprs release tags |
 | [`awkrs`](Formula/awkrs.rb) | [awkrs](https://github.com/MenkeTechnologies/awkrs) | `awkrs` `aw` | tracks awkrs release tags |
 | [`nmaprs`](Formula/nmaprs.rb) | [nmaprs](https://github.com/MenkeTechnologies/nmaprs) | `nmaprs` `nms` | tracks nmaprs release tags |
 | [`temprs`](Formula/temprs.rb) | [temprs](https://github.com/MenkeTechnologies/temprs) | `temprs` `tp` | tracks temprs release tags |
@@ -89,8 +93,10 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | `stryke` | ✓ | ✓ | ✓ | ✓ |
 | `zshrs` | ✓ | ✓ | ✓ | ✓ |
 | `zshrs-all` | ✓ | ✓ | ✓ | ✓ |
+| `zshrs-daemon` | ✓ | ✓ | ✓ | ✓ |
 | `lsofrs` | ✓ | ✓ | ✓ | ✓ |
 | `iftoprs` | ✓ | ✓ | ✓ | ✓ |
+| `htoprs` | ✓ | ✓ | ✓ | ✓ |
 | `awkrs` | — (3-target release) | ✓ | ✓ | ✓ |
 | `nmaprs` | ✓ | ✓ | ✓ | ✓ |
 | `temprs` | ✓ | ✓ | ✓ | ✓ |
