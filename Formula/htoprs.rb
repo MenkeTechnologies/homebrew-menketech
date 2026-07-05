@@ -2,27 +2,27 @@ class Htoprs < Formula
   desc "Interactive process viewer — a faithful Rust port of htop"
   homepage "https://github.com/MenkeTechnologies/htoprs"
   license "GPL-2.0-or-later"
-  version "0.5.4"
+  version "0.5.5"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.4/htoprs-v0.5.4-aarch64-apple-darwin.tar.gz"
-      sha256 "f0f6d1d6a31214bddb515b62f768d0dd70e8cbf5b6ae0f6437e0449e032c44c7"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.5/htoprs-v0.5.5-aarch64-apple-darwin.tar.gz"
+      sha256 "b8de114dce23eff879fb7e54ed490aa93505c6cff8e0cd7cf8c3496f9c6505c2"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.4/htoprs-v0.5.4-x86_64-apple-darwin.tar.gz"
-      sha256 "fd0c3bc5774829f361bb63ed546213d7c5b7be3ea859e413fdd813a5977dd472"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.5/htoprs-v0.5.5-x86_64-apple-darwin.tar.gz"
+      sha256 "3e7321874e50091236bfc7147f13dc2bad0c736e397be1a1509efc08fa3e796b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.4/htoprs-v0.5.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0454bb54d9f54248bf73beea5ced2100e6598f2d9d584bac2c13899f62e4246d"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.5/htoprs-v0.5.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2f4e9919319b47a31fa76c6b6f0e7b552b2e8f9ab1efe350f4a354582d000438"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.4/htoprs-v0.5.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4f1f847d02a607ff7c53a103c0329966f2a73956de5f567410953de99711efb7"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.5/htoprs-v0.5.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "29654be5b58d703c3ec9315fe998a1fe4c5e85f82b69678b0db2760494b3a4ec"
     end
   end
 
