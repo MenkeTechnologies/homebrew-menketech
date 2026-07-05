@@ -14,7 +14,7 @@
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs` / `zwire-host`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -52,9 +52,10 @@ brew install elisprs     # Emacs Lisp on the fusevm bytecode VM (AOT + rkyv cach
 brew install vimlrs      # rust Vimscript (VimL) interpreter: vimlrs
 brew install ztmux       # rust tmux port: full terminal multiplexer, server + client: ztmux
 brew install zcolorizer  # ccze port
+brew install zwire-host  # universal local IPC host: system stats, fs, exec, PTY, kv: zwire-host
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs ztmux zcolorizer
+brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs ztmux zcolorizer zwire-host
 ```
 
 Upgrades:
@@ -87,6 +88,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`vimlrs`](Formula/vimlrs.rb) | [vimlrs](https://github.com/MenkeTechnologies/vimlrs) | `vimlrs` | tracks vimlrs release tags |
 | [`ztmux`](Formula/ztmux.rb) | [ztmux](https://github.com/MenkeTechnologies/ztmux) | `ztmux` | tracks ztmux release tags |
 | [`zcolorizer`](Formula/zcolorizer.rb) | [zcolorizer](https://github.com/MenkeTechnologies/zcolorizer) | `zcolorizer` | tracks zcolorizer release tags |
+| [`zwire-host`](Formula/zwire-host.rb) | [zwire-host](https://github.com/MenkeTechnologies/zwire-host) | `zwire-host` | tracks zwire-host release tags |
 
 ---
 
@@ -111,6 +113,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | `elisprs` | — (5-target release) | ✓ | ✓ | ✓ |
 | `vimlrs` | ✓ | ✓ | ✓ | ✓ |
 | `zcolorizer` | ✓ | ✓ | ✓ | ✓ |
+| `zwire-host` | ✓ | ✓ | ✓ | ✓ |
 
 Every formula ships aarch64-linux; `awkrs` and `elisprs` are the formulas without an x86_64-darwin bottle.
 
