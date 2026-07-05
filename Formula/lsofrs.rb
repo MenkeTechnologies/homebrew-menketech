@@ -2,27 +2,27 @@ class Lsofrs < Formula
   desc "Rust rewrite of lsof — 5–21× faster, 7-tab TUI, 31 cyberpunk themes"
   homepage "https://github.com/MenkeTechnologies/lsofrs"
   license "MIT"
-  version "4.9.0"
+  version "4.9.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/lsofrs/releases/download/v4.9.0/lsofrs-v4.9.0-aarch64-apple-darwin.tar.gz"
-      sha256 "89eef74d21fe11beeb5271ae7fac5a7bcdda091402a954ae076dfcdedd620b3f"
+      url "https://github.com/MenkeTechnologies/lsofrs/releases/download/v4.9.1/lsofrs-v4.9.1-aarch64-apple-darwin.tar.gz"
+      sha256 "e38d55b5c753e8b53fb52f785547e1dee27b4e716b0cf989ee1166e279fbbbd2"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/lsofrs/releases/download/v4.9.0/lsofrs-v4.9.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8ee914a60b52881fa604948dffd1f1d823b09cf53859f4576d7aa43b5304016f"
+      url "https://github.com/MenkeTechnologies/lsofrs/releases/download/v4.9.1/lsofrs-v4.9.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b9fa181bd8402f3a7447d21a48a8ef673f6bcdcd6439d9af39443ba9627c4de5"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/lsofrs/releases/download/v4.9.0/lsofrs-v4.9.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "20247e96f49b0459da9eff8c3fc2d52e351a07390c24be034675c37ee614b516"
+      url "https://github.com/MenkeTechnologies/lsofrs/releases/download/v4.9.1/lsofrs-v4.9.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fc210e9ef73a5eebd11075a27f530e1eda5731c0e38d9da11b9f1661c678be55"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/lsofrs/releases/download/v4.9.0/lsofrs-v4.9.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4b784633f6b6de61281d5b75b9f5a4d4b0e071ae76c549bbc25fdd4655eda0bd"
+      url "https://github.com/MenkeTechnologies/lsofrs/releases/download/v4.9.1/lsofrs-v4.9.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ef3a51365b00cc4cf38efe9c39001c4a3820fd15deb17ad3bd2f219d6b0081fe"
     end
   end
 
@@ -36,6 +36,6 @@ class Lsofrs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   lsofrs-v4.9.0-x86_64-unknown-linux-musl.tar.gz  sha256: 619cca7f14754cddb50fc46a2165c7c54b06eb1498ba79e130db3d357adcec15
-  #   lsofrs-v4.9.0-aarch64-unknown-linux-musl.tar.gz  sha256: 01fab6af05e873014be9b83e01e3f6660ca5da1ce059abe5d09a8f5b8a8b018f
+  #   lsofrs-v4.9.1-x86_64-unknown-linux-musl.tar.gz  sha256: 9256244ea08a3a3fd94d49c6eab11d25cc6ecf8e08de59cc5c488a7acf5bf49b
+  #   lsofrs-v4.9.1-aarch64-unknown-linux-musl.tar.gz  sha256: d4c25bd0f51d1bb4efa99cb89ab145b9a2366e5aadd184a2f560d332a4f64e6d
 end
