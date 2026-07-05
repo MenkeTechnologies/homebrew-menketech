@@ -8,7 +8,7 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-17-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-18-cyan.svg)](Formula/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
@@ -51,9 +51,10 @@ brew install zemacs      # modal text editor on the Helix engine: zemacs
 brew install elisprs     # Emacs Lisp on the fusevm bytecode VM (AOT + rkyv cache): elisp
 brew install vimlrs      # rust Vimscript (VimL) interpreter: vimlrs
 brew install ztmux       # rust tmux port: full terminal multiplexer, server + client: ztmux
+brew install zcolorizer  # ccze port
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs ztmux
+brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs ztmux zcolorizer
 ```
 
 Upgrades:
@@ -85,6 +86,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`elisprs`](Formula/elisprs.rb) | [elisprs](https://github.com/MenkeTechnologies/elisprs) | `elisp` | tracks elisprs release tags |
 | [`vimlrs`](Formula/vimlrs.rb) | [vimlrs](https://github.com/MenkeTechnologies/vimlrs) | `vimlrs` | tracks vimlrs release tags |
 | [`ztmux`](Formula/ztmux.rb) | [ztmux](https://github.com/MenkeTechnologies/ztmux) | `ztmux` | tracks ztmux release tags |
+| [`zcolorizer`](Formula/zcolorizer.rb) | [zcolorizer](https://github.com/MenkeTechnologies/zcolorizer) | `zcolorizer` | tracks zcolorizer release tags |
 
 ---
 
@@ -108,6 +110,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | `zemacs` | ✓ | ✓ | ✓ | ✓ |
 | `elisprs` | — (5-target release) | ✓ | ✓ | ✓ |
 | `vimlrs` | ✓ | ✓ | ✓ | ✓ |
+| `zcolorizer` | ✓ | ✓ | ✓ | ✓ |
 
 Every formula ships aarch64-linux; `awkrs` and `elisprs` are the formulas without an x86_64-darwin bottle.
 
