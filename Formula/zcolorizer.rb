@@ -2,27 +2,27 @@ class Zcolorizer < Formula
   desc "Real-time log colorizer (ccze/pygments port) with customizable regex rules"
   homepage "https://github.com/MenkeTechnologies/zcolorizer"
   license "MIT"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zcolorizer/releases/download/v0.2.1/zcolorizer-v0.2.1-aarch64-apple-darwin.tar.gz"
-      sha256 "d7f2f0c8842165024d5d4221687a34167f94ae3dda5f42bf7d02f7065f7e1f6e"
+      url "https://github.com/MenkeTechnologies/zcolorizer/releases/download/v0.2.2/zcolorizer-v0.2.2-aarch64-apple-darwin.tar.gz"
+      sha256 "fd97fb54fbeed7b06d67961b17fe215d06825047f5d03094519c6a413e3d8b88"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zcolorizer/releases/download/v0.2.1/zcolorizer-v0.2.1-x86_64-apple-darwin.tar.gz"
-      sha256 "5bb97fafdf7066e5ea89b9c3ae1596f41fcfb94f9b7500317d32619b7e1c100e"
+      url "https://github.com/MenkeTechnologies/zcolorizer/releases/download/v0.2.2/zcolorizer-v0.2.2-x86_64-apple-darwin.tar.gz"
+      sha256 "2503981c124bc267c621a431bd4c69ab7a751d293065d071266d17d48b7216af"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zcolorizer/releases/download/v0.2.1/zcolorizer-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b4bb55cb6f606c1ae0ac1400772c79ce3bf32d00d794a2e9363c72d9ab0cba8c"
+      url "https://github.com/MenkeTechnologies/zcolorizer/releases/download/v0.2.2/zcolorizer-v0.2.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "38a80a62a6305809ae03f31e454630f873f5a3c29183423f02d3f365d34fe157"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zcolorizer/releases/download/v0.2.1/zcolorizer-v0.2.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "274e095aa46ff9239602b2c5426457e57aa95ae0834b6455cfc9814e70d7af23"
+      url "https://github.com/MenkeTechnologies/zcolorizer/releases/download/v0.2.2/zcolorizer-v0.2.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "51ab5384cb032b1725fb9550cb67413518f5632aba2e32bfc30f84a1ee5f724f"
     end
   end
 
@@ -35,6 +35,6 @@ class Zcolorizer < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   zcolorizer-v0.2.1-x86_64-unknown-linux-musl.tar.gz  sha256: c6657fab8a2d93c99316c9054407eb810397ce68c8cd07e62287a360fbcb6a89
-  #   zcolorizer-v0.2.1-aarch64-unknown-linux-musl.tar.gz  sha256: df93ab5fe487898824112a2b1d86718cc7fc608247a60e1ecce3c5387d12f4b6
+  #   zcolorizer-v0.2.2-x86_64-unknown-linux-musl.tar.gz  sha256: c6913c2244d777ad91b08c04f35a35d63a2d4b4bbfb5f0ca64279886a613bf86
+  #   zcolorizer-v0.2.2-aarch64-unknown-linux-musl.tar.gz  sha256: e79a8f22c948200cbf1a875d74bb9b7f72e1a951e88512e17c7345cc17e1a4d3
 end
