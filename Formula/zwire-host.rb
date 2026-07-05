@@ -2,27 +2,27 @@ class ZwireHost < Formula
   desc "Local IPC host: system stats, filesystem, exec, PTY and kv store"
   homepage "https://github.com/MenkeTechnologies/zwire-host"
   license "MIT"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.1/zwire-host-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "fe7968a53ba694d67bd80d323db2f65bba04ac18aa5ee6221a80a45fd1b53c52"
+      url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.2/zwire-host-v0.3.2-aarch64-apple-darwin.tar.gz"
+      sha256 "4147bc1424b37983ec4b87e8e88fc1d69a81ec2429d806c41c0dcef034ed57c7"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.1/zwire-host-v0.3.1-x86_64-apple-darwin.tar.gz"
-      sha256 "b28b8002b6cd05ab4a3c9c55928c5159b549339724f545f0267e3fb29cdb57b2"
+      url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.2/zwire-host-v0.3.2-x86_64-apple-darwin.tar.gz"
+      sha256 "38681a970a2615694c0956c9f0263b00cfbb58cef00a80f67b3e856f8920aa04"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.1/zwire-host-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f5bfdd6ea5315bbd1ee209d7b49a83315610ccc550169adee8a1ab488e3b86c3"
+      url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.2/zwire-host-v0.3.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3ac7b0a8ba83492afb939a1da500e4f0cbf397cc17ca9824c7f067b3aefb5fb2"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.1/zwire-host-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1cb7a44f0b9b6c62245a8fe93b932a4a3c954d850b5d962486fc76f44a8c8557"
+      url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.2/zwire-host-v0.3.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "aa5aa3a049fa313f2e8ca6f9fca4d8737e6be918eb60b65f4a62b813cb863564"
     end
   end
 
