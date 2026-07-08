@@ -2,27 +2,27 @@ class Vimlrs < Formula
   desc "Vimscript (VimL) interpreter in Rust, ported from Neovim's C eval engine"
   homepage "https://github.com/MenkeTechnologies/vimlrs"
   license "MIT"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/vimlrs/releases/download/v0.1.2/vimlrs-v0.1.2-aarch64-apple-darwin.tar.gz"
-      sha256 "702a771011af030fb65f776e81efb190d5e997411e3ffd6fbcf645d102383e5a"
+      url "https://github.com/MenkeTechnologies/vimlrs/releases/download/v0.1.3/vimlrs-v0.1.3-aarch64-apple-darwin.tar.gz"
+      sha256 "3dc2cf408725ae9b0c28e50fcb9fdb8947a5e45e91461ca4a46db6d6ae2ffbea"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/vimlrs/releases/download/v0.1.2/vimlrs-v0.1.2-x86_64-apple-darwin.tar.gz"
-      sha256 "068ce8f425ce2c38f5e905c344fb69aae2dbfc84b36496133ca106385393404b"
+      url "https://github.com/MenkeTechnologies/vimlrs/releases/download/v0.1.3/vimlrs-v0.1.3-x86_64-apple-darwin.tar.gz"
+      sha256 "e634c088d988b9785be21fb67a5d5a175aef4570581dd7a5f487af8df35e0a7a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/vimlrs/releases/download/v0.1.2/vimlrs-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e791d2d3055fe589bb85a37833753b767ec875340ef47229ff1aa0ed89387907"
+      url "https://github.com/MenkeTechnologies/vimlrs/releases/download/v0.1.3/vimlrs-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1b6512c5af9d4172c01a83ed14e05751e06380753fe8f48b261e8bd31f9ff10f"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/vimlrs/releases/download/v0.1.2/vimlrs-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4dc1c5b7e994a98d7f91a44736c6fa340f6e222563da70ad87dc420f3379b729"
+      url "https://github.com/MenkeTechnologies/vimlrs/releases/download/v0.1.3/vimlrs-v0.1.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "a6ec5d6a1125c0e192b3c220e3343b79df958d00d9982fcfc18e868f243b3d6d"
     end
   end
 
@@ -35,6 +35,6 @@ class Vimlrs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   vimlrs-v0.1.2-x86_64-unknown-linux-musl.tar.gz  sha256: 3f8c6c3a73e128647ab7ebb0e0413ebe2c42b2826750861e53b9fda7d6989faf
-  #   vimlrs-v0.1.2-aarch64-unknown-linux-musl.tar.gz  sha256: cde42dd3a2581fff2298625b269ead11fc85dc9d8956e7cef046ec2e38651a26
+  #   vimlrs-v0.1.3-x86_64-unknown-linux-musl.tar.gz  sha256: 49115c8e3b81ad417b4bbdfde5abb46dcff5893e3548a3afc57c3171d28d6e9a
+  #   vimlrs-v0.1.3-aarch64-unknown-linux-musl.tar.gz  sha256: cba9ca6945b94dd40e18911e87f421a73875f196aeb5f02e9939f1144daaee4e
 end
