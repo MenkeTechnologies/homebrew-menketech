@@ -27,11 +27,11 @@ class Vimlrs < Formula
   end
 
   def install
-    bin.install "vimlrs"
+    bin.install "viml"
   end
 
   test do
-    assert_match "vimlrs", shell_output("#{bin}/vimlrs --version")
+    assert_match "viml", shell_output("#{bin}/viml --version")
   end
 
   # Static musl tarballs also published at this release:
