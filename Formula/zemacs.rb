@@ -2,23 +2,23 @@ class Zemacs < Formula
   desc "Modal text editor in Rust — vim/emacs keymaps"
   homepage "https://github.com/MenkeTechnologies/zemacs"
   license "MPL-2.0"
-  version "0.4.5"
+  version "0.4.6"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zemacs/releases/download/v0.4.5/zemacs-v0.4.5-aarch64-apple-darwin.tar.gz"
-      sha256 "28b1ec9b9f173fff57b7b01db559d8e18ea383c0bc55b32b099f79bff9c46907"
+      url "https://github.com/MenkeTechnologies/zemacs/releases/download/v0.4.6/zemacs-v0.4.6-aarch64-apple-darwin.tar.gz"
+      sha256 "9bd3c7d871d0d129d72d2b61d49f576827954ba3c1131ef49bff658e1286f98a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zemacs/releases/download/v0.4.5/zemacs-v0.4.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ad0940439fe1fbe9377ca13b21b79b9f4a2f08e183a339e0afa5bb1774a00496"
+      url "https://github.com/MenkeTechnologies/zemacs/releases/download/v0.4.6/zemacs-v0.4.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c810724275043f2b75d6cf64d712d844033512f479ccb067307b6de3634c72c1"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zemacs/releases/download/v0.4.5/zemacs-v0.4.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "534ce4800740cae1f9f757262d13549ef0b728b24e5e9cb81cb08b7e7778e222"
+      url "https://github.com/MenkeTechnologies/zemacs/releases/download/v0.4.6/zemacs-v0.4.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "af0012ca43c56cd38496b41ea2983dbabd67e4da907aeba1dd0f2595fff9a8a7"
     end
   end
 
