@@ -1,5 +1,5 @@
 class ZpwrchromeHost < Formula
-  desc "Native messaging host for zpwrchrome — UNIX pass + segmented downloader + OTP"
+  desc "Native messaging host for zpwrchrome — Unix pass + segmented downloader + OTP"
   homepage "https://github.com/MenkeTechnologies/zpwrchrome"
   license "MIT"
   version "0.10.2"
