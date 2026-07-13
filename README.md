@@ -14,7 +14,7 @@
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs` / `zwire-host`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -112,6 +112,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | `zemacs` | ✓ | ✓ | ✓ | ✓ |
 | `elisprs` | — (5-target release) | ✓ | ✓ | ✓ |
 | `vimlrs` | ✓ | ✓ | ✓ | ✓ |
+| `ztmux` | ✓ | ✓ | ✓ | ✓ |
 | `zcolorizer` | ✓ | ✓ | ✓ | ✓ |
 | `zwire-host` | ✓ | ✓ | ✓ | ✓ |
 
@@ -133,4 +134,4 @@ Formula updates show up as commits authored by `github-actions[bot]`.
 
 ## [0xFF] LICENSE
 
-MIT License. See each source repo's LICENSE for per-tool terms (all MIT, except `zemacs` which is MPL-2.0 on the Helix engine).
+MIT License. See each source repo's LICENSE for per-tool terms (all MIT, except `zemacs` which is MPL-2.0 on the Helix engine and `htoprs` which is GPL-2.0-or-later).
