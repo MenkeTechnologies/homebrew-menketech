@@ -8,13 +8,13 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-19-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-20-cyan.svg)](Formula/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -43,6 +43,7 @@ brew install iftoprs     # rust iftop: iftoprs
 brew install htoprs      # rust htop: interactive process viewer
 brew install awkrs       # rust awk: awkrs + aw
 brew install nmaprs      # rust nmap: nmaprs + nms
+brew install grcrs       # rust grc: generic colouriser: grc + grcat
 brew install temprs      # tempfile stack manager: temprs + tp
 brew install storageshower # cyberpunk disk-usage TUI: storageshower
 brew install powerliners # rust powerline port: powerline + powerline-daemon + powerline-config + powerline-render + powerline-lint
@@ -55,7 +56,7 @@ brew install zcolorizer  # ccze port
 brew install zwire-host  # universal local IPC host: system stats, fs, exec, PTY, kv: zwire-host
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs ztmux zcolorizer zwire-host
+brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs ztmux zcolorizer zwire-host
 ```
 
 Upgrades:
@@ -79,6 +80,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`htoprs`](Formula/htoprs.rb) | [htoprs](https://github.com/MenkeTechnologies/htoprs) | `htoprs` | tracks htoprs release tags |
 | [`awkrs`](Formula/awkrs.rb) | [awkrs](https://github.com/MenkeTechnologies/awkrs) | `awkrs` `aw` | tracks awkrs release tags |
 | [`nmaprs`](Formula/nmaprs.rb) | [nmaprs](https://github.com/MenkeTechnologies/nmaprs) | `nmaprs` `nms` | tracks nmaprs release tags |
+| [`grcrs`](Formula/grcrs.rb) | [grcrs](https://github.com/MenkeTechnologies/grcrs) | `grc` `grcat` | tracks grcrs release tags |
 | [`temprs`](Formula/temprs.rb) | [temprs](https://github.com/MenkeTechnologies/temprs) | `temprs` `tp` | tracks temprs release tags |
 | [`storageshower`](Formula/storageshower.rb) | [storageshower](https://github.com/MenkeTechnologies/storageshower) | `storageshower` | tracks storageshower release tags |
 | [`powerliners`](Formula/powerliners.rb) | [powerliners](https://github.com/MenkeTechnologies/powerliners) | `powerline` `powerline-daemon` `powerline-config` `powerline-render` `powerline-lint` | tracks powerliners release tags |
@@ -105,6 +107,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | `htoprs` | ✓ | ✓ | ✓ | ✓ |
 | `awkrs` | — (3-target release) | ✓ | ✓ | ✓ |
 | `nmaprs` | ✓ | ✓ | ✓ | ✓ |
+| `grcrs` | ✓ | ✓ | ✓ | ✓ |
 | `temprs` | ✓ | ✓ | ✓ | ✓ |
 | `storageshower` | ✓ | ✓ | ✓ | ✓ |
 | `powerliners` | ✓ | ✓ | ✓ | ✓ |
