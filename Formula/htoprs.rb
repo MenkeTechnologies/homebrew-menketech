@@ -1,28 +1,28 @@
 class Htoprs < Formula
   desc "Interactive process viewer — a faithful Rust port of htop"
   homepage "https://github.com/MenkeTechnologies/htoprs"
-  license "GPL-2.0-or-later"
-  version "0.5.7"
+  license "MIT"
+  version "0.5.8"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.7/htoprs-v0.5.7-aarch64-apple-darwin.tar.gz"
-      sha256 "efd6ccd1cef6d965f673350d75044bb801841fed775b83d7fdc9726b755815dc"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.8/htoprs-v0.5.8-aarch64-apple-darwin.tar.gz"
+      sha256 "5487974abcb6fa3d139ae6a2e238080862a48387540566b8463306f1e160ce55"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.7/htoprs-v0.5.7-x86_64-apple-darwin.tar.gz"
-      sha256 "f22ee114dba23c0505f31c014967cae9657ad6ae7405c585e20895313ad5de4c"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.8/htoprs-v0.5.8-x86_64-apple-darwin.tar.gz"
+      sha256 "528d19cc593e90c3ed1bd3590300b83e72154cfdcfa2f44cad41b2e125399a66"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.7/htoprs-v0.5.7-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7a98d9a38f0a7907a9ae1c1c76ae951f6a103a9fabd87fa10f41e38a12c0b5ea"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.8/htoprs-v0.5.8-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2f00694cb304a865173c33eb99d57db790b50d116780508d27591f8361d8aee3"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.7/htoprs-v0.5.7-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7de24a08c4c57f88bac680317553feed5a9859fba34543bb5f406d9af8779a73"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.8/htoprs-v0.5.8-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bb9171c7bcdc390ca1811dc967a30b54eb2dfed7c0cf0c443ba91c784bd37c7d"
     end
   end
 
