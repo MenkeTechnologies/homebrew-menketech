@@ -2,27 +2,27 @@ class Storageshower < Formula
   desc "Cyberpunk disk-usage TUI in Rust (ratatui + sysinfo, drill-down + theme editor)"
   homepage "https://github.com/MenkeTechnologies/storageshower"
   license "MIT"
-  version "0.28.8"
+  version "0.28.9"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.8/storageshower-v0.28.8-aarch64-apple-darwin.tar.gz"
-      sha256 "8263410a789db95bae484039e2eddc4248216f0dced81c4e57346244915ac73d"
+      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.9/storageshower-v0.28.9-aarch64-apple-darwin.tar.gz"
+      sha256 "a4c56d6963c989d0874754a9c8affda2121e446f78f3ca2387a245ec15d8f970"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.8/storageshower-v0.28.8-x86_64-apple-darwin.tar.gz"
-      sha256 "517f328a0f0485e02d82041daef254b13c555dbc66a9475deb28632cb475434f"
+      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.9/storageshower-v0.28.9-x86_64-apple-darwin.tar.gz"
+      sha256 "4ce55fca69cb7795fdd938ffa04bc05e8cd3d64fcaa2401f475e97ce764f7e46"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.8/storageshower-v0.28.8-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "386f8119846ca38fd0db6cf38d5e9ecfedbc7a4e1432fb3713976e9d0e625064"
+      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.9/storageshower-v0.28.9-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6e92ae7e212b7d6915e4902e8a13ed8a7d77a5bbe97fa38ce91b42269dbf0cb0"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.8/storageshower-v0.28.8-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "04d18f588e4a5d409ac92b0f3b521768e14bc8893889f3467522458c133a624a"
+      url "https://github.com/MenkeTechnologies/storageshower/releases/download/v0.28.9/storageshower-v0.28.9-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "26e015b026d54b9867203b401402b2ef5a90af083f54dbd7b5691031264ae071"
     end
   end
 
@@ -36,6 +36,6 @@ class Storageshower < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   storageshower-v0.28.8-x86_64-unknown-linux-musl.tar.gz  sha256: 9eeea7a61f6a56f26cbaa7c72b00495f8e4b9e7eb7e378617298e4646e0d9b49
-  #   storageshower-v0.28.8-aarch64-unknown-linux-musl.tar.gz  sha256: 8ce8c38fff284d0653e1d672e5e8a4316bfb15ab4b24afadd3217cfd598c8a9c
+  #   storageshower-v0.28.9-x86_64-unknown-linux-musl.tar.gz  sha256: fec8622976563ba4fa0a9a1483bff0d4f0947634c2d996ae30c93145550eca2d
+  #   storageshower-v0.28.9-aarch64-unknown-linux-musl.tar.gz  sha256: abc3211998d9fbb376c4e180cbdc4d576c1dd6d3d7452b7df5ee2fbc7fd80118
 end
