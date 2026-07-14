@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.12.13"
+  version "0.12.14"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.13/zshrs-all-v0.12.13-aarch64-apple-darwin.tar.gz"
-      sha256 "746dfce808d841131205061a8f49de2720175f946be7ea53aa85d46b7e8c30c2"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.14/zshrs-all-v0.12.14-aarch64-apple-darwin.tar.gz"
+      sha256 "d223fedb2b9c8d43505bc32fe0c5265e77f2bcccc2460108a31a87ff4ade6ed4"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.13/zshrs-all-v0.12.13-x86_64-apple-darwin.tar.gz"
-      sha256 "1b461cad3910eacf36036b8d83bff49bf7e80e4e54714611be677ef988a921bb"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.14/zshrs-all-v0.12.14-x86_64-apple-darwin.tar.gz"
+      sha256 "f41cf9dfc7ef1e466477e293c5d4931b9a3b26a0822764cbbd64ece4b65879cf"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.13/zshrs-all-v0.12.13-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "753bdd77d4c09f0fe8dfb616d536afe61a53f05eb34d6ad3762e603a6ed64a74"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.14/zshrs-all-v0.12.14-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2712840f4c2e00fc547f181cde5098ec9b718324c88d6d96b3c058f58c526941"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.13/zshrs-all-v0.12.13-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "be9dcfcab2a972656df9de4521b5fa5626384ee3d1d27cc332789131ba78856f"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.14/zshrs-all-v0.12.14-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ac187b54384d8399341cfe0f91004f985e406d12fa926c2182e06871dc9dc12c"
     end
   end
 
