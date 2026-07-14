@@ -9,6 +9,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Formulas](https://img.shields.io/badge/formulas-20-cyan.svg)](Formula/)
+[![Casks](https://img.shields.io/badge/casks-1-magenta.svg)](Casks/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
@@ -24,8 +25,9 @@ Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnol
 
 - [\[0x00\] Quick Start](#0x00-quick-start)
 - [\[0x01\] Formulas](#0x01-formulas)
-- [\[0x02\] Platform Support](#0x02-platform-support)
-- [\[0x03\] Auto-Update Mechanism](#0x03-auto-update-mechanism)
+- [\[0x02\] Casks](#0x02-casks)
+- [\[0x03\] Platform Support](#0x03-platform-support)
+- [\[0x04\] Auto-Update Mechanism](#0x04-auto-update-mechanism)
 - [\[0xFF\] License](#0xff-license)
 
 ---
@@ -57,6 +59,9 @@ brew install zwire-host  # universal local IPC host: system stats, fs, exec, PTY
 
 # or install everything in one go
 brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs ztmux zcolorizer zwire-host
+
+# casks (macOS GUI apps)
+brew install --cask zwire # Chromium rebrand: zpwrchrome power-tool, cyberpunk theme + new-tab on a Blink base
 ```
 
 Upgrades:
@@ -94,7 +99,19 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 
 ---
 
-## [0x02] PLATFORM SUPPORT
+## [0x02] CASKS
+
+macOS GUI apps, installed with `brew install --cask <name>`.
+
+| Cask | Repo | App | Latest version |
+|---|---|---|---|
+| [`zwire`](Casks/zwire.rb) | [zwire](https://github.com/MenkeTechnologies/zwire) | `zwire.app` | tracks zwire `v*` release tags |
+
+`zwire` ships only the self-contained macOS `.app` (requires macOS Big Sur or newer). The `.app` is ad-hoc signed, not notarized — on first launch, right-click `zwire.app` → Open, or install with `brew install --cask --no-quarantine zwire` to bypass Gatekeeper.
+
+---
+
+## [0x03] PLATFORM SUPPORT
 
 | Formula | x86_64-darwin | aarch64-darwin | x86_64-linux | aarch64-linux |
 |---|:---:|:---:|:---:|:---:|
@@ -123,7 +140,7 @@ Every formula ships aarch64-linux; `awkrs` and `elisprs` are the formulas withou
 
 ---
 
-## [0x03] AUTO-UPDATE MECHANISM
+## [0x04] AUTO-UPDATE MECHANISM
 
 Each formula here is updated automatically by the source repo's `Release` workflow (`.github/workflows/release.yml`, or `release-host.yml` for `zpwrchrome-host`). When a release tag is pushed on the source repo (`v*` for most tools, `host-v*` for `zpwrchrome-host` since the host crate ships independently of the Chrome extension's own `v*` tags):
 
