@@ -2,27 +2,27 @@ class Htoprs < Formula
   desc "Interactive process viewer — a faithful Rust port of htop"
   homepage "https://github.com/MenkeTechnologies/htoprs"
   license "MIT"
-  version "0.5.8"
+  version "0.5.9"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.8/htoprs-v0.5.8-aarch64-apple-darwin.tar.gz"
-      sha256 "5487974abcb6fa3d139ae6a2e238080862a48387540566b8463306f1e160ce55"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.9/htoprs-v0.5.9-aarch64-apple-darwin.tar.gz"
+      sha256 "eabeb5b75e3d56100b88b7d889a10383d8f594c202ef65832ee321cca97fb1a7"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.8/htoprs-v0.5.8-x86_64-apple-darwin.tar.gz"
-      sha256 "528d19cc593e90c3ed1bd3590300b83e72154cfdcfa2f44cad41b2e125399a66"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.9/htoprs-v0.5.9-x86_64-apple-darwin.tar.gz"
+      sha256 "abd382fff3dfa3886ad403b55e679079356c5a9a294ef1cd330e26d0a6b40fa2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.8/htoprs-v0.5.8-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "2f00694cb304a865173c33eb99d57db790b50d116780508d27591f8361d8aee3"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.9/htoprs-v0.5.9-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "76e4436a3febb296e7467e431561f926b10ac8175ef5cd05d526f76a10031ec3"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.8/htoprs-v0.5.8-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "bb9171c7bcdc390ca1811dc967a30b54eb2dfed7c0cf0c443ba91c784bd37c7d"
+      url "https://github.com/MenkeTechnologies/htoprs/releases/download/v0.5.9/htoprs-v0.5.9-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9d6e44e2d21df6d1baaa0eed9c5b5ac6093828e9ff1ef07dedb257609e50ae9b"
     end
   end
 
