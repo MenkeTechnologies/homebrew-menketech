@@ -15,7 +15,7 @@
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zemacs` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -50,7 +50,7 @@ brew install temprs      # tempfile stack manager: temprs + tp
 brew install storageshower # cyberpunk disk-usage TUI: storageshower
 brew install powerliners # rust powerline port: powerline + powerline-daemon + powerline-config + powerline-render + powerline-lint
 brew install zpwrchrome-host # native messaging host for the zpwrchrome Chrome extension: zpwrchrome-host
-brew install zemacs      # modal text editor on the Helix engine: zemacs
+brew install zmax        # modal text editor on the Helix engine: zemacs
 brew install elisprs     # Emacs Lisp on the fusevm bytecode VM (AOT + rkyv cache): elisp
 brew install vimlrs      # rust Vimscript (VimL) interpreter: vimlrs
 brew install ztmux       # rust tmux port: full terminal multiplexer, server + client: ztmux
@@ -58,7 +58,7 @@ brew install zcolorizer  # ccze port
 brew install zwire-host  # universal local IPC host: system stats, fs, exec, PTY, kv: zwire-host
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zemacs elisprs vimlrs ztmux zcolorizer zwire-host
+brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host
 
 # casks (macOS GUI apps)
 brew install --cask zwire # Chromium rebrand: zpwrchrome power-tool, cyberpunk theme + new-tab on a Blink base
@@ -90,7 +90,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`storageshower`](Formula/storageshower.rb) | [storageshower](https://github.com/MenkeTechnologies/storageshower) | `storageshower` | tracks storageshower release tags |
 | [`powerliners`](Formula/powerliners.rb) | [powerliners](https://github.com/MenkeTechnologies/powerliners) | `powerline` `powerline-daemon` `powerline-config` `powerline-render` `powerline-lint` | tracks powerliners release tags |
 | [`zpwrchrome-host`](Formula/zpwrchrome-host.rb) | [zpwrchrome](https://github.com/MenkeTechnologies/zpwrchrome) | `zpwrchrome-host` | tracks zpwrchrome `host-v*` release tags |
-| [`zemacs`](Formula/zemacs.rb) | [zemacs](https://github.com/MenkeTechnologies/zemacs) | `zemacs` | tracks zemacs release tags |
+| [`zmax`](Formula/zmax.rb) | [zmax](https://github.com/MenkeTechnologies/zmax) | `zemacs` | tracks zmax release tags |
 | [`elisprs`](Formula/elisprs.rb) | [elisprs](https://github.com/MenkeTechnologies/elisprs) | `elisp` | tracks elisprs release tags |
 | [`vimlrs`](Formula/vimlrs.rb) | [vimlrs](https://github.com/MenkeTechnologies/vimlrs) | `vimlrs` | tracks vimlrs release tags |
 | [`ztmux`](Formula/ztmux.rb) | [ztmux](https://github.com/MenkeTechnologies/ztmux) | `ztmux` | tracks ztmux release tags |
@@ -129,14 +129,14 @@ macOS GUI apps, installed with `brew install --cask <name>`.
 | `storageshower` | ✓ | ✓ | ✓ | ✓ |
 | `powerliners` | ✓ | ✓ | ✓ | ✓ |
 | `zpwrchrome-host` | ✓ | ✓ | ✓ | ✓ |
-| `zemacs` | ✓ | ✓ | ✓ | ✓ |
+| `zmax` | — (3-target release) | ✓ | ✓ | ✓ |
 | `elisprs` | — (5-target release) | ✓ | ✓ | ✓ |
 | `vimlrs` | ✓ | ✓ | ✓ | ✓ |
 | `ztmux` | ✓ | ✓ | ✓ | ✓ |
 | `zcolorizer` | ✓ | ✓ | ✓ | ✓ |
 | `zwire-host` | ✓ | ✓ | ✓ | ✓ |
 
-Every formula ships aarch64-linux; `awkrs` and `elisprs` are the formulas without an x86_64-darwin bottle.
+Every formula ships aarch64-linux; `awkrs`, `elisprs`, and `zmax` are the formulas without an x86_64-darwin bottle.
 
 ---
 
@@ -154,4 +154,4 @@ Formula updates show up as commits authored by `github-actions[bot]`.
 
 ## [0xFF] LICENSE
 
-MIT License. See each source repo's LICENSE for per-tool terms (all MIT, except `zemacs` which is MPL-2.0 on the Helix engine and `htoprs` which is GPL-2.0-or-later).
+MIT License. See each source repo's LICENSE for per-tool terms (all MIT, except `zmax` which is MPL-2.0 on the Helix engine and `htoprs` which is GPL-2.0-or-later).
