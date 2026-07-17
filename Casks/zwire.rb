@@ -2,15 +2,14 @@ cask "zwire" do
   version "0.6.54"
   sha256 "03ffdea2ba883c24916db9e79ec4f93ab95f0c7169b23f7426d4d2d8f44de796"
 
-  url "https://github.com/MenkeTechnologies/zwire/releases/download/v#{version}/zwire-#{version}-macos.zip",
-      verified: "github.com/MenkeTechnologies/zwire/"
+  url "https://github.com/MenkeTechnologies/zwire/releases/download/v#{version}/zwire-#{version}-macos.zip"
   name "zwire"
-  desc "Chromium rebrand: zpwrchrome power-tool, cyberpunk theme + new-tab on a Blink base"
+  desc "Chromium rebrand: zpwrchrome power-tool, cyberpunk theme + new-tab on Blink"
   homepage "https://github.com/MenkeTechnologies/zwire"
 
   # Ships only the self-contained macOS .app (zwire.app at the archive root of
   # zwire-<version>-macos.zip). Blink base → modern macOS only.
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "zwire.app"
 
