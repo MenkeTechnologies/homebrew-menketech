@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.12.17"
+  version "0.12.18"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.17/zshrs-all-v0.12.17-aarch64-apple-darwin.tar.gz"
-      sha256 "89b9e2629d5e694bb566dbbb3b3567931fa92239f203e1e5bf4f2cd2e0a441d1"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.18/zshrs-all-v0.12.18-aarch64-apple-darwin.tar.gz"
+      sha256 "ca3d00236082b2fa9df1f0eebc629ef726c0f9f68114714f7439e3d7d7d57cbb"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.17/zshrs-all-v0.12.17-x86_64-apple-darwin.tar.gz"
-      sha256 "57db4dc0733539df70a3b42b87b6a71d90dce97071e454258e6dad7746c5219a"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.18/zshrs-all-v0.12.18-x86_64-apple-darwin.tar.gz"
+      sha256 "bde553cbc62c52380283e27dc79eb69e703bddc5cfe4ccefd5ae41e810cbc96b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.17/zshrs-all-v0.12.17-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "27cd92243475118cb8051d9deae4b6881db3fc3e911609f14494bcf78ba87fe2"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.18/zshrs-all-v0.12.18-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "31231a63b6196eeeab14f67dd9d7d751a9beef08a8681fb922aa47f84cea7ce5"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.17/zshrs-all-v0.12.17-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a2b84df296130ac0d1b21de202ee20e7dccc70c5176b835806d8ba6b5ca0fa69"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.18/zshrs-all-v0.12.18-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "902ee1bd4e7d512fb0b730dcea0a2a082de006594ec9eb4e79bf6dbed17a7c66"
     end
   end
 
