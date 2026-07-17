@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.12.18"
+  version "0.12.19"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.18/zshrs-all-v0.12.18-aarch64-apple-darwin.tar.gz"
-      sha256 "ca3d00236082b2fa9df1f0eebc629ef726c0f9f68114714f7439e3d7d7d57cbb"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.19/zshrs-all-v0.12.19-aarch64-apple-darwin.tar.gz"
+      sha256 "a8cccc8fa57d2b80434d22f5d28b664aee80799525737413b95adeda73468979"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.18/zshrs-all-v0.12.18-x86_64-apple-darwin.tar.gz"
-      sha256 "bde553cbc62c52380283e27dc79eb69e703bddc5cfe4ccefd5ae41e810cbc96b"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.19/zshrs-all-v0.12.19-x86_64-apple-darwin.tar.gz"
+      sha256 "552b3ba364d2e689f902aecb8ec05a463125e8ed9a1c4276ac0157f8662b5485"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.18/zshrs-all-v0.12.18-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "31231a63b6196eeeab14f67dd9d7d751a9beef08a8681fb922aa47f84cea7ce5"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.19/zshrs-all-v0.12.19-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "a8982e3cce81fbb3eeae20016b56c647f4c4914dabd385676f69e1dbe9316c13"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.18/zshrs-all-v0.12.18-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "902ee1bd4e7d512fb0b730dcea0a2a082de006594ec9eb4e79bf6dbed17a7c66"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.19/zshrs-all-v0.12.19-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1eed62492e6918ed5fd8b92b6d18251e94be00d37ace3cadcfeefa1c99764194"
     end
   end
 
