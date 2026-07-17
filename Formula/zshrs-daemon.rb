@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.12.15"
+  version "0.12.16"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.15/zshrs-all-v0.12.15-aarch64-apple-darwin.tar.gz"
-      sha256 "f3b89199a6b9360e6ee64cdc580223057f574f6ff9ce3484e2a62ad325114c4b"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.16/zshrs-all-v0.12.16-aarch64-apple-darwin.tar.gz"
+      sha256 "15a8192f5cc662d6089ca551dd87674016853075e26558991e940847e2505f4e"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.15/zshrs-all-v0.12.15-x86_64-apple-darwin.tar.gz"
-      sha256 "f3467afe35419c787ed3def48ad00a5d1573249fe1cf55f584cc80c450dcd241"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.16/zshrs-all-v0.12.16-x86_64-apple-darwin.tar.gz"
+      sha256 "e7e3bdc01e77d040b0add804b00c77361cd88d5d2356c4dc4109234bf5b5204f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.15/zshrs-all-v0.12.15-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "19652d75c12813e36efe306abd6e29c161d9db74b84c162d04039c328d899fbb"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.16/zshrs-all-v0.12.16-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e9ce55e33974de76d4bb70f8e63b8bd9f4771e00e0fd2e255d070e93b0001e90"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.15/zshrs-all-v0.12.15-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2c90d4ee5fdc5efcbcd3e079eb889a4834b43c1a03ae60bd850814100983ac23"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.16/zshrs-all-v0.12.16-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2d6d6aee8ab19e45f0b575cd4b123f6387876b6421ec5bd6fa6aae1a3d9f1500"
     end
   end
 
