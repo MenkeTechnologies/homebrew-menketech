@@ -2,27 +2,27 @@ class Rubylang < Formula
   desc "Compiled Ruby runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/rubylang"
   license "MIT"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.0/rubylang-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "9448e4a58686f8a87921cc79609466b46b88aef67e131697a9561cb5395e03c5"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.1/rubylang-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "a77311953d8c10ae494f58e32fc0386612769fba491b91b29747f02241cb2425"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.0/rubylang-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "babb26fefc61c5e606c24f5c9ec76ce6f196c4a9662c8a31d11e12d2c468e2d1"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.1/rubylang-v0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "c618c0f105317576dd61859a798302e01974555c1cfc940e843748d793b630ef"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.0/rubylang-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3226adee8d956858108a739af8c61ae5b9d185f0254589809475387bf6cebf3d"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.1/rubylang-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c0f212eed0b9eb30e6cbff06fde4dc9fef3ef27274d5f5161bd47aac2fe68174"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.0/rubylang-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fd99bb29b9c5bd6fc18fd0fe82a73ebc873267284bd6334b290c865f1d18390e"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.1/rubylang-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "81e56507e66d8f947c7f9a132b715329f4828a25de512b9f11b7058019a122e6"
     end
   end
 
@@ -35,6 +35,6 @@ class Rubylang < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   rubylang-v0.1.0-x86_64-unknown-linux-musl.tar.gz  sha256: a09b1390c676a0756e7913fdbfe982805bfe9e726500bdfafcfbf954a25f3ec0
-  #   rubylang-v0.1.0-aarch64-unknown-linux-musl.tar.gz  sha256: e8ae8b628df5d96b1bd095f736ae00abc12a4a3cc1f9f14ada95b0c4663cda90
+  #   rubylang-v0.1.1-x86_64-unknown-linux-musl.tar.gz  sha256: ba182e8b7634197938ffd2a0d9f6fce601f80b5a1d332776f6c3263172be1804
+  #   rubylang-v0.1.1-aarch64-unknown-linux-musl.tar.gz  sha256: a040ad0e183ed84d2e895ce93df46a82358be1d7daef420127bf0c3ab54969ae
 end
