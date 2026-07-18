@@ -2,27 +2,27 @@ class Zshrs < Formula
   desc "First compiled Unix shell — drop-in zsh with bytecode JIT, AOP, worker pool"
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
-  version "0.12.20"
+  version "0.12.21"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.20/zshrs-v0.12.20-aarch64-apple-darwin.tar.gz"
-      sha256 "d505062e4b94de3d887a168335d384ab8003e7995f9d3158661b9bfc8d1de032"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.21/zshrs-v0.12.21-aarch64-apple-darwin.tar.gz"
+      sha256 "d46c9a24aba7c85ab378f05cef1b403f1e91adec0bfa8ee5aa0841bfde0f2ed5"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.20/zshrs-v0.12.20-x86_64-apple-darwin.tar.gz"
-      sha256 "aae7951f79ad7f42a58abfd4a56a0f5ef98b2d0c57a812c853b67f6b18e8b9b5"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.21/zshrs-v0.12.21-x86_64-apple-darwin.tar.gz"
+      sha256 "d94e41fda3e779576dcfdea6d27bae79427a5760ef2a70ced511077108129fb7"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.20/zshrs-v0.12.20-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "affc87494baca09af6980d2ac6ac0d216cda82ee5a68a39c5d16475ca1888629"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.21/zshrs-v0.12.21-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "34d3e89b437b7ccf120f6a9ca8d9def43e101697393dcabc162a0a3aea8f5779"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.20/zshrs-v0.12.20-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ec933ece4d35cf8befd4b83704f967b33c6a396245f96560971e677ae7a67c6e"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.21/zshrs-v0.12.21-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "6296f75345e3beed34db553b59c84ab37c92659d80440b8992a898af4c9a0010"
     end
   end
 
