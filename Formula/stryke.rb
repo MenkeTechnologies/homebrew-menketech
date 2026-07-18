@@ -2,27 +2,27 @@ class Stryke < Formula
   desc "The 2nd fastest dynamic language — parallel Perl 5 interpreter in Rust"
   homepage "https://github.com/MenkeTechnologies/strykelang"
   license "MIT"
-  version "0.17.43"
+  version "0.17.44"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.43/stryke-v0.17.43-aarch64-apple-darwin.tar.gz"
-      sha256 "a44654f329d8b5debd372ef61aa511fbe315c891f3770dfd54fae7aa7f225478"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.44/stryke-v0.17.44-aarch64-apple-darwin.tar.gz"
+      sha256 "63347fa98a33ac412b47867f89a24310a42b8931b1828b0f7dfee961fe4bc2af"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.43/stryke-v0.17.43-x86_64-apple-darwin.tar.gz"
-      sha256 "8e91b9b80961e0acd6add16ef2a48dc54a245d2435487e65e9d111e4cd7b06ab"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.44/stryke-v0.17.44-x86_64-apple-darwin.tar.gz"
+      sha256 "103eebad603ad97fcd924e9cc3a9faaac028fb4ef3e27a82f240a24f21b7b8fa"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.43/stryke-v0.17.43-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b6e0b05409659ffa55543dc3fa7994561b6190782f70216ef20982f3f7c90e7e"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.44/stryke-v0.17.44-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e6a9dac3ee094b0a01cf8efd2393c98e552c0d66795ace33fc4c40e6d534469a"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.43/stryke-v0.17.43-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3a530cf8e8c39e611399e511583912ee9f2f1a4eabe0825fcccd0d065b007f69"
+      url "https://github.com/MenkeTechnologies/strykelang/releases/download/v0.17.44/stryke-v0.17.44-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4c929aefd957a30cf4d0401191f024c1e48e18aa95ce1dac28ab9458132328a0"
     end
   end
 
