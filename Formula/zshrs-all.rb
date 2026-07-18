@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.12.19"
+  version "0.12.20"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.19/zshrs-all-v0.12.19-aarch64-apple-darwin.tar.gz"
-      sha256 "a8cccc8fa57d2b80434d22f5d28b664aee80799525737413b95adeda73468979"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.20/zshrs-all-v0.12.20-aarch64-apple-darwin.tar.gz"
+      sha256 "869d825992be19307d24274012c0e10daadffee1ef491ac6f7fcc4f4f197c2ed"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.19/zshrs-all-v0.12.19-x86_64-apple-darwin.tar.gz"
-      sha256 "552b3ba364d2e689f902aecb8ec05a463125e8ed9a1c4276ac0157f8662b5485"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.20/zshrs-all-v0.12.20-x86_64-apple-darwin.tar.gz"
+      sha256 "2eb38f500a1cfa6507ac5f8d0bc23f71ee40c894ab1eb32cda893fb28f3e70c3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.19/zshrs-all-v0.12.19-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a8982e3cce81fbb3eeae20016b56c647f4c4914dabd385676f69e1dbe9316c13"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.20/zshrs-all-v0.12.20-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b5566cf1eca19fdf797135eb63f9edf31dfb1448d21856664237d0aa6bfaf9d9"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.19/zshrs-all-v0.12.19-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1eed62492e6918ed5fd8b92b6d18251e94be00d37ace3cadcfeefa1c99764194"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.20/zshrs-all-v0.12.20-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "48fbfd747d3a0e66b2037c5fe0d9127908b2a5d3ad739e97ef0ec5e4f7808cff"
     end
   end
 
