@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.12.21"
+  version "0.12.22"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.21/zshrs-all-v0.12.21-aarch64-apple-darwin.tar.gz"
-      sha256 "4c10fc5f9a2698bd1ec44b595beccebfedb8d4c502b61718dd479e89b378df0e"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.22/zshrs-all-v0.12.22-aarch64-apple-darwin.tar.gz"
+      sha256 "90807fc9b0ac90859ecdb6216874dc2160c3bed075c3f7ee485f48c78344f568"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.21/zshrs-all-v0.12.21-x86_64-apple-darwin.tar.gz"
-      sha256 "60d81b2c943e30df91dc1da8ea556f15ff7310a4ff74fbd9a5eabad34c8928aa"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.22/zshrs-all-v0.12.22-x86_64-apple-darwin.tar.gz"
+      sha256 "f5a69f4b381cfb1cc0d53b956d4555a7c450c108367fc9f736da28b1ee74c0fd"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.21/zshrs-all-v0.12.21-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f9b9676a2c23acced9e5134a54c0fd8f3fc36c5304c37a0e8c73af521810ae8b"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.22/zshrs-all-v0.12.22-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "30b014a75b35292a704f38bb12e2a27f8d43ef732d062d99ad1e53ca10b643cd"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.21/zshrs-all-v0.12.21-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "aac8726db6b0f660f38a31afdc9f7ccf58e28a818b76074662e5fbc8abf71f40"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.22/zshrs-all-v0.12.22-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "12efda933b7bcfc5056333db4465a3ee30eeb3b98de197e5641b4af43e4302bb"
     end
   end
 
