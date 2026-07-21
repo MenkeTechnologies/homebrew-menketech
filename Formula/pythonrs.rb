@@ -19,7 +19,8 @@ class Pythonrs < Formula
   end
 
   def install
-    prefix.install "bin", "lib"
+    libexec.install "bin", "lib"
+    bin.install_symlink libexec/"bin/python"
   end
 
   test do
