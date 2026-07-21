@@ -8,14 +8,14 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-29-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-26-cyan.svg)](Formula/)
 [![Casks](https://img.shields.io/badge/casks-1-magenta.svg)](Casks/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `pythonrs` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `arb`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `arb`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -58,7 +58,6 @@ brew install zcolorizer  # ccze port
 brew install zwire-host  # universal local IPC host: system stats, fs, exec, PTY, kv: zwire-host
 brew install rubylang    # compiled Ruby on the fusevm bytecode VM + Cranelift JIT: ruby
 brew install phplang     # compiled PHP on the fusevm bytecode VM + Cranelift JIT: php
-brew install pythonrs    # compiled Python on the fusevm bytecode VM + Cranelift JIT (self-contained CPython bundle): python
 brew install node-js     # compiled JavaScript on the fusevm bytecode VM + Cranelift JIT: node
 brew install javars      # compiled Java on the fusevm bytecode VM + Cranelift JIT (no JVM): java
 brew install kotlinrs    # compiled Kotlin on the fusevm bytecode VM + Cranelift JIT (no JVM): kotlin
@@ -67,7 +66,7 @@ brew install groovyrs    # compiled Groovy on the fusevm bytecode VM + Cranelift
 brew install arb         # visualize & modify Unix pipelines — a dynamic TUI for every pipeline: arb
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host rubylang phplang pythonrs node-js javars kotlinrs scalars groovyrs arb
+brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host rubylang phplang node-js javars kotlinrs scalars groovyrs arb
 
 # casks (macOS GUI apps)
 brew install --cask zwire # Chromium rebrand: zpwrchrome power-tool, cyberpunk theme + new-tab on a Blink base
@@ -107,7 +106,6 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`zwire-host`](Formula/zwire-host.rb) | [zwire-host](https://github.com/MenkeTechnologies/zwire-host) | `zwire-host` | tracks zwire-host release tags |
 | [`rubylang`](Formula/rubylang.rb) | [rubylang](https://github.com/MenkeTechnologies/rubylang) | `ruby` | tracks rubylang release tags |
 | [`phplang`](Formula/phplang.rb) | [phplang](https://github.com/MenkeTechnologies/phplang) | `php` | tracks phplang release tags |
-| [`pythonrs`](Formula/pythonrs.rb) | [pythonrs](https://github.com/MenkeTechnologies/pythonrs) | `python` | tracks pythonrs release tags |
 | [`node-js`](Formula/node-js.rb) | [node-js](https://github.com/MenkeTechnologies/node-js) | `node` | tracks node-js release tags |
 | [`javars`](Formula/javars.rb) | [javars](https://github.com/MenkeTechnologies/javars) | `java` | tracks javars release tags |
 | [`kotlinrs`](Formula/kotlinrs.rb) | [kotlinrs](https://github.com/MenkeTechnologies/kotlinrs) | `kotlin` | tracks kotlinrs release tags |
@@ -155,7 +153,6 @@ macOS GUI apps, installed with `brew install --cask <name>`.
 | `zwire-host` | ✓ | ✓ | ✓ | ✓ |
 | `rubylang` | ✓ | ✓ | ✓ | ✓ |
 | `phplang` | ✓ | ✓ | ✓ | ✓ |
-| `pythonrs` | — (2-target bundle) | ✓ | ✓ | — (2-target bundle) |
 | `node-js` | ✓ | ✓ | ✓ | ✓ |
 | `javars` | ✓ | ✓ | ✓ | ✓ |
 | `kotlinrs` | ✓ | ✓ | ✓ | ✓ |
@@ -163,7 +160,7 @@ macOS GUI apps, installed with `brew install --cask <name>`.
 | `groovyrs` | ✓ | ✓ | ✓ | ✓ |
 | `arb` | ✓ | ✓ | ✓ | ✓ |
 
-Most formulas ship aarch64-linux; `awkrs`, `elisprs`, and `zmax` are the formulas without an x86_64-darwin bottle. `pythonrs` is the exception — it ships self-contained CPython bundles built only on native same-arch runners, so it bottles aarch64-darwin and x86_64-linux only.
+Most formulas ship aarch64-linux; `awkrs`, `elisprs`, and `zmax` are the formulas without an x86_64-darwin bottle.
 
 ---
 
