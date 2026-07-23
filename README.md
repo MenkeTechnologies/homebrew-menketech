@@ -8,14 +8,14 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-30-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-31-cyan.svg)](Formula/)
 [![Casks](https://img.shields.io/badge/casks-1-magenta.svg)](Casks/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `pythonrs` / `arb` / `zvcs`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `pythonrs` / `rlang` / `arb` / `zvcs`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -64,10 +64,11 @@ brew install kotlinrs    # compiled Kotlin on the fusevm bytecode VM + Cranelift
 brew install scalars     # compiled Scala on the fusevm bytecode VM + Cranelift JIT (no JVM): scala
 brew install groovyrs    # compiled Groovy on the fusevm bytecode VM + Cranelift JIT (no JVM): groovy
 brew install pythonrs    # compiled Python on the fusevm bytecode VM + Cranelift JIT: python
+brew install rlang       # compiled R on the fusevm bytecode VM + Cranelift JIT: Rscript
 brew install arb         # visualize & modify Unix pipelines — a dynamic TUI for every pipeline: arb
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host rubylang phplang node-js javars kotlinrs scalars groovyrs pythonrs arb zvcs
+brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host rubylang phplang node-js javars kotlinrs scalars groovyrs pythonrs rlang arb zvcs
 
 # casks (macOS GUI apps)
 brew install --cask zwire # Chromium rebrand: zpwrchrome power-tool, cyberpunk theme + new-tab on a Blink base
@@ -113,6 +114,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`scalars`](Formula/scalars.rb) | [scalars](https://github.com/MenkeTechnologies/scalars) | `scala` | tracks scalars release tags |
 | [`groovyrs`](Formula/groovyrs.rb) | [groovyrs](https://github.com/MenkeTechnologies/groovyrs) | `groovy` | tracks groovyrs release tags |
 | [`pythonrs`](Formula/pythonrs.rb) | [pythonrs](https://github.com/MenkeTechnologies/pythonrs) | `python` | tracks pythonrs release tags |
+| [`rlang`](Formula/rlang.rb) | [rlang](https://github.com/MenkeTechnologies/rlang) | `Rscript` | tracks rlang release tags |
 | [`arb`](Formula/arb.rb) | [arb](https://github.com/MenkeTechnologies/arb) | `arb` | tracks arb release tags |
 | [`zvcs`](Formula/zvcs.rb) | [zvcs](https://github.com/MenkeTechnologies/zvcs) | `zvcs` | tracks zvcs release tags |
 
