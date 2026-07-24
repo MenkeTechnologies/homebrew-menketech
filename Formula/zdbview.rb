@@ -1,5 +1,5 @@
 class Zdbview < Formula
-  desc "Terminal inspector and CRUD editor for rkyv archives and SQLite databases"
+  desc "Terminal inspector and read/write editor for rkyv archives and SQLite databases"
   homepage "https://github.com/MenkeTechnologies/zdbview"
   version "0.3.0"
   license "MIT"
