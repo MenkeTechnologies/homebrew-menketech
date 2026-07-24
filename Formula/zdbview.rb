@@ -1,8 +1,8 @@
 class Zdbview < Formula
   desc "Terminal inspector and CRUD editor for rkyv archives and SQLite databases"
   homepage "https://github.com/MenkeTechnologies/zdbview"
-  license "MIT"
   version "0.1.0"
+  license "MIT"
 
   on_macos do
     on_arm do
@@ -37,6 +37,8 @@ class Zdbview < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   zdbview-v0.1.0-x86_64-unknown-linux-musl.tar.gz  sha256: f94994ed7e0d55e2d88d71a3b4abfad52ca9fa455aadd99d790880b61b894ce7
-  #   zdbview-v0.1.0-aarch64-unknown-linux-musl.tar.gz  sha256: b79a60a69c99cadc8a8ac75140422f40178890eaf69bb3d9c124ecf6fb4b4d43
+  #   zdbview-v0.1.0-x86_64-unknown-linux-musl.tar.gz
+  #     sha256: f94994ed7e0d55e2d88d71a3b4abfad52ca9fa455aadd99d790880b61b894ce7
+  #   zdbview-v0.1.0-aarch64-unknown-linux-musl.tar.gz
+  #     sha256: b79a60a69c99cadc8a8ac75140422f40178890eaf69bb3d9c124ecf6fb4b4d43
 end
