@@ -1,30 +1,30 @@
 class ZshrsDaemon < Formula
-  desc "Daemon + zd client for zshrs, for users of other shells (bash/fish/zsh)"
+  desc "zshrs daemon + zd client only — for users of other shells (bash/fish/zsh)"
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.12.24"
+  version "0.12.26"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.24/zshrs-all-v0.12.24-aarch64-apple-darwin.tar.gz"
-      sha256 "cd9b2b8e50f71ba5140b1afa981f7fed92b568641e101b814621b676270af901"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.26/zshrs-all-v0.12.26-aarch64-apple-darwin.tar.gz"
+      sha256 "f26ce9ebccb750212ed31ca555b54259d5d9b2243664a3a75e0c9ab5466bd016"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.24/zshrs-all-v0.12.24-x86_64-apple-darwin.tar.gz"
-      sha256 "7af02f6cf9233c68a4de75a8ae689adc62d679be1b1b13b027923a3a3321d1ef"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.26/zshrs-all-v0.12.26-x86_64-apple-darwin.tar.gz"
+      sha256 "8d352f81fcde78d6835cd0f3edd1220a196d75b8847db7d0cd8b8a977e6fa7db"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.24/zshrs-all-v0.12.24-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "83355987fc732db7e0aeb5e5b391061451a2dc37879674ac34bcba061dae249f"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.26/zshrs-all-v0.12.26-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4a29e4a90408783673a29cf70abbf28cf2dc15fb2efea067a2c0bfd8d4c2b72e"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.24/zshrs-all-v0.12.24-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "bbfd6bda194a7433cae32c17e9428732afce779bc70e17ec99ef766fdc7ec5f9"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.26/zshrs-all-v0.12.26-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d4823f68ddfd859337242eb025213c0217c829dbef484871c65b7503b1ef2629"
     end
   end
 
