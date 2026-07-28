@@ -8,14 +8,14 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-32-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-33-cyan.svg)](Formula/)
 [![Casks](https://img.shields.io/badge/casks-1-magenta.svg)](Casks/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `pythonrs` / `rlang` / `arb` / `zvcs` / `zdbview`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `pythonrs` / `rlang` / `arb` / `zvcs` / `zdbview` / `tclrs`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -67,9 +67,10 @@ brew install pythonrs    # compiled Python on the fusevm bytecode VM + Cranelift
 brew install rlang       # compiled R on the fusevm bytecode VM + Cranelift JIT: Rscript
 brew install arb         # visualize & modify Unix pipelines — a dynamic TUI for every pipeline: arb
 brew install zdbview     # terminal inspector + CRUD editor for rkyv archives and SQLite databases: zdbview
+brew install tclrs       # compiled Tcl on the fusevm bytecode VM + Cranelift JIT: tclrs
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host rubylang phplang node-js javars kotlinrs scalars groovyrs pythonrs rlang arb zvcs zdbview
+brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host rubylang phplang node-js javars kotlinrs scalars groovyrs pythonrs rlang arb zvcs zdbview tclrs
 
 # casks (macOS GUI apps)
 brew install --cask zwire # Chromium rebrand: zpwrchrome power-tool, cyberpunk theme + new-tab on a Blink base
@@ -119,6 +120,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`arb`](Formula/arb.rb) | [arb](https://github.com/MenkeTechnologies/arb) | `arb` | tracks arb release tags |
 | [`zvcs`](Formula/zvcs.rb) | [zvcs](https://github.com/MenkeTechnologies/zvcs) | `zvcs` | tracks zvcs release tags |
 | [`zdbview`](Formula/zdbview.rb) | [zdbview](https://github.com/MenkeTechnologies/zdbview) | `zdbview` | tracks zdbview release tags |
+| [`tclrs`](Formula/tclrs.rb) | [tclrs](https://github.com/MenkeTechnologies/tclrs) | `tclrs` | tracks tclrs release tags |
 
 ---
 
@@ -170,6 +172,7 @@ macOS GUI apps, installed with `brew install --cask <name>`.
 | `rlang` | ✓ | ✓ | ✓ | ✓ |
 | `zvcs` | — (3-target release) | ✓ | ✓ | ✓ |
 | `zdbview` | ✓ | ✓ | ✓ | ✓ |
+| `tclrs` | ✓ | ✓ | ✓ | ✓ |
 
 Most formulas ship aarch64-linux; `awkrs`, `elisprs`, `zmax`, `zvcs`, and `pythonrs` are the formulas without an x86_64-darwin bottle (`pythonrs` also lacks aarch64-linux).
 
