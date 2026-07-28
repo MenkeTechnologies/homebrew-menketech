@@ -2,29 +2,29 @@ class Ztmux < Formula
   desc "Rust port of tmux — the full terminal multiplexer, server and client"
   homepage "https://github.com/MenkeTechnologies/ztmux"
   license "MIT"
-  version "3.7.27"
+  version "3.7.28"
 
   depends_on "libevent"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.27/ztmux-v3.7.27-aarch64-apple-darwin.tar.gz"
-      sha256 "191f85e869436dcf9de5a9adfdedce4a75cbe9dc7507bad9991604bd13e11373"
+      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.28/ztmux-v3.7.28-aarch64-apple-darwin.tar.gz"
+      sha256 "b418ca0ddb4946cc0a2595c330d7a0d5f99dcd5fc08c23bdbe181380f4811d17"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.27/ztmux-v3.7.27-x86_64-apple-darwin.tar.gz"
-      sha256 "fe8a235285fc9dd1f09844789c54c18ba5c949870b11b4b474a706f48d35d153"
+      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.28/ztmux-v3.7.28-x86_64-apple-darwin.tar.gz"
+      sha256 "de94720d1c5868424fe653de12a4244b7a418ad4604868ec5149c7ff027c2d8a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.27/ztmux-v3.7.27-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0c2d4ca62cb382f3c89aaf8d5592a1f150ffde32dc9b0bbf7d74371993b5e719"
+      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.28/ztmux-v3.7.28-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f5b284f842e99e81adeccda6106130b29a8b41594a1349a4c006265ea1994732"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.27/ztmux-v3.7.27-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1351c1cea07a5746c15cffe9a0f3869cd4767d987db8e7721e1199d1d8b96479"
+      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.28/ztmux-v3.7.28-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "166add5a50aba8e3ac7a3228dd6c0d55bd6b59b00ade4ce30adbb86418053a01"
     end
   end
 
