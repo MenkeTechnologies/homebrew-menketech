@@ -52,7 +52,7 @@ brew install powerliners # rust powerline port: powerline + powerline-daemon + p
 brew install zpwrchrome-host # native messaging host for the zpwrchrome Chrome extension: zpwrchrome-host
 brew install zmax        # modal text editor on the Helix engine: zmax
 brew install elisprs     # Emacs Lisp on the fusevm bytecode VM (AOT + rkyv cache): elisp
-brew install vimlrs      # rust Vimscript (VimL) interpreter: vimlrs
+brew install vimlrs      # rust Vimscript (VimL) interpreter: viml
 brew install ztmux       # rust tmux port: full terminal multiplexer, server + client: ztmux
 brew install zcolorizer  # ccze port
 brew install zwire-host  # universal local IPC host: system stats, fs, exec, PTY, kv: zwire-host
@@ -66,8 +66,9 @@ brew install groovyrs    # compiled Groovy on the fusevm bytecode VM + Cranelift
 brew install pythonrs    # compiled Python on the fusevm bytecode VM + Cranelift JIT: python
 brew install rlang       # compiled R on the fusevm bytecode VM + Cranelift JIT: Rscript
 brew install arb         # visualize & modify Unix pipelines — a dynamic TUI for every pipeline: arb
-brew install zdbview     # terminal inspector + CRUD editor for rkyv archives and SQLite databases: zdbview
+brew install zdbview     # terminal inspector + record editor for rkyv archives and SQLite databases: zdbview
 brew install tclrs       # compiled Tcl on the fusevm bytecode VM + Cranelift JIT: tclrs
+brew install zvcs        # git-shadowing superset VCS, lock-free many-writer commits over submodules: zvcs
 
 # or install everything in one go
 brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host rubylang phplang node-js javars kotlinrs scalars groovyrs pythonrs rlang arb zvcs zdbview tclrs
@@ -104,7 +105,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`zpwrchrome-host`](Formula/zpwrchrome-host.rb) | [zpwrchrome](https://github.com/MenkeTechnologies/zpwrchrome) | `zpwrchrome-host` | tracks zpwrchrome `host-v*` release tags |
 | [`zmax`](Formula/zmax.rb) | [zmax](https://github.com/MenkeTechnologies/zmax) | `zmax` | tracks zmax release tags |
 | [`elisprs`](Formula/elisprs.rb) | [elisprs](https://github.com/MenkeTechnologies/elisprs) | `elisp` | tracks elisprs release tags |
-| [`vimlrs`](Formula/vimlrs.rb) | [vimlrs](https://github.com/MenkeTechnologies/vimlrs) | `vimlrs` | tracks vimlrs release tags |
+| [`vimlrs`](Formula/vimlrs.rb) | [vimlrs](https://github.com/MenkeTechnologies/vimlrs) | `viml` | tracks vimlrs release tags |
 | [`ztmux`](Formula/ztmux.rb) | [ztmux](https://github.com/MenkeTechnologies/ztmux) | `ztmux` | tracks ztmux release tags |
 | [`zcolorizer`](Formula/zcolorizer.rb) | [zcolorizer](https://github.com/MenkeTechnologies/zcolorizer) | `zcolorizer` | tracks zcolorizer release tags |
 | [`zwire-host`](Formula/zwire-host.rb) | [zwire-host](https://github.com/MenkeTechnologies/zwire-host) | `zwire-host` | tracks zwire-host release tags |
@@ -155,7 +156,7 @@ macOS GUI apps, installed with `brew install --cask <name>`.
 | `powerliners` | ✓ | ✓ | ✓ | ✓ |
 | `zpwrchrome-host` | ✓ | ✓ | ✓ | ✓ |
 | `zmax` | — (3-target release) | ✓ | ✓ | ✓ |
-| `elisprs` | — (5-target release) | ✓ | ✓ | ✓ |
+| `elisprs` | — (3-target release) | ✓ | ✓ | ✓ |
 | `vimlrs` | ✓ | ✓ | ✓ | ✓ |
 | `ztmux` | ✓ | ✓ | ✓ | ✓ |
 | `zcolorizer` | ✓ | ✓ | ✓ | ✓ |
@@ -192,4 +193,4 @@ Formula updates show up as commits authored by `github-actions[bot]`.
 
 ## [0xFF] LICENSE
 
-MIT License. See each source repo's LICENSE for per-tool terms (all MIT, except `zmax` which is MPL-2.0 on the Helix engine and `htoprs` which is GPL-2.0-or-later).
+MIT License. See each source repo's LICENSE for per-tool terms (all MIT, except `zmax` which is MPL-2.0 on the Helix engine).

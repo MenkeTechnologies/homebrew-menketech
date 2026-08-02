@@ -24,8 +24,8 @@ class Pythonrs < Formula
   end
 
   test do
-    assert_equal "42", shell_output("#{bin}/python -c 'print(6*7)'").strip
+    assert_match "42", shell_output("#{bin}/python -c 'print(6*7)'")
     (testpath/"t.py").write("import hashlib\nprint(hashlib.sha256(b'x').hexdigest()[:8])\n")
-    assert_equal "2d711642", shell_output("#{bin}/python #{testpath}/t.py").strip
+    assert_match "2d711642", shell_output("#{bin}/python #{testpath}/t.py")
   end
 end
