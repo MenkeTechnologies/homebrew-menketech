@@ -2,27 +2,27 @@ class Powerliners < Formula
   desc "1:1 Rust port of powerline-status — daemon + client + config + render + lint"
   homepage "https://github.com/MenkeTechnologies/powerliners"
   license "MIT"
-  version "0.2.21"
+  version "0.2.22"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.21/powerliners-v0.2.21-aarch64-apple-darwin.tar.gz"
-      sha256 "355a03731e4a82103702ba0bd82fc775c789fd44c3a64aa0da9d83990cdad99e"
+      url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.22/powerliners-v0.2.22-aarch64-apple-darwin.tar.gz"
+      sha256 "0f5d76a7573252d578478733e2d888db9efd687d11c429cacab996ea748726cf"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.21/powerliners-v0.2.21-x86_64-apple-darwin.tar.gz"
-      sha256 "a1c0372b5ad1cf3dd8472f3bb4470ac8f9b30dfa373bff5f02748fef5d51f166"
+      url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.22/powerliners-v0.2.22-x86_64-apple-darwin.tar.gz"
+      sha256 "8f23520b11a4dfa274dd06445c0919b0ff06b7b30f2eb7fd08109a419a207357"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.21/powerliners-v0.2.21-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fee09fae59730297b371ac9bd155018bfcd099cc53a85918386cf42731a3a1f9"
+      url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.22/powerliners-v0.2.22-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "49fbb28baf756872f8b04ccfcd36e8b05d8fd996d55fc1c01a69c85d0b3d49c9"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.21/powerliners-v0.2.21-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "15ed9a84e8b688f84f760d3628f3f5ddb774ed3e2e6a2948293ef25bc24c9313"
+      url "https://github.com/MenkeTechnologies/powerliners/releases/download/v0.2.22/powerliners-v0.2.22-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f695d2f08654c9f645ba611020a66410815fda5ec89b26b1d5662c2ecdcf2fd9"
     end
   end
 
@@ -39,9 +39,9 @@ class Powerliners < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   powerliners-v0.2.21-x86_64-unknown-linux-musl.tar.gz  sha256: 88b74d41e7da1bcab1173a50dfb0498e81f495884c3b141f339e3ac588cf4df9
-  #   powerliners-v0.2.21-aarch64-unknown-linux-musl.tar.gz  sha256: 5d7da6022191cbc7f090047b20d1872466393e4ecbfdabca91909a191255b67b
+  #   powerliners-v0.2.22-x86_64-unknown-linux-musl.tar.gz  sha256: de1453f62638331c3d7a83cabd23a25d32706fcfa3a5771277ed960a2d71d6e8
+  #   powerliners-v0.2.22-aarch64-unknown-linux-musl.tar.gz  sha256: 8ad2ab2b083d40ecdd6311c0408f11509453c93ef04970b95081a9179b962baf
 
   # Per-binary tarballs also published — see release page for sha256:
-  #   https://github.com/MenkeTechnologies/powerliners/releases/tag/v0.2.21
+  #   https://github.com/MenkeTechnologies/powerliners/releases/tag/v0.2.22
 end
