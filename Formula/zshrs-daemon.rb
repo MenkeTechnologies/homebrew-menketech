@@ -1,5 +1,5 @@
 class ZshrsDaemon < Formula
-  desc "zshrs daemon + zd client only — for users of other shells (bash/fish/zsh)"
+  desc "Daemon + zd client for zshrs — for users of other shells (bash/fish/zsh)"
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
