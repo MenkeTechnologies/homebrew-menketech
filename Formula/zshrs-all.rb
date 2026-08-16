@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.12.32"
+  version "0.12.33"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.32/zshrs-all-v0.12.32-aarch64-apple-darwin.tar.gz"
-      sha256 "e66ea7ac7cc128ffb0428b3ff96da5d6568a3d46d81c6446d67efee234b068f8"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.33/zshrs-all-v0.12.33-aarch64-apple-darwin.tar.gz"
+      sha256 "584fb1d147af5b991fcf57d96d97af385204ca4d4e613095b7fed1e6fb24b202"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.32/zshrs-all-v0.12.32-x86_64-apple-darwin.tar.gz"
-      sha256 "44ac99dc6f45178b22555a4d2c207bb4b3388e2156e7121a19e9fb6df0367097"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.33/zshrs-all-v0.12.33-x86_64-apple-darwin.tar.gz"
+      sha256 "3ea8ae806a2cd52230f1964842e598d01eec250ae2e32df92fde97a6a7a1d197"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.32/zshrs-all-v0.12.32-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "9da9d5e83777cfdf7227957210b3f0f86dde9aea036c700c68dc81392c2b9664"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.33/zshrs-all-v0.12.33-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4a82f45dbd5acd55a6eee977639e34b1b65693499e27a09898e54b733f2ddcf7"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.32/zshrs-all-v0.12.32-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "11ad5054db246e695c8566db6389b7804ccdb89e3ab8054b9d2b66fd263c30ac"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.33/zshrs-all-v0.12.33-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c7b494e33a63a3be80532705b8a92b38e70a5374336069d548a448b211b5701c"
     end
   end
 
