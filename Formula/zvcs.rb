@@ -2,23 +2,23 @@ class Zvcs < Formula
   desc "Git-shadowing superset VCS with lock-free many-writer commits over submodules"
   homepage "https://github.com/MenkeTechnologies/zvcs"
   license "MIT"
-  version "0.15.0"
+  version "0.16.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zvcs/releases/download/v0.15.0/zvcs-v0.15.0-aarch64-apple-darwin.tar.gz"
-      sha256 "7d7a278e95129322ab0d610096fdb5e5039170973a831d120188bb32b7e16711"
+      url "https://github.com/MenkeTechnologies/zvcs/releases/download/v0.16.0/zvcs-v0.16.0-aarch64-apple-darwin.tar.gz"
+      sha256 "ab9d859f16f69ad8d83a090cf9391b22fb846d3abe98ee5ba7c16cde5863b1a1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zvcs/releases/download/v0.15.0/zvcs-v0.15.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0d1fc9e92675008135e865ad5b0cf984427ef5f65ab4688da09828e4057b4106"
+      url "https://github.com/MenkeTechnologies/zvcs/releases/download/v0.16.0/zvcs-v0.16.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5ae1175bacbc3e1e2071d79756ceeb5414537e5a41b641f2acaf925b2bb6edde"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zvcs/releases/download/v0.15.0/zvcs-v0.15.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ff22df2d1f1011bf85c88bb3569cc61355e3f8b2ffbc249c8744e81d7295f248"
+      url "https://github.com/MenkeTechnologies/zvcs/releases/download/v0.16.0/zvcs-v0.16.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ed2477b99b19da953353ccb894f76f29e3f046d0f3e61098de1de7a9084c8223"
     end
   end
 
@@ -53,6 +53,6 @@ class Zvcs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   zvcs-v0.15.0-x86_64-unknown-linux-musl.tar.gz  sha256: 535d00acbd1c40ec6961796f2ebb427a6d31fc0f857e11d5b512a5be1e8ecfa0
-  #   zvcs-v0.15.0-aarch64-unknown-linux-musl.tar.gz  sha256: 4b2b6d07ee598ff8b762b49f209627f0b19e3aa4d4ffa6dc4ba81aced2829762
+  #   zvcs-v0.16.0-x86_64-unknown-linux-musl.tar.gz  sha256: 5009eae4173754a053fe520f7d5a988bc91e653148a28fc50253d6e6df685d1c
+  #   zvcs-v0.16.0-aarch64-unknown-linux-musl.tar.gz  sha256: 19a95c4640f96727a6aba8a000784d9d8ba277e57371549711cc56230f8e7446
 end
