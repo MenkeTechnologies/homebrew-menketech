@@ -1,6 +1,6 @@
 cask "zwire" do
-  version "0.6.64"
-  sha256 "970f01d5d8f6d7b39f0909c5b85ea988100cbfeb7a67761375136ab49818c9c3"
+  version "0.6.65"
+  sha256 "500ba5b2953b98f3b1080c0aac5cae3871a7c1c4a9356a5fdf69146da173cfae"
 
   url "https://github.com/MenkeTechnologies/zwire/releases/download/v#{version}/zwire-#{version}-macos.zip"
   name "zwire"
