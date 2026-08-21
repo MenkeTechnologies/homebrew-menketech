@@ -2,27 +2,27 @@ class Ztmux < Formula
   desc "Rust port of tmux — the full terminal multiplexer, server and client"
   homepage "https://github.com/MenkeTechnologies/ztmux"
   license "MIT"
-  version "3.7.41"
+  version "3.7.42"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.41/ztmux-v3.7.41-aarch64-apple-darwin.tar.gz"
-      sha256 "bb02f3b71a55551f48bbf6a8c93d5ceef7e0629009ad6cf62658e673cc65a389"
+      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.42/ztmux-v3.7.42-aarch64-apple-darwin.tar.gz"
+      sha256 "43f88f59155863b810199f1fa89d89f79c916266442d755aabd8fc15d02ff777"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.41/ztmux-v3.7.41-x86_64-apple-darwin.tar.gz"
-      sha256 "6a9c90f357923ebebd82f296aa06e418ed5f29674513bafeef0a66f43c0b0736"
+      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.42/ztmux-v3.7.42-x86_64-apple-darwin.tar.gz"
+      sha256 "6c0f2113424cd82b798894eaf26868505d9d72e4cb3e3ed6d0eca5eeedc47ea8"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.41/ztmux-v3.7.41-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b5fecce75bb296445773a22d4d2d86fc2700c2e59ea5c7cb2b956a7bd6e8bb32"
+      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.42/ztmux-v3.7.42-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6af46dba322f09873a89be03210d3e9e536789d949fdbabe977cd4adb424d086"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.41/ztmux-v3.7.41-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d3f27c2d86c0c429ab466d4ae3435a66132a79ed8f9b9546b7d2a134c2b55375"
+      url "https://github.com/MenkeTechnologies/ztmux/releases/download/v3.7.42/ztmux-v3.7.42-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b0d6bfbd2d9eef5203b856c4e816e2e25925465ea76e21747e872f17fc326216"
     end
   end
 
