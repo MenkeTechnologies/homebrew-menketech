@@ -8,14 +8,14 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-33-cyan.svg)](Formula/)
+[![Formulas](https://img.shields.io/badge/formulas-34-cyan.svg)](Formula/)
 [![Casks](https://img.shields.io/badge/casks-1-magenta.svg)](Casks/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `pythonrs` / `rlang` / `arb` / `zvcs` / `zdbview` / `tclrs`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `pythonrs` / `rlang` / `arb` / `zvcs` / `zdbview` / `tclrs` / `zshrs-native`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -40,6 +40,7 @@ brew install stryke      # the language: stryke + s + st
 brew install zshrs       # the shell: zshrs + zd
 brew install zshrs-all   # full install: zshrs + zd + zshrs-recorder + zshrs-daemon (conflicts with zshrs)
 brew install zshrs-daemon # zshrs daemon + zd only, for non-zshrs shells (conflicts with zshrs / zshrs-all)
+brew install zshrs-native # zshrs with git (zvcs), arb and stryke compiled in as no-fork builtins (conflicts with zshrs / zshrs-all)
 brew install lsofrs      # rust lsof: lsofrs + lsf
 brew install iftoprs     # rust iftop: iftoprs
 brew install htoprs      # rust htop: interactive process viewer
@@ -93,6 +94,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`zshrs`](Formula/zshrs.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs` `zd` | tracks zshrs release tags |
 | [`zshrs-all`](Formula/zshrs-all.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs` `zd` `zshrs-recorder` `zshrs-daemon` | tracks zshrs release tags (conflicts with `zshrs`) |
 | [`zshrs-daemon`](Formula/zshrs-daemon.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs-daemon` `zd` | tracks zshrs release tags (conflicts with `zshrs` / `zshrs-all`) |
+| [`zshrs-native`](Formula/zshrs-native.rb) | [zshrs-native](https://github.com/MenkeTechnologies/zshrs-native) | `zshrs` | tracks zshrs-native release tags (conflicts with `zshrs` / `zshrs-all`) |
 | [`lsofrs`](Formula/lsofrs.rb) | [lsofrs](https://github.com/MenkeTechnologies/lsofrs) | `lsofrs` `lsf` | tracks lsofrs release tags |
 | [`iftoprs`](Formula/iftoprs.rb) | [iftoprs](https://github.com/MenkeTechnologies/iftoprs) | `iftoprs` | tracks iftoprs release tags |
 | [`htoprs`](Formula/htoprs.rb) | [htoprs](https://github.com/MenkeTechnologies/htoprs) | `htoprs` | tracks htoprs release tags |
