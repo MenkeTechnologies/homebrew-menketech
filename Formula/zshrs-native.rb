@@ -4,27 +4,27 @@ class ZshrsNative < Formula
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs"
   conflicts_with "zshrs-all", because: "both install zshrs"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.0/zshrs-native-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "26a50eca534863c9bba9fcfc42b0e6f7f16256d1b5386f10ba9ae8e69f7065d5"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.1/zshrs-native-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "b42f9f34810088adc33c51bf45fa63f112d230a4c9fede722f474da463c254a7"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.0/zshrs-native-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "d874e469151975b6749c496aeb66b5fa570dc29565b4438bb76394eaed0566fb"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.1/zshrs-native-v0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "a043d14a7dec4158ce971fe480e28815ec5199165f75e1f3cf591f741554b5ef"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.0/zshrs-native-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7d3b0c4b4fbd7b6c04ae8fbc84ed2e3ac34340656b1776bd712e02823697337c"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.1/zshrs-native-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "40e4fcc67f6e0068d9d451dd078e5ba96c9f0f5c2eea15b7ce49e8c485eebfaf"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.0/zshrs-native-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ee5fe2fbc7c965ef3fe26da82e4b88d3cb1424855f56bd449c6d38ad2d6b1e59"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.1/zshrs-native-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "48844f02f131dabc54c5f06c0f7c7158b1a6b05c8b371f3fb08b92be3d8f11b2"
     end
   end
 
