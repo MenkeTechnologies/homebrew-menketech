@@ -8,7 +8,8 @@
 #      `license` (Homebrew auto-rejects PRs without these).
 #   3. Every formula has at least one `bottle` block OR a `bin.install`
 #      so a `brew install` actually deposits an artifact.
-#   4. The README's `formulas-N` badge matches the actual count.
+#   4. The README badges stay dynamic (no hardcoded count literal)
+#      and every formula has a row in both README tables.
 
 require "pathname"
 
@@ -130,11 +131,44 @@ end
 
 readme = root.join("README.md")
 if readme.exist?
-  claimed = readme.read[/formulas-(\d+)/, 1]&.to_i
-  actual = formulas.size
-  if claimed && claimed != actual
-    warn "FAIL  README badge says formulas-#{claimed} but Formula/ holds #{actual}"
+  readme_src = readme.read
+
+  # --- The formulas/casks badges must stay dynamic. A hardcoded
+  # `formulas-N` literal drifts on every auto-push: Formula/*.rb files
+  # arrive from each tool's own Release workflow (HOMEBREW_TAP_TOKEN)
+  # and none of those workflows touch README.md, so the number was
+  # wrong the moment a formula landed. Pin the shields.io
+  # github/directory-file-count form, which counts the directory at
+  # render time and cannot go stale.
+  if (stale = readme_src[/\b(?:formulas|casks)-\d+\b/])
+    warn "FAIL  README badge hardcodes a count (#{stale}) — use shields.io github/directory-file-count instead"
     fail_count += 1
+  end
+
+  # --- Every formula needs a row in BOTH README tables. A formula that
+  # lands by auto-push and never gets documented is invisible to users:
+  # `zshrs-native-all` shipped that way and no gate noticed.
+  section = lambda do |heading|
+    readme_src[/^##\s+#{Regexp.escape(heading)}\s*$(.*?)(?=^##\s+\[0x|\z)/m, 1].to_s
+  end
+  formula_table  = section.call("[0x01] FORMULAS")
+  platform_table = section.call("[0x03] PLATFORM SUPPORT")
+
+  if formula_table.empty? || platform_table.empty?
+    warn "FAIL  README is missing the `## [0x01] FORMULAS` or `## [0x03] PLATFORM SUPPORT` section"
+    fail_count += 1
+  else
+    formulas.each do |path|
+      stem = path.basename(".rb").to_s
+      unless formula_table.include?("[`#{stem}`](Formula/#{stem}.rb)")
+        warn "FAIL  README [0x01] FORMULAS table has no row for #{stem}"
+        fail_count += 1
+      end
+      unless platform_table.match?(/^\|\s*`#{Regexp.escape(stem)}`\s*\|/)
+        warn "FAIL  README [0x03] PLATFORM SUPPORT table has no row for #{stem}"
+        fail_count += 1
+      end
+    end
   end
 end
 
