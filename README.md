@@ -8,8 +8,8 @@
 ```
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Formulas](https://img.shields.io/badge/formulas-34-cyan.svg)](Formula/)
-[![Casks](https://img.shields.io/badge/casks-1-magenta.svg)](Casks/)
+[![Formulas](https://img.shields.io/github/directory-file-count/MenkeTechnologies/homebrew-menketech/Formula?type=file&extension=rb&label=formulas&color=cyan)](Formula/)
+[![Casks](https://img.shields.io/github/directory-file-count/MenkeTechnologies/homebrew-menketech/Casks?type=file&extension=rb&label=casks&color=magenta)](Casks/)
 
 ### `[HOMEBREW TAP // ALL MENKETECHNOLOGIES CLI TOOLS // ONE \`brew tap\` AWAY]`
 
@@ -41,6 +41,7 @@ brew install zshrs       # the shell: zshrs + zd
 brew install zshrs-all   # full install: zshrs + zd + zshrs-recorder + zshrs-daemon (conflicts with zshrs)
 brew install zshrs-daemon # zshrs daemon + zd only, for non-zshrs shells (conflicts with zshrs / zshrs-all)
 brew install zshrs-native # zshrs with git (zvcs), arb and stryke compiled in as no-fork builtins (conflicts with zshrs / zshrs-all)
+brew install zshrs-native-all # full zshrs-native install: zshrs + zd + zshrs-recorder + zshrs-daemon (conflicts with zshrs / zshrs-all / zshrs-daemon / zshrs-native)
 brew install lsofrs      # rust lsof: lsofrs + lsf
 brew install iftoprs     # rust iftop: iftoprs
 brew install htoprs      # rust htop: interactive process viewer
@@ -95,6 +96,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`zshrs-all`](Formula/zshrs-all.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs` `zd` `zshrs-recorder` `zshrs-daemon` | tracks zshrs release tags (conflicts with `zshrs`) |
 | [`zshrs-daemon`](Formula/zshrs-daemon.rb) | [zshrs](https://github.com/MenkeTechnologies/zshrs) | `zshrs-daemon` `zd` | tracks zshrs release tags (conflicts with `zshrs` / `zshrs-all`) |
 | [`zshrs-native`](Formula/zshrs-native.rb) | [zshrs-native](https://github.com/MenkeTechnologies/zshrs-native) | `zshrs` | tracks zshrs-native release tags (conflicts with `zshrs` / `zshrs-all`) |
+| [`zshrs-native-all`](Formula/zshrs-native-all.rb) | [zshrs-native](https://github.com/MenkeTechnologies/zshrs-native) | `zshrs` `zd` `zshrs-recorder` `zshrs-daemon` | tracks zshrs-native release tags (conflicts with `zshrs` / `zshrs-all` / `zshrs-daemon` / `zshrs-native`) |
 | [`lsofrs`](Formula/lsofrs.rb) | [lsofrs](https://github.com/MenkeTechnologies/lsofrs) | `lsofrs` `lsf` | tracks lsofrs release tags |
 | [`iftoprs`](Formula/iftoprs.rb) | [iftoprs](https://github.com/MenkeTechnologies/iftoprs) | `iftoprs` | tracks iftoprs release tags |
 | [`htoprs`](Formula/htoprs.rb) | [htoprs](https://github.com/MenkeTechnologies/htoprs) | `htoprs` | tracks htoprs release tags |
@@ -147,6 +149,8 @@ macOS GUI apps, installed with `brew install --cask <name>`.
 | `zshrs` | ✓ | ✓ | ✓ | ✓ |
 | `zshrs-all` | ✓ | ✓ | ✓ | ✓ |
 | `zshrs-daemon` | ✓ | ✓ | ✓ | ✓ |
+| `zshrs-native` | ✓ | ✓ | ✓ | ✓ |
+| `zshrs-native-all` | ✓ | ✓ | ✓ | ✓ |
 | `lsofrs` | ✓ | ✓ | ✓ | ✓ |
 | `iftoprs` | ✓ | ✓ | ✓ | ✓ |
 | `htoprs` | ✓ | ✓ | ✓ | ✓ |
