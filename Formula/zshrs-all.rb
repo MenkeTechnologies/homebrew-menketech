@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.12.37"
+  version "0.12.38"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.37/zshrs-all-v0.12.37-aarch64-apple-darwin.tar.gz"
-      sha256 "ff12cee120dfd2d36345e5edf5992ad00af686ba3fe7631faca1e58a105e8cd0"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.38/zshrs-all-v0.12.38-aarch64-apple-darwin.tar.gz"
+      sha256 "31dc70dd775f841c7ca15fa911d691a7ea31b320cea321809908e57c407db7af"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.37/zshrs-all-v0.12.37-x86_64-apple-darwin.tar.gz"
-      sha256 "51ddc84f8e54dac88f98db30b3b782a9268839f9b64e7e775b0a244ae53e26b4"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.38/zshrs-all-v0.12.38-x86_64-apple-darwin.tar.gz"
+      sha256 "20eb72b6441294658cd1d2b26b870a38447b6ad0365050fd8e8cc0847b58b859"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.37/zshrs-all-v0.12.37-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b19679dc681599562f1778a011ef37a0d9d7976ea209c44b5ddd8c2c690a3ea6"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.38/zshrs-all-v0.12.38-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "074d4d43efbc275c900fc930a0a59ff8f12296dc1f3c1bad3067bc1150922a2c"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.37/zshrs-all-v0.12.37-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "dde922b23793b1b19e25eeb8d324b072c30d95d684d39ca4c43868c16036a2fa"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.38/zshrs-all-v0.12.38-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1f648834ebb581af2aa3574b63445c9be1bd47c54eca40669b11b639889c0f18"
     end
   end
 
