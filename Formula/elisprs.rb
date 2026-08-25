@@ -2,23 +2,23 @@ class Elisprs < Formula
   desc "Emacs Lisp in Rust — lowers .el to the fusevm bytecode VM"
   homepage "https://github.com/MenkeTechnologies/elisprs"
   license "MIT"
-  version "0.1.8"
+  version "0.1.9"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.8/elisprs-v0.1.8-aarch64-apple-darwin.tar.gz"
-      sha256 "8f3ea9000ce364b754427ad105f551da2f2544098ee6abc1cb61ab1a711f0609"
+      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.9/elisprs-v0.1.9-aarch64-apple-darwin.tar.gz"
+      sha256 "fbeadaf20e90f069730fc19705b9316ab6989ec393aa09a84bc028ef6ca9605c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.8/elisprs-v0.1.8-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e363e06dae72d4e53fb95d9e11a3c55ce7d80baa7c2071511d98dac6cd07c762"
+      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.9/elisprs-v0.1.9-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "e95d71543ccee5ab0f91b1f7ab0b116665738f1e12a95381c1e87ad9cf2e5b44"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.8/elisprs-v0.1.8-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "8b527cd74ece2271a2df2a7d8c9f105dd2a8f9f1b08f82b238482e9810ac45bf"
+      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.9/elisprs-v0.1.9-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f61856541f8c2a3b577eb5b5f06cb1e78b489bbc893e5d0fa5f7324cd21bae06"
     end
   end
 

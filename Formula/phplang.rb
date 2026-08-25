@@ -2,27 +2,27 @@ class Phplang < Formula
   desc "Compiled PHP runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/phplang"
   license "MIT"
-  version "0.1.0"
+  version "0.2.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.1.0/phplang-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "de3abd6570f0bcce1ef45556e282997de31ea1e8a524291d777d8b354ea850e0"
+      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.1/phplang-v0.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "0d8f7ebea398dd561ed84541fb07e40e4840a8f80ac6de6c545ed6072e9a66ff"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.1.0/phplang-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8850448173065e981ced5a9dde913e21bc089ab06e669108263a1f90a78ae742"
+      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.1/phplang-v0.2.1-x86_64-apple-darwin.tar.gz"
+      sha256 "c1a2c1ab164f504960f5ef800d6bdcb64edcd1d456aecea8353fdf965cac6d2c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.1.0/phplang-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e50f4f136080a7a4ae38da96624f4cf1ac8ac215e06388f22ddf8c200f8b8484"
+      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.1/phplang-v0.2.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "817b276b9b884274a412f13e4479421341450e0fd1c0c123a8c427ce52b04226"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.1.0/phplang-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "23098e51a742a8c432f0f14f0ca32b5992d3fb6170d38d285694eb9c9747c93d"
+      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.1/phplang-v0.2.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2811aa77295f9566686119d9c6b823469a655d06ef3944adcfbfdffe9fca271a"
     end
   end
 

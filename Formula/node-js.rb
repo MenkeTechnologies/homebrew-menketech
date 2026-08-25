@@ -2,27 +2,27 @@ class NodeJs < Formula
   desc "Compiled JavaScript runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/node-js"
   license "MIT"
-  version "0.1.0"
+  version "0.1.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.0/node-js-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "8c8dcbfbe053de579241cc197fa76c40c7de5e84ce85f13d1128b6712fc745e6"
+      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.2/node-js-v0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "4f937743d813053d4f7c346e16d38160f007f4092ce570b93b08da09df2144c6"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.0/node-js-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "114263f83e4f7d4301a192be5c56017496f2b6bd3206b8867b030b8c5dc6a895"
+      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.2/node-js-v0.1.2-x86_64-apple-darwin.tar.gz"
+      sha256 "b3c2311f4fceed45722e9fbf55d1501ebad2129a1054764cfdc2ae1e06e3083a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.0/node-js-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "cd4e8c0d4b8ee76e9d38dbd0f50511a1d6d7fc9e9e2f35c2517f434074e036c2"
+      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.2/node-js-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "22440b0ec761891672fffa7bc88f12d204cf2f92eb507229861c57d4710604f7"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.0/node-js-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "c85c9299acfe51b00555242ad68378099b4995cdb81e00ffde0667da91312e72"
+      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.2/node-js-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ca83dcac737fe4f7fc0bba24d326feb43c6d8c6bb12de10f9897bd2092f136f2"
     end
   end
 
