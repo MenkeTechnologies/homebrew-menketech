@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.12.38"
+  version "0.12.39"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.38/zshrs-all-v0.12.38-aarch64-apple-darwin.tar.gz"
-      sha256 "31dc70dd775f841c7ca15fa911d691a7ea31b320cea321809908e57c407db7af"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.39/zshrs-all-v0.12.39-aarch64-apple-darwin.tar.gz"
+      sha256 "8b6a2370e7b8d283ef1ec4c62048d5dfde22602a8f4e279a47361fc58a0a0404"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.38/zshrs-all-v0.12.38-x86_64-apple-darwin.tar.gz"
-      sha256 "20eb72b6441294658cd1d2b26b870a38447b6ad0365050fd8e8cc0847b58b859"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.39/zshrs-all-v0.12.39-x86_64-apple-darwin.tar.gz"
+      sha256 "d550f99be6a8080cbaafba656ec2d833d8b32751613994d95cd81a424c2c6a54"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.38/zshrs-all-v0.12.38-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "074d4d43efbc275c900fc930a0a59ff8f12296dc1f3c1bad3067bc1150922a2c"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.39/zshrs-all-v0.12.39-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "14ff31c558d9b26254436096015fe931914bf6a73440ea9913da359a78cf501e"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.38/zshrs-all-v0.12.38-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1f648834ebb581af2aa3574b63445c9be1bd47c54eca40669b11b639889c0f18"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.39/zshrs-all-v0.12.39-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "359b8edcd252bb7244c780110714a24a4a9d2494731c9f56a4eb956eabeafad6"
     end
   end
 
