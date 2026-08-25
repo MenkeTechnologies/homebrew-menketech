@@ -2,27 +2,27 @@ class Javars < Formula
   desc "Compiled Java runtime on the fusevm bytecode VM + Cranelift JIT (no JVM)"
   homepage "https://github.com/MenkeTechnologies/javars"
   license "MIT"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/javars/releases/download/v0.1.1/javars-v0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "1ca82e02a36545075e61434079303043b39dc9441e0f2d7751ab45f7d43da374"
+      url "https://github.com/MenkeTechnologies/javars/releases/download/v0.1.2/javars-v0.1.2-aarch64-apple-darwin.tar.gz"
+      sha256 "5f541a8ff3ae3f470633a6ee9400fe1ec38c9ca7260dddc719e0997817dae430"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/javars/releases/download/v0.1.1/javars-v0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "0b26a50482f8c03bae7d88976d669cf5e0b0bed3f389c7cbfbbc7ebcffffd489"
+      url "https://github.com/MenkeTechnologies/javars/releases/download/v0.1.2/javars-v0.1.2-x86_64-apple-darwin.tar.gz"
+      sha256 "8fd5c68a4aa36a8165930d5c5dbe239188428f5ce2461fb0ba954e07ebe8d1f1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/javars/releases/download/v0.1.1/javars-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "357f8fb6d667b30c25cc834b1354ffa78e9537be4d69eec2c32ca81003eb3f0e"
+      url "https://github.com/MenkeTechnologies/javars/releases/download/v0.1.2/javars-v0.1.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "400158e1eabbab6760b104462107189aa81c074595f0398c333d6942b2e7b3b8"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/javars/releases/download/v0.1.1/javars-v0.1.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b7cfbcb926c2a202848942d874bf66548a199c7249a919b592879cc59bf4a39b"
+      url "https://github.com/MenkeTechnologies/javars/releases/download/v0.1.2/javars-v0.1.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "2d9278eac4ab98cf7ffaf3d3515b0cba2ac1e0200f8b3932c9b978f0ed730cee"
     end
   end
 
@@ -36,6 +36,6 @@ class Javars < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   javars-v0.1.1-x86_64-unknown-linux-musl.tar.gz  sha256: 1ad7619379ee5fcb6f9aff1e7ab03731bb78ea54cb5fc1a5ef039e35aa283ee8
-  #   javars-v0.1.1-aarch64-unknown-linux-musl.tar.gz  sha256: efd257977dc03d6f9d6ca6b0a9a05c4b0e2591760a0583747af3982f2d30653f
+  #   javars-v0.1.2-x86_64-unknown-linux-musl.tar.gz  sha256: 7e6af6530ace1db13613fe3ab5552ce63db51ea506ff76ad34d159687b2dded4
+  #   javars-v0.1.2-aarch64-unknown-linux-musl.tar.gz  sha256: 13f5f8d2e96e1b3d2e25532d67381c8a6a7c35c68456bf3d0f23cf4d5384f547
 end
