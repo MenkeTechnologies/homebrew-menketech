@@ -2,27 +2,27 @@ class Zmax < Formula
   desc "Modal text editor in Rust — vim/emacs keymaps"
   homepage "https://github.com/MenkeTechnologies/zmax"
   license "MPL-2.0"
-  version "0.4.62"
+  version "0.4.63"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zmax/releases/download/v0.4.62/zmax-v0.4.62-aarch64-apple-darwin.tar.gz"
-      sha256 "48b7f510479c0f62dabe4d0acbde13a383d2a0ad92744b981c8326e87c8f155e"
+      url "https://github.com/MenkeTechnologies/zmax/releases/download/v0.4.63/zmax-v0.4.63-aarch64-apple-darwin.tar.gz"
+      sha256 "46550c0f9959851cfef41a749971cfa2d2f531be15233a18f7bc5add8f14d406"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zmax/releases/download/v0.4.62/zmax-v0.4.62-x86_64-apple-darwin.tar.gz"
-      sha256 "d0368da3a1e5d73f44ae618f773469ba040e4e9577c0590d5dcbb867b6d0deea"
+      url "https://github.com/MenkeTechnologies/zmax/releases/download/v0.4.63/zmax-v0.4.63-x86_64-apple-darwin.tar.gz"
+      sha256 "27fdb2b2ca878a27a02e88fffd8dc3d17466d953ba228eb4e5611ab6de2b873c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zmax/releases/download/v0.4.62/zmax-v0.4.62-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "edfc71afc0427a0e936d7a83388061b564e1671c5387b85b75928961c6f26480"
+      url "https://github.com/MenkeTechnologies/zmax/releases/download/v0.4.63/zmax-v0.4.63-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7d72ed1f57a8f27397ac85d9442388774089980965ff1f7008ce3f8580ffea1e"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zmax/releases/download/v0.4.62/zmax-v0.4.62-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5a30cf925909af7f89ea6f01135cba2f142dd8e5efdb87a60d653ab5695be42a"
+      url "https://github.com/MenkeTechnologies/zmax/releases/download/v0.4.63/zmax-v0.4.63-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5e86fd15660006b726785e4e1465e368964c26b394d9206c4594fd038b9a7ce9"
     end
   end
 
