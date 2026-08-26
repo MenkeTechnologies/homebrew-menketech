@@ -1,5 +1,5 @@
 class GoRs < Formula
-  desc "Go on the fusevm bytecode VM — compiles to fusevm::Chunk, three-tier Cranelift JIT"
+  desc "Compiled Go runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/go-rs"
   license "MIT"
   version "0.1.3"
