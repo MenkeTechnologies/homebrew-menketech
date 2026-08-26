@@ -1,5 +1,5 @@
 class ZshrsNative < Formula
-  desc "zshrs with git, arb and stryke compiled in as no-fork builtins"
+  desc "Fat zshrs build with git, arb and stryke compiled in as no-fork builtins"
   homepage "https://github.com/MenkeTechnologies/zshrs-native"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs"
