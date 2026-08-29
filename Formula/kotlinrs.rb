@@ -2,27 +2,27 @@ class Kotlinrs < Formula
   desc "Compiled Kotlin runtime on the fusevm bytecode VM + Cranelift JIT (no JVM)"
   homepage "https://github.com/MenkeTechnologies/kotlinrs"
   license "MIT"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/kotlinrs/releases/download/v0.1.3/kotlinrs-v0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "cb8b0f171745e81f26bf210e8f0a531e198f308e936d667ce34b6cbbbbb12b4a"
+      url "https://github.com/MenkeTechnologies/kotlinrs/releases/download/v0.1.4/kotlinrs-v0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "7ad6837b472b43d15980d5ed9a50435d18fe1bb0e3e697047b8f1534bf840a1b"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/kotlinrs/releases/download/v0.1.3/kotlinrs-v0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "d91deaf2594b8e25e0872c862406b4dcca3284a6c7b2cdcf4195ba71576e1b55"
+      url "https://github.com/MenkeTechnologies/kotlinrs/releases/download/v0.1.4/kotlinrs-v0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "d75ee0cf68c4a77c8eb6cc0f228de8abddc9713de79693b3cea97b734bf4ea0f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/kotlinrs/releases/download/v0.1.3/kotlinrs-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "56977230d8d289ff28745aebe2c9581dfd3bb7924f055e4e30862ab36549bf50"
+      url "https://github.com/MenkeTechnologies/kotlinrs/releases/download/v0.1.4/kotlinrs-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d6db95a3ddb9dd928ddfd85b584dcfae84f86a4301c9d717293a469e3ce97f2b"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/kotlinrs/releases/download/v0.1.3/kotlinrs-v0.1.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0a4893f2ed8a0b653c1ca8a9f2759dd02e60f297cad51e7dce50b524ae2892ae"
+      url "https://github.com/MenkeTechnologies/kotlinrs/releases/download/v0.1.4/kotlinrs-v0.1.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "aa084a25eb097cc92cb482ae582f383de0e4239f8c35ccdb82c20974913fc8f5"
     end
   end
 
@@ -36,6 +36,6 @@ class Kotlinrs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   kotlinrs-v0.1.3-x86_64-unknown-linux-musl.tar.gz  sha256: 1bf1da380ba9d498955a7c2e001f682574470da336610f26e4006066089b2acd
-  #   kotlinrs-v0.1.3-aarch64-unknown-linux-musl.tar.gz  sha256: b81e9992b9ea163a909b4603fdbb39a3f964e6dbd9a86ca781934c8e98b1f812
+  #   kotlinrs-v0.1.4-x86_64-unknown-linux-musl.tar.gz  sha256: 5e0a3eecbe6e2d6a224e14bf965b10ee9067ed2e7b2cf79daceedafd76b63a04
+  #   kotlinrs-v0.1.4-aarch64-unknown-linux-musl.tar.gz  sha256: 35511e36b950392fc62f1089dce3ea26e87c96ac8f6767ec80e128f85279ad5d
 end
