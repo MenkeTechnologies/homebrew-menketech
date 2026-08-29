@@ -2,27 +2,27 @@ class GoRs < Formula
   desc "Compiled Go runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/go-rs"
   license "MIT"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.3/go-rs-v0.1.3-aarch64-apple-darwin.tar.gz"
-      sha256 "dc1c6c354dbebb865ee02afcb64395ceeb40e3a493129441e767a778f16b044b"
+      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.4/go-rs-v0.1.4-aarch64-apple-darwin.tar.gz"
+      sha256 "e0c396addbd700824def42616835f92f315a30a4760e4634570ad255bae3ba14"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.3/go-rs-v0.1.3-x86_64-apple-darwin.tar.gz"
-      sha256 "5b941770e2a88496f0d84e36fb5bfa1a2e4fd11e278ae9477fd28c776150e717"
+      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.4/go-rs-v0.1.4-x86_64-apple-darwin.tar.gz"
+      sha256 "4c1231d4a85457201f78cea939b71f73b90691e7261b9b073d8c0fd0f2b27da3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.3/go-rs-v0.1.3-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8f8270f3084f89e0a5928f5c880099c2bde17f8f201a631f11ed0678a6efc7e7"
+      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.4/go-rs-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f3d0116a5695a00e1be64f64478b63571bfee89535c189db36f89a7cf1f43228"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.3/go-rs-v0.1.3-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d3f1c2cd98d199f4801c8ca4af4862242fb355fbd735bb7eb85b4a048a0da360"
+      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.4/go-rs-v0.1.4-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ec2bc273e4dd694442613ecea0c726e2b20bfa249cb6336883d6eed93fadd2f9"
     end
   end
 
@@ -35,6 +35,6 @@ class GoRs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   go-rs-v0.1.3-x86_64-unknown-linux-musl.tar.gz  sha256: ad984f686eef8bcb4115840441766768c23c1f46123acd75815f326d702c4515
-  #   go-rs-v0.1.3-aarch64-unknown-linux-musl.tar.gz  sha256: b13db311b671049f03a3a04c907755cdf7d62f7b6ba83e957fdbf5245400fcc2
+  #   go-rs-v0.1.4-x86_64-unknown-linux-musl.tar.gz  sha256: 031126c4928c7a19290e5ea829db450a2db8b13cde5a168d0a19e734ca871f33
+  #   go-rs-v0.1.4-aarch64-unknown-linux-musl.tar.gz  sha256: 8a3199e0fd25e90a03a90988e2dd32f920bbf9a703b496b1776875455c8955bf
 end
