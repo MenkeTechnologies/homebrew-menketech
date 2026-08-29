@@ -1,28 +1,28 @@
 class Zdbview < Formula
-  desc "Terminal inspector and record editor for rkyv archives and SQLite databases"
+  desc "Terminal inspector and CRUD editor for rkyv archives and SQLite databases"
   homepage "https://github.com/MenkeTechnologies/zdbview"
-  version "0.12.0"
+  version "0.13.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zdbview/releases/download/v0.12.0/zdbview-v0.12.0-aarch64-apple-darwin.tar.gz"
-      sha256 "732c038a35d4059a8c46a71d85a47ff4dee6e222b726aab541938f015d916235"
+      url "https://github.com/MenkeTechnologies/zdbview/releases/download/v0.13.0/zdbview-v0.13.0-aarch64-apple-darwin.tar.gz"
+      sha256 "2479954ca2017806d7edb8f4f54159673eddf3bf736c6f522862c6967d2c9e46"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zdbview/releases/download/v0.12.0/zdbview-v0.12.0-x86_64-apple-darwin.tar.gz"
-      sha256 "56c5f6774897a0d27afd75702148178ee761a8e548bbc5182e8254e9b7f19a3c"
+      url "https://github.com/MenkeTechnologies/zdbview/releases/download/v0.13.0/zdbview-v0.13.0-x86_64-apple-darwin.tar.gz"
+      sha256 "7b18e8d5e232b411fb3ac37630df2663bcd58e62a7394ecc28317e28dbfcb696"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zdbview/releases/download/v0.12.0/zdbview-v0.12.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ad3823ba4f7129d2d24c2ce7d61e4918e6dcc7ab05a15ab54752ec107ddf5b51"
+      url "https://github.com/MenkeTechnologies/zdbview/releases/download/v0.13.0/zdbview-v0.13.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c6994a2a6fff67059b358e976c69c55808dc76e67dc14ec35efce7a63234302d"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zdbview/releases/download/v0.12.0/zdbview-v0.12.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "535b3accfaa5c5ecef244b11faa63db4ec5eecd7c5f29a5b8917c2c03e4de399"
+      url "https://github.com/MenkeTechnologies/zdbview/releases/download/v0.13.0/zdbview-v0.13.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "058c4bdfb37c3baa330f44cfb73eb4879fb6e46e2c3a578ff17d4c3bb9d75abb"
     end
   end
 
@@ -37,8 +37,8 @@ class Zdbview < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   zdbview-v0.12.0-x86_64-unknown-linux-musl.tar.gz
-  #     sha256: 4299b1542174c737c1c323cb367a5c568163d664106d9726021781aee8e66744
-  #   zdbview-v0.12.0-aarch64-unknown-linux-musl.tar.gz
-  #     sha256: c8006d7b749c1fe35f15f8114ccdc6e566342786af83ad5c48e18ba32887d45d
+  #   zdbview-v0.13.0-x86_64-unknown-linux-musl.tar.gz
+  #     sha256: 3e68fee9cd658c6c113b86f39856b888c28dea73fec42df393d1c1cc5bfe1a64
+  #   zdbview-v0.13.0-aarch64-unknown-linux-musl.tar.gz
+  #     sha256: 3ff55c41f930bb6a6d2f2b9b5d30a95dbbbf7aa89da6ef9f3a5e2e469d8ef502
 end
