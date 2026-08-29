@@ -2,27 +2,27 @@ class Arb < Formula
   desc "Visualize and modify Unix pipelines — a dynamic TUI for every pipeline"
   homepage "https://github.com/MenkeTechnologies/arb"
   license "MIT"
-  version "0.1.9"
+  version "0.1.10"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/arb/releases/download/v0.1.9/arb-v0.1.9-aarch64-apple-darwin.tar.gz"
-      sha256 "c96fcd916044b59c249858bfbd238645fb3e9aacda7b4e9684abc3d4428ce9b1"
+      url "https://github.com/MenkeTechnologies/arb/releases/download/v0.1.10/arb-v0.1.10-aarch64-apple-darwin.tar.gz"
+      sha256 "3ce886fead9eae81fc68875cecbf127f76f0c78805fe7207cd96c56ed967776f"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/arb/releases/download/v0.1.9/arb-v0.1.9-x86_64-apple-darwin.tar.gz"
-      sha256 "c712d0e02a163b8c03c242a3454f00aa9dcd437fb17dfd7b1f57b53c07451b89"
+      url "https://github.com/MenkeTechnologies/arb/releases/download/v0.1.10/arb-v0.1.10-x86_64-apple-darwin.tar.gz"
+      sha256 "82e1585b654677e6398eceb61cd7a8730b736f89b463bb32f8b0b5f40a6ba182"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/arb/releases/download/v0.1.9/arb-v0.1.9-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4b94133df4fdb4143576d65e3b4a33a138d18b58f4ae8e6ab6aa7ddaf0b08744"
+      url "https://github.com/MenkeTechnologies/arb/releases/download/v0.1.10/arb-v0.1.10-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "edd05f105c08f849f736ef6e680e7313f6f36191d52147e993d5e648b519b669"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/arb/releases/download/v0.1.9/arb-v0.1.9-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "0f9cca88732573f2ec7b8b1efa82f6bc74aedd0502a32623ed5bf41437596974"
+      url "https://github.com/MenkeTechnologies/arb/releases/download/v0.1.10/arb-v0.1.10-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9adea201eb3fee5edb53ce5297ec1bf0f59fa52c070f5efcec3997ef017a5a72"
     end
   end
 
@@ -35,6 +35,6 @@ class Arb < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   arb-v0.1.9-x86_64-unknown-linux-musl.tar.gz  sha256: d7b1b47318ee39db78b523785571d946ee19744e7e2880a80a9b4f45fd7cf010
-  #   arb-v0.1.9-aarch64-unknown-linux-musl.tar.gz  sha256: 40958d2fe2fa619b82f9cee7dea7bc07cfb9301e69ef0ce6b8f9000084ca54c9
+  #   arb-v0.1.10-x86_64-unknown-linux-musl.tar.gz  sha256: d1252fd6b46469a03af082d1bda5598de8ad9fef8d3a56138762fe7cf7958bca
+  #   arb-v0.1.10-aarch64-unknown-linux-musl.tar.gz  sha256: d045536dbf94554054c18b39f19bd2a6a1837dabceb14109e7f85027c041e242
 end
