@@ -3,27 +3,27 @@ class ZshrsAll < Formula
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs and zd"
-  version "0.12.41"
+  version "0.12.42"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.41/zshrs-all-v0.12.41-aarch64-apple-darwin.tar.gz"
-      sha256 "94667da3c73417c987d7f85e0b4fbc9b0080c8c49a5d51564e62477b8224ed92"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.42/zshrs-all-v0.12.42-aarch64-apple-darwin.tar.gz"
+      sha256 "963a1668228ad898d52d9d95f4fd3a320796a85659fa41e0c7b16cb5ba9bbc5b"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.41/zshrs-all-v0.12.41-x86_64-apple-darwin.tar.gz"
-      sha256 "5c542a3b1c6de1bd83a15ffd20a982c950de75ace09da5759085c6a11ee4f9c5"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.42/zshrs-all-v0.12.42-x86_64-apple-darwin.tar.gz"
+      sha256 "a7bc4585b03e2ae744f3a974c3c2c35d612739cb4ad9a6d4b5fe47d8b8103a31"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.41/zshrs-all-v0.12.41-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "69d9f1f6fc9aff87720ec3019e8e5469c82b9d2a8b266b7c04bac4c97593b869"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.42/zshrs-all-v0.12.42-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2c799428112fa64287acfeb2137fe016d01f4203c9ce95c97a58ee0656ad4629"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.41/zshrs-all-v0.12.41-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5f163d93c985435fe20cf32103ad1f1b3d10d03ef5979a9c7b7df3f1a6c89acc"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.42/zshrs-all-v0.12.42-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "357b09b26641baedb7d2e447bc8960870fa8cdc037a04096c3dc26116d121760"
     end
   end
 
