@@ -35,6 +35,6 @@ class Phplang < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   phplang-v0.1.0-x86_64-unknown-linux-musl.tar.gz  sha256: 75b6aacd84e69202f8fdf376ec4f80f049b055583b94c42955d230cf9ec0f058
-  #   phplang-v0.1.0-aarch64-unknown-linux-musl.tar.gz  sha256: fb61acf1cb5c1c8f9a2eddd978c1b3efe24b46ea10c9fd2efd08b233db7ad4db
+  #   phplang-v0.2.1-x86_64-unknown-linux-musl.tar.gz  sha256: 001e935d9aa7db7be3417a948cf05a06f16755106189c7baa8dbc1c8439fffb2
+  #   phplang-v0.2.1-aarch64-unknown-linux-musl.tar.gz  sha256: c8d26ef6771f33a4f3ceaea268c92d832691ee90fa80cd16dfde804642bfb73c
 end
