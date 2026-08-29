@@ -35,6 +35,6 @@ class Rlang < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   rlang-v0.1.0-x86_64-unknown-linux-musl.tar.gz  sha256: 78b91718df492d07d34a674b12230b5a1dc797478f7ff84af3a4d6ce5f5320d8
-  #   rlang-v0.1.0-aarch64-unknown-linux-musl.tar.gz  sha256: 6340219e53c491cd7ada76c6600332846ba692150e6136f12d43aa4768f57e8b
+  #   rlang-v0.1.2-x86_64-unknown-linux-musl.tar.gz  sha256: 23e2bd1bd169051d08a7d91dac64b6f2b7fc33c739ad152dc7f34dc4b5e2c869
+  #   rlang-v0.1.2-aarch64-unknown-linux-musl.tar.gz  sha256: 1b11f1d2f01a6f909a814c5b742061bb1c17d66f633de34bf7a3ac1b140deccc
 end
