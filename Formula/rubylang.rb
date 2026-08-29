@@ -2,27 +2,27 @@ class Rubylang < Formula
   desc "Compiled Ruby runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/rubylang"
   license "MIT"
-  version "0.1.6"
+  version "0.1.7"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.6/rubylang-v0.1.6-aarch64-apple-darwin.tar.gz"
-      sha256 "b7a91a1f834bb76eb8bdbcc9081684a1c769f74096d598a19361048c2e9f3aac"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.7/rubylang-v0.1.7-aarch64-apple-darwin.tar.gz"
+      sha256 "962a466dd0508a6c90c68d29bba4700e5f675b196e165865d1e5c1b2ee80b05d"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.6/rubylang-v0.1.6-x86_64-apple-darwin.tar.gz"
-      sha256 "91526aa5a2a7a5730c41ea5d5906f55533122293bc37f41d8926b1e3583904fb"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.7/rubylang-v0.1.7-x86_64-apple-darwin.tar.gz"
+      sha256 "36fe21b7357068e29665aa74714ab98091e3e0ec1f908baf020411db701e1ebd"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.6/rubylang-v0.1.6-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "1b3ef8a9843b9beb07c5b50293f6dd0461754aa98fc7493095954ce71148dd9c"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.7/rubylang-v0.1.7-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "308b3d10b122de9f8e2571663cc21fc2d5e940f6fc21f2218d15f2e98e82a1c3"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.6/rubylang-v0.1.6-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "5bf22c9c36c513dd46ee8258461e892ce3964eb69135e610e46097e2cf7da405"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.7/rubylang-v0.1.7-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0db004a35189f6c9249a751ab5b5ff8d306d2fa38b63743ad909722157b56a31"
     end
   end
 
