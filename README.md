@@ -15,7 +15,7 @@
 
 > *"`brew install stryke zshrs lsofrs awkrs iftoprs nmaprs temprs storageshower powerliners zpwrchrome-host` — done."*
 
-Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `pythonrs` / `rlang` / `go-rs` / `arb` / `zvcs` / `zdbview` / `tclrs` / `zshrs-native`, the formula here gets a fresh version + sha256 sums for every platform.
+Single tap that ships pre-built binaries for every CLI tool in the [MenkeTechnologies](https://github.com/MenkeTechnologies) family. Updated automatically by each tool's GitHub Actions `Release` workflow — when a `v*` (or `host-v*` for `zpwrchrome-host`) tag is pushed on `strykelang` / `zshrs` / `lsofrs` / `iftoprs` / `htoprs` / `awkrs` / `nmaprs` / `grcrs` / `temprs` / `storageshower` / `powerliners` / `zpwrchrome` / `zmax` / `elisprs` / `vimlrs` / `ztmux` / `zcolorizer` / `zwire-host` / `rubylang` / `phplang` / `node-js` / `javars` / `kotlinrs` / `scalars` / `groovyrs` / `pythonrs` / `rlang` / `go-rs` / `arb` / `zvcs` / `zdbview` / `tclrs` / `texrs` / `zshrs-native`, the formula here gets a fresh version + sha256 sums for every platform.
 
 ### [`MenkeTechnologies on GitHub`](https://github.com/MenkeTechnologies) &middot; [`strykelang`](https://github.com/MenkeTechnologies/strykelang) · [`zshrs`](https://github.com/MenkeTechnologies/zshrs) · [`MenkeTechnologiesMeta`](https://github.com/MenkeTechnologies/MenkeTechnologiesMeta)
 
@@ -71,10 +71,11 @@ brew install go-rs       # compiled Go on the fusevm bytecode VM + Cranelift JIT
 brew install arb         # visualize & modify Unix pipelines — a dynamic TUI for every pipeline: arb
 brew install zdbview     # terminal inspector + record editor for rkyv archives and SQLite databases: zdbview
 brew install tclrs       # compiled Tcl on the fusevm bytecode VM + Cranelift JIT: tclrs
+brew install texrs       # TeX mouth and expander in Rust, lowered onto fusevm bytecode: texrs
 brew install zvcs        # git-shadowing superset VCS, lock-free many-writer commits over submodules: zvcs
 
 # or install everything in one go
-brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host rubylang phplang node-js javars kotlinrs scalars groovyrs pythonrs rlang go-rs arb zvcs zdbview tclrs
+brew install stryke zshrs lsofrs iftoprs htoprs awkrs nmaprs grcrs temprs storageshower powerliners zpwrchrome-host zmax elisprs vimlrs ztmux zcolorizer zwire-host rubylang phplang node-js javars kotlinrs scalars groovyrs pythonrs rlang go-rs arb zvcs zdbview tclrs texrs
 
 # casks (macOS GUI apps)
 brew install --cask zwire # Chromium rebrand: zpwrchrome power-tool, cyberpunk theme + new-tab on a Blink base
@@ -128,6 +129,7 @@ brew update && brew upgrade <formula>   # or `brew upgrade` for all
 | [`zvcs`](Formula/zvcs.rb) | [zvcs](https://github.com/MenkeTechnologies/zvcs) | `zvcs` | tracks zvcs release tags |
 | [`zdbview`](Formula/zdbview.rb) | [zdbview](https://github.com/MenkeTechnologies/zdbview) | `zdbview` | tracks zdbview release tags |
 | [`tclrs`](Formula/tclrs.rb) | [tclrs](https://github.com/MenkeTechnologies/tclrs) | `tclrs` | tracks tclrs release tags |
+| [`texrs`](Formula/texrs.rb) | [texrs](https://github.com/MenkeTechnologies/texrs) | `texrs` | tracks texrs release tags |
 
 ---
 
@@ -183,6 +185,7 @@ macOS GUI apps, installed with `brew install --cask <name>`.
 | `zvcs` | — (3-target release) | ✓ | ✓ | ✓ |
 | `zdbview` | ✓ | ✓ | ✓ | ✓ |
 | `tclrs` | ✓ | ✓ | ✓ | ✓ |
+| `texrs` | ✓ | ✓ | ✓ | ✓ |
 
 Most formulas ship aarch64-linux; `awkrs`, `elisprs`, `zmax`, `zvcs`, and `pythonrs` are the formulas without an x86_64-darwin bottle (`pythonrs` also lacks aarch64-linux).
 
