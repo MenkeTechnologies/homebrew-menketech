@@ -2,27 +2,27 @@ class Tclrs < Formula
   desc "Tcl compiled to fusevm bytecode — a parser and compiler, no bespoke VM or JIT"
   homepage "https://github.com/MenkeTechnologies/tclrs"
   license "MIT"
-  version "0.4.2"
+  version "0.4.3"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/tclrs/releases/download/v0.4.2/tclrs-v0.4.2-aarch64-apple-darwin.tar.gz"
-      sha256 "3080db169e45bc593b5134a632d9b797b3a8dcaf47017798afba3a8f9da7234c"
+      url "https://github.com/MenkeTechnologies/tclrs/releases/download/v0.4.3/tclrs-v0.4.3-aarch64-apple-darwin.tar.gz"
+      sha256 "e812e720db09e90cb10c0234a112fe41343b2052a29d1596f0df18d8ef43fd91"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/tclrs/releases/download/v0.4.2/tclrs-v0.4.2-x86_64-apple-darwin.tar.gz"
-      sha256 "aef98d1197b3d826625c25a26cb16770ad37646e0383d61e2368e52f59aaf761"
+      url "https://github.com/MenkeTechnologies/tclrs/releases/download/v0.4.3/tclrs-v0.4.3-x86_64-apple-darwin.tar.gz"
+      sha256 "d0c08607601f12895e5710164053251710d6277f6a933b22d36ec47c84908a3c"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/tclrs/releases/download/v0.4.2/tclrs-v0.4.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "af2bdcb1ff1a6a5a3a2130571607f5601460bcb12ac5cb0c3a88f3f0c315071b"
+      url "https://github.com/MenkeTechnologies/tclrs/releases/download/v0.4.3/tclrs-v0.4.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4d952e8cf6bc9ede21c4e12ff23bdf416be62b8ad51bb370518cfb8844663729"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/tclrs/releases/download/v0.4.2/tclrs-v0.4.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3f7aaa022fee7388e6690125eebed383c951aa407ed2e6b4fefc38a6065924de"
+      url "https://github.com/MenkeTechnologies/tclrs/releases/download/v0.4.3/tclrs-v0.4.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3096f777f9f20c64a58b26521a5e768ab35372a468416a05935ffa8b55c2101f"
     end
   end
 
@@ -36,6 +36,6 @@ class Tclrs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   tclrs-v0.4.2-x86_64-unknown-linux-musl.tar.gz  sha256: 51bfaa11cc198f24984a62fdc9f36165581987cba99af26f086fb1f1759c5c0a
-  #   tclrs-v0.4.2-aarch64-unknown-linux-musl.tar.gz  sha256: 348c100b401f8bddb8b32c1b18e1c9c6c0aa29e9674c9c1816e71ed01110c3a3
+  #   tclrs-v0.4.3-x86_64-unknown-linux-musl.tar.gz  sha256: 5b1b541d246732332add0e21ff7681925f249274370fdcf5a20f2c8c00e08a40
+  #   tclrs-v0.4.3-aarch64-unknown-linux-musl.tar.gz  sha256: 38ca319c8bdd204549d94b128896e2da75f7291ec40ed7083de32dc28f6e5dec
 end
