@@ -35,6 +35,6 @@ class NodeJs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   node-js-v0.1.0-x86_64-unknown-linux-musl.tar.gz  sha256: a4e64dd008f409b159f7fd0b7bc079d055ab019a49e561b89abee91244e0e448
-  #   node-js-v0.1.0-aarch64-unknown-linux-musl.tar.gz  sha256: 3280c3b7191148a0c73a8c18fa386a0fde9324a9b9bc16db7523ef35ccbd75b0
+  #   node-js-v0.1.2-x86_64-unknown-linux-musl.tar.gz  sha256: 764bd185f3ea5fc2d4798830f5873e2f5c19834033c6e3f3661ab7071e6f1f7b
+  #   node-js-v0.1.2-aarch64-unknown-linux-musl.tar.gz  sha256: eb67be1c6de6b6eb6460187c71df5d9f6bb505eb0f7f2d00bc973cec1b03ded0
 end
