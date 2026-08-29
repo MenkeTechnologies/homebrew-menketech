@@ -31,6 +31,6 @@ class Elisprs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   elisprs-v0.1.8-x86_64-unknown-linux-musl.tar.gz  sha256: 9cc5eefedd421de221bc7160ed4b6c5ed0e2809ab8b66edf043d617156784e15
-  #   elisprs-v0.1.8-aarch64-unknown-linux-musl.tar.gz  sha256: 926804a9c9c61b238c02d421b8c62bdf7dd1a45e459e363d8a7c0407c0d74219
+  #   elisprs-v0.1.9-x86_64-unknown-linux-musl.tar.gz  sha256: fc15cffe414cd0e3231eff0e862f113cbf24fe1882eeb3f1878d532b36ee5cd1
+  #   elisprs-v0.1.9-aarch64-unknown-linux-musl.tar.gz  sha256: b03477f139eeceebd7a759d5dcfae6d82b4afca07de9d3478df46f8c33f02296
 end
