@@ -2,27 +2,27 @@ class Texrs < Formula
   desc "TeX mouth and expander in Rust, lowered onto fusevm bytecode"
   homepage "https://github.com/MenkeTechnologies/texrs"
   license "MIT"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/texrs/releases/download/v0.1.0/texrs-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5e4dd13b99ad782a35be27b02e4ece61cd5a91e6aef7d52c2299070a83f15380"
+      url "https://github.com/MenkeTechnologies/texrs/releases/download/v0.2.0/texrs-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "39ce2354e5303b61211defc3755bb7051a9ef33f64bcdb60317bc40cdbcaa8d9"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/texrs/releases/download/v0.1.0/texrs-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "1328736665671da8b76cd881531592b3c03e7f9d6db6212f9c4daa4c1b9a6830"
+      url "https://github.com/MenkeTechnologies/texrs/releases/download/v0.2.0/texrs-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "a290b0ab1368a23cf7815f9e894e37eb4ee92107761c4e98e73ba968ef2f73dd"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/texrs/releases/download/v0.1.0/texrs-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a012dd9d8be47c2a98a3557d8ff7621ae0f86fd80108a7dc8561da9b9c7258b3"
+      url "https://github.com/MenkeTechnologies/texrs/releases/download/v0.2.0/texrs-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "993bddd17b88cb65636a062af495ce1e61f59848f47701c1bab08971ba49bd91"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/texrs/releases/download/v0.1.0/texrs-v0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7fbb89d91d9ed4d1dd6afe7d25a1f75ff4d84daded401c4048943c86fb5324d7"
+      url "https://github.com/MenkeTechnologies/texrs/releases/download/v0.2.0/texrs-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "33918a1ac9b6fdd31a6099e054baf01d761989a6946f0c64a6d0b0ca7a33f312"
     end
   end
 
@@ -37,6 +37,6 @@ class Texrs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   texrs-v0.1.0-x86_64-unknown-linux-musl.tar.gz  sha256: 8018aaca70e639f5bb6222d9e58ec01dfc300da118f98c0ad47bb71d6eb1860e
-  #   texrs-v0.1.0-aarch64-unknown-linux-musl.tar.gz  sha256: a8a06bd700454eb20db4cbc0a04c998522a8d7e7a024ca0dd55d05ae233b4e29
+  #   texrs-v0.2.0-x86_64-unknown-linux-musl.tar.gz  sha256: b3d3f7572c17a86b63d2ba971099b2776d8e1816f03798c0237cc00cdddb7a66
+  #   texrs-v0.2.0-aarch64-unknown-linux-musl.tar.gz  sha256: 1e31df1619bce6eaf19abd7bbc472f4a0ad7acb18788b4935e731b6b1f9c62ec
 end
