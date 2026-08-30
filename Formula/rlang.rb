@@ -2,27 +2,27 @@ class Rlang < Formula
   desc "Compiled R runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/rlang"
   license "MIT"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/rlang/releases/download/v0.1.5/rlang-v0.1.5-aarch64-apple-darwin.tar.gz"
-      sha256 "d419a1deb45d44e65fa52f2833a3671094313402d6d31a161553e5ceb5caa062"
+      url "https://github.com/MenkeTechnologies/rlang/releases/download/v0.1.6/rlang-v0.1.6-aarch64-apple-darwin.tar.gz"
+      sha256 "26a50de415172616318934c60ee245cf425eca265c4714050b7f7e001a9b4e96"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/rlang/releases/download/v0.1.5/rlang-v0.1.5-x86_64-apple-darwin.tar.gz"
-      sha256 "995cd098b50a3d81db8cceaa22a4621c8e1cd641660480320731046a02bc98f0"
+      url "https://github.com/MenkeTechnologies/rlang/releases/download/v0.1.6/rlang-v0.1.6-x86_64-apple-darwin.tar.gz"
+      sha256 "a20b0c08253d9569399508e4639b07b90f8065d85594e0360b5d846be2164794"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/rlang/releases/download/v0.1.5/rlang-v0.1.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fb63fbdb600753dadb15524d446ac22934610cc2613579b42624a9305bd94580"
+      url "https://github.com/MenkeTechnologies/rlang/releases/download/v0.1.6/rlang-v0.1.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4e48e8089a44af066eeb0b05bdd6946ea97889d79a0c4ec692ae59e5d10c91cd"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/rlang/releases/download/v0.1.5/rlang-v0.1.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "53bf151d5aa2f8ccafeb1a2e2cebcfcd598dfec9702ef59f1cbf515b6315328a"
+      url "https://github.com/MenkeTechnologies/rlang/releases/download/v0.1.6/rlang-v0.1.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b3ad89a72cfa7e7205b97f0c777b3695a1c569255942184546f0672eb2cc825d"
     end
   end
 
@@ -35,6 +35,6 @@ class Rlang < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   rlang-v0.1.5-x86_64-unknown-linux-musl.tar.gz  sha256: d59b3dd9bdcac7a717ce71ab1287c203adcf8ac43d3a5384a838c28faf566e7b
-  #   rlang-v0.1.5-aarch64-unknown-linux-musl.tar.gz  sha256: dbaefe1a6b0e6071ad3a37146d7ec1a4bc8bc3c9402dade7abf0123440f3044c
+  #   rlang-v0.1.6-x86_64-unknown-linux-musl.tar.gz  sha256: be28e0d0deac6b26b81dad80d0482e7bd66140bf90ded50355e5ddd0cbd037f9
+  #   rlang-v0.1.6-aarch64-unknown-linux-musl.tar.gz  sha256: 53fe78658ebae48800f6ca4ef2c57104f8db6b0ffd30c4b676ac543614bd86d9
 end
