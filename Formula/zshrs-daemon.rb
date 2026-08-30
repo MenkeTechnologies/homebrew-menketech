@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.12.49"
+  version "0.12.50"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.49/zshrs-all-v0.12.49-aarch64-apple-darwin.tar.gz"
-      sha256 "78cf65850b5c3a23522eb4e8808ee573ecd29ce709c4be6595979cf7d034aa33"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.50/zshrs-all-v0.12.50-aarch64-apple-darwin.tar.gz"
+      sha256 "a2c460d1b83ba2d8b07f1cc57f1571c90993a30ba579fd2ec4bd43f1b5633ded"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.49/zshrs-all-v0.12.49-x86_64-apple-darwin.tar.gz"
-      sha256 "bf2950191aa4c4fea9e86125dc404696479dc1a27da028ddd4c5fba67e259492"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.50/zshrs-all-v0.12.50-x86_64-apple-darwin.tar.gz"
+      sha256 "8485f96ffdffdde095ac839fe063d334e5fc6489915593fb79564bf3395cba45"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.49/zshrs-all-v0.12.49-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "511119341720b708dc1e2b160f235386a1acbd2eef9e791a5b86ee459e0672c7"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.50/zshrs-all-v0.12.50-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d086b6dfcb7de8121e65ab454e8305c7ac60900f5f8e08e030f3981a10fc228b"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.49/zshrs-all-v0.12.49-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "58ce8c5a4b8f8f6a9fb1ba7e1dbde35677da05cf19bc67be4c97456dd036f9c2"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.50/zshrs-all-v0.12.50-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "83778a6c3f9d1d711750e8eec84650a78528ee01311785373174a58d7776fe11"
     end
   end
 
