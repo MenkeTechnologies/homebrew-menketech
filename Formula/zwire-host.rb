@@ -7,22 +7,22 @@ class ZwireHost < Formula
   on_macos do
     on_arm do
       url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.21/zwire-host-v0.3.21-aarch64-apple-darwin.tar.gz"
-      sha256 "109260634564e19624779c44752fdf5cc1790239ecbcd82d17348d7a97587644"
+      sha256 "c0cb0d650d3afc67de29c47917ec32e3b0d6a870ba42c6a99c48b2d73ed39c90"
     end
     on_intel do
       url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.21/zwire-host-v0.3.21-x86_64-apple-darwin.tar.gz"
-      sha256 "a69c3bc0173b35888abbc9c0209199abdfcb29f3b3d2f7294e4730a0439c629f"
+      sha256 "72c8cc16586d69c17320c4559b5ea1e780455a2d613f1ee71a8498cf51191dfe"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.21/zwire-host-v0.3.21-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "20349eb358e1ac31f6fd05f5eff565a9d8b9f3a6e64b76253f09c0f4fd90dc59"
+      sha256 "cd342c0bd7cebf23082e20dc1ed7b42aa8bafe2e18e8ddd67f74bbc78e5ba894"
     end
     on_arm do
       url "https://github.com/MenkeTechnologies/zwire-host/releases/download/v0.3.21/zwire-host-v0.3.21-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "656ffad25bb60983f91c25765b33029897262521edc97b3f9b7c9e82993cf943"
+      sha256 "00130d87c5ef8b6d845df576ba04a477faaa9f2ed9b4486a9f1b0543d9c35775"
     end
   end
 
