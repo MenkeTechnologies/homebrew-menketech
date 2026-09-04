@@ -2,27 +2,27 @@ class Grcrs < Formula
   desc "Generic Colouriser — a faithful Rust port of grc"
   homepage "https://github.com/MenkeTechnologies/grcrs"
   license "MIT"
-  version "1.13.1"
+  version "1.13.8"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/grcrs/releases/download/v1.13.1/grcrs-v1.13.1-aarch64-apple-darwin.tar.gz"
-      sha256 "585bbf2b8a77f3519b7150faf331a98e376c10b1f0973d74563f4f7ba8471f23"
+      url "https://github.com/MenkeTechnologies/grcrs/releases/download/v1.13.8/grcrs-v1.13.8-aarch64-apple-darwin.tar.gz"
+      sha256 "aec3d5d3eb7d1ce7f37294268051e765a1d0960afedfb816e21cd0e0ecd09ab0"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/grcrs/releases/download/v1.13.1/grcrs-v1.13.1-x86_64-apple-darwin.tar.gz"
-      sha256 "7f915a5f815295c450d06aa94167df299b54547878b07d871c9ba3261e4f183b"
+      url "https://github.com/MenkeTechnologies/grcrs/releases/download/v1.13.8/grcrs-v1.13.8-x86_64-apple-darwin.tar.gz"
+      sha256 "eb3a53acb2d3a6a2b00325fd96ec49adad4b20d34c3b114e4edf4271c10674b2"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/grcrs/releases/download/v1.13.1/grcrs-v1.13.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4d9078236e43b1891aa65f892b3e1e1e07b166206d81a5ae436c065357e1e1e0"
+      url "https://github.com/MenkeTechnologies/grcrs/releases/download/v1.13.8/grcrs-v1.13.8-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "45652cee8bd010f5cc3e9ddea5aacb4e5e71262c72dc87f19c63307731873a70"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/grcrs/releases/download/v1.13.1/grcrs-v1.13.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "752f69d84b4fe331f6049f5c988c2cab1880fa403b2f67f3919a902fc35ae3c5"
+      url "https://github.com/MenkeTechnologies/grcrs/releases/download/v1.13.8/grcrs-v1.13.8-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c781a61b2093b20561fde2ee9f7ff530a90aaaff4dd253777de817f8684d7a55"
     end
   end
 
@@ -38,6 +38,6 @@ class Grcrs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   grcrs-v1.13.1-x86_64-unknown-linux-musl.tar.gz  sha256: cec91329efc3a5c1617bda6caca70b846b2ba6da7c8f8664d118071ca0280c8a
-  #   grcrs-v1.13.1-aarch64-unknown-linux-musl.tar.gz  sha256: c644844cb7b55dca600e367bc5d29a06435ce5e7ffff15565a2c0b0d76014b44
+  #   grcrs-v1.13.8-x86_64-unknown-linux-musl.tar.gz  sha256: 6cf72d28d26a5d840f43fcdad82231c54ab4515fe2cb558ef02e19b426c253a6
+  #   grcrs-v1.13.8-aarch64-unknown-linux-musl.tar.gz  sha256: 907c0b6aa6dc954935962e98d18f85c7a6c7b0c253b4aa7cce49e803eab7a039
 end
