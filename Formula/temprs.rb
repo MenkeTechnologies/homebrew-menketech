@@ -2,27 +2,27 @@ class Temprs < Formula
   desc "Temporary file stack manager — atomic flock-protected master record"
   homepage "https://github.com/MenkeTechnologies/temprs"
   license "MIT"
-  version "2.9.13"
+  version "2.9.20"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.13/temprs-v2.9.13-aarch64-apple-darwin.tar.gz"
-      sha256 "32d05178ae112f31073397ee7245a71d2fbbf9b1bf14f95a7a63056d1b43c5aa"
+      url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.20/temprs-v2.9.20-aarch64-apple-darwin.tar.gz"
+      sha256 "f9f814ec15de77a37bfcf99b0bc2e5f62eee96370232b5bd243b551a92022001"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.13/temprs-v2.9.13-x86_64-apple-darwin.tar.gz"
-      sha256 "eb8d99e000611ed8c866da2baa5cd695c1d2e02bd1685dc6f81f15b612bb35cf"
+      url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.20/temprs-v2.9.20-x86_64-apple-darwin.tar.gz"
+      sha256 "44ab31c285cd77693143267f75712f01fc62179e46ed01452b8ff9526fd9b426"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.13/temprs-v2.9.13-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "10fdf66f2a95258e687b93b980f68857492cf7fed4e8ff967d5ee54211f7bd29"
+      url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.20/temprs-v2.9.20-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "09742e09684a45d659199a034f820a0e17fa938ec81a7e6777fd1fa8394949e1"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.13/temprs-v2.9.13-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d4893548b6cc6f615482094b06fde15591afbd8d06e96ac5d243af0f2dc35985"
+      url "https://github.com/MenkeTechnologies/temprs/releases/download/v2.9.20/temprs-v2.9.20-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9e4cdbf688cf9dcf46f9d93268884f9e7eb81a492dbe5f210fb0bd39a6d7400e"
     end
   end
 
@@ -36,6 +36,6 @@ class Temprs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   temprs-v2.9.13-x86_64-unknown-linux-musl.tar.gz  sha256: b9ac4ef7e7a32b4365280757fe69043b21cd897189e74969f03a3b2548aeef7d
-  #   temprs-v2.9.13-aarch64-unknown-linux-musl.tar.gz  sha256: 38888de487b178476ba9aa1b51b4fa9cf79a3364731d3592390eb468b223ab48
+  #   temprs-v2.9.20-x86_64-unknown-linux-musl.tar.gz  sha256: 1d55751c866b1cef3c9d28c72df42d1cdd5cffb754398c5e632e26e705f4620c
+  #   temprs-v2.9.20-aarch64-unknown-linux-musl.tar.gz  sha256: 15540c93560e9cd298076ecba55235b1522dab7d11f281bf56a6f990bbb198ab
 end
