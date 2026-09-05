@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.12.58"
+  version "0.12.59"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.58/zshrs-all-v0.12.58-aarch64-apple-darwin.tar.gz"
-      sha256 "6c3ec9e3929fb69497274da0e62191503a8990659e6ee255e48a57232a3fb9d7"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.59/zshrs-all-v0.12.59-aarch64-apple-darwin.tar.gz"
+      sha256 "65aa9caf4391e6b8f6e45f57efa82cfb34ce6adb6799550e04af1b6f0c7e13a2"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.58/zshrs-all-v0.12.58-x86_64-apple-darwin.tar.gz"
-      sha256 "41a4ca5754786ad1b3a5e84101c682dec65e35cf4a5548fa4f593e062757229f"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.59/zshrs-all-v0.12.59-x86_64-apple-darwin.tar.gz"
+      sha256 "093cbef6557fd688e95ee6522b5c7bbfef3ce4204963f17eb88f82033cb55317"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.58/zshrs-all-v0.12.58-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d6fd4c3e7261e7853c8a3cf5039c7798c88f10bb321685777d5ec9c31fbd2eae"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.59/zshrs-all-v0.12.59-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1b542430ada48d497d328965937c8bf9d0973cef8e52d3be8b79e1996dfa9e52"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.58/zshrs-all-v0.12.58-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "362d7b413d19008ad57837965ca9086e73c0d9ace742a00100b0f391d951f753"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.59/zshrs-all-v0.12.59-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "dc707e69b9a90f7bf022f2455d80b847f1cf6df39e5f7bc84b39f22546d198af"
     end
   end
 
