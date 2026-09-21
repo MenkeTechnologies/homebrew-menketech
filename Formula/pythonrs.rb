@@ -7,14 +7,14 @@ class Pythonrs < Formula
   on_macos do
     on_arm do
       url "https://github.com/MenkeTechnologies/pythonrs/releases/download/v0.1.10/pythonrs-v0.1.10-aarch64-apple-darwin-bundled.tar.gz"
-      sha256 "ab3a6c0b077da54590c522188f3fa4d70eb56247b74a58197d1627f01ebe9e2b"
+      sha256 "08c1ff64c19c499302466cf32accfba7e74de766ab1f8a761fc9e90c1cfd7b6f"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/MenkeTechnologies/pythonrs/releases/download/v0.1.10/pythonrs-v0.1.10-x86_64-unknown-linux-gnu-bundled.tar.gz"
-      sha256 "52a01ccdaec7a6baecbcbd247154b3d1203af08a6b85f0fb88554940bb5eb7b6"
+      sha256 "aa8b2ab346c25f8655de63497d326ff1480345bb35ff6427a12844697f07f3c3"
     end
   end
 
