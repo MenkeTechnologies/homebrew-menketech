@@ -2,27 +2,27 @@ class Rubylang < Formula
   desc "Compiled Ruby runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/rubylang"
   license "MIT"
-  version "0.1.14"
+  version "0.1.15"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.14/rubylang-v0.1.14-aarch64-apple-darwin.tar.gz"
-      sha256 "76d4e862b90f53be2d44a3a822c537454d53b3b8e4015aed75e8d6e878d65ba8"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.15/rubylang-v0.1.15-aarch64-apple-darwin.tar.gz"
+      sha256 "bdd6390d8581b7233953a3b085ab5f8053cbfe540077459a7230b772031992d1"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.14/rubylang-v0.1.14-x86_64-apple-darwin.tar.gz"
-      sha256 "810e9da0d6511d257f3349bf32b7b75adca4e007ced8d53c5773ae210401b5c2"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.15/rubylang-v0.1.15-x86_64-apple-darwin.tar.gz"
+      sha256 "e7a8df9ef254c3c8ddb9609b62255b5e536f3e15b64644473d4ed1b92271cd56"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.14/rubylang-v0.1.14-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "8df855f553b80148c41198d6b79a3df56dc8d396e950b24b93660da1d57bf61c"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.15/rubylang-v0.1.15-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "33740e50760412320ca0f250a69b24cee5a100d1d67e8d4e8a2e6dbd000e33e9"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.14/rubylang-v0.1.14-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1f6606a81ebc8379bef1431556112d1fa290e0e7a0bac19e1cf01d7d4727d001"
+      url "https://github.com/MenkeTechnologies/rubylang/releases/download/v0.1.15/rubylang-v0.1.15-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "63df9f41adc31d8a4d7019f98c9771e0a389122dfcda5b3db9e31826edf3c137"
     end
   end
 
