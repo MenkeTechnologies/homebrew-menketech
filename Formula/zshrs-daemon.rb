@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.12.65"
+  version "0.12.66"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.65/zshrs-all-v0.12.65-aarch64-apple-darwin.tar.gz"
-      sha256 "376a6922d8abe316c3d13706adb50059b63499b725ceb7a3b710a68ce4d80afe"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.66/zshrs-all-v0.12.66-aarch64-apple-darwin.tar.gz"
+      sha256 "f4c861163673b0db5624d3f0562bffb63ae6e86be2bbc918a04ab0b60a79fc5e"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.65/zshrs-all-v0.12.65-x86_64-apple-darwin.tar.gz"
-      sha256 "f9e214018e7d3867672b967f638235a0655afea8c8db3d744a00b30c598279bc"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.66/zshrs-all-v0.12.66-x86_64-apple-darwin.tar.gz"
+      sha256 "f1ba17f1bcf0b78980ab35ee7779f76ea412df7646eccb4d6e734ffd9c5f8a81"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.65/zshrs-all-v0.12.65-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f7e3847515f30f587fdf52296998009464277b3c9e2513e85532da3f8901701c"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.66/zshrs-all-v0.12.66-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1f3446d8fa37fae6c8a46203ddc17f3a3e85e36b05f027f8d986cb3d661c47d1"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.65/zshrs-all-v0.12.65-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "a1d404ecae7726d6632f4df1f61d0d9a8c2006962b98c396388709232510b731"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.12.66/zshrs-all-v0.12.66-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4edb64be782c10b53ad305a230a8e51eb8c603257593cab346a52e6d51b93882"
     end
   end
 
