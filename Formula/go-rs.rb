@@ -2,27 +2,27 @@ class GoRs < Formula
   desc "Compiled Go runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/go-rs"
   license "MIT"
-  version "0.1.11"
+  version "0.1.12"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.11/go-rs-v0.1.11-aarch64-apple-darwin.tar.gz"
-      sha256 "118ee2ed385822e9457e5c3a96f8f220a6b70d2f39049e8ddbe0d72ebb7116ec"
+      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.12/go-rs-v0.1.12-aarch64-apple-darwin.tar.gz"
+      sha256 "7b0b060b61911e99251c768aed1b8bbd8fbdffa7170010149bbfc043f9608d48"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.11/go-rs-v0.1.11-x86_64-apple-darwin.tar.gz"
-      sha256 "f281295ccfb06564cdbd295bac8c43a2970ccc86641029ebeaf4658bbcb4a58a"
+      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.12/go-rs-v0.1.12-x86_64-apple-darwin.tar.gz"
+      sha256 "758e54fbb42c407cfea7e014acd38ab78bd31ca89f2ce5d1874e17d7307b2625"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.11/go-rs-v0.1.11-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5dedad16dabca5c1e7d1d1dacc8f71b3ed130067c2abd4a2ae9814ed7736e759"
+      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.12/go-rs-v0.1.12-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "762203e5152b9786c687d622f59133197c23864bcc751ec67f76a04ed8a9a4d4"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.11/go-rs-v0.1.11-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1b24ed99b72790f45e6aee22f7a47265c00da1fbc3c3b382ad58769bc05d6e67"
+      url "https://github.com/MenkeTechnologies/go-rs/releases/download/v0.1.12/go-rs-v0.1.12-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "99eebf9ae7db645b26d221cad7f04c0f9c220a485cf41206bcc9a1987f5ab4c5"
     end
   end
 
@@ -35,6 +35,6 @@ class GoRs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   go-rs-v0.1.11-x86_64-unknown-linux-musl.tar.gz  sha256: 131ed205a8063071976e325004cfe0e228c137c242e8d2a962b7a333f97142cd
-  #   go-rs-v0.1.11-aarch64-unknown-linux-musl.tar.gz  sha256: f0bcad1a7f56d96f4a3fd759b6a06cec665bb7a8b33764222f12e03fe78ca7b4
+  #   go-rs-v0.1.12-x86_64-unknown-linux-musl.tar.gz  sha256: 5573d4a376eec98268123b4534fa747d1e189f0562d40a6197b20eeb650420f2
+  #   go-rs-v0.1.12-aarch64-unknown-linux-musl.tar.gz  sha256: f1fef11cfb2834ecde3a0f994e48c2147a1a6ce38ce879bcad430e693e81d429
 end
