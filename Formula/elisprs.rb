@@ -2,23 +2,23 @@ class Elisprs < Formula
   desc "Emacs Lisp in Rust — lowers .el to the fusevm bytecode VM"
   homepage "https://github.com/MenkeTechnologies/elisprs"
   license "MIT"
-  version "0.1.16"
+  version "0.1.17"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.16/elisprs-v0.1.16-aarch64-apple-darwin.tar.gz"
-      sha256 "ffabbd018f155c27abe8ef3a728d3076a34f7e012347f4eff770b21f6b69fb49"
+      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.17/elisprs-v0.1.17-aarch64-apple-darwin.tar.gz"
+      sha256 "03c74fc3b7e718fc3d560ccb80409120147193e3365f5c8ea1696e623b6f6941"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.16/elisprs-v0.1.16-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5445d65df06842cd63d3a0dc10077a38b2f200cc80fa30faa29d5c7c94c95da3"
+      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.17/elisprs-v0.1.17-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "065affdea3798862efff30eac7f43dfc51ce3f98010d8d1c8b2ff1aca6ac1e84"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.16/elisprs-v0.1.16-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b672ef7c430b18757fba0206c97d2efda384b953b0902ccddd1c6bac897ca021"
+      url "https://github.com/MenkeTechnologies/elisprs/releases/download/v0.1.17/elisprs-v0.1.17-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8d8b0e961246271f908c7ae7f302a76db1737857f5865fdac7f0a8aa668cd1b9"
     end
   end
 
@@ -31,6 +31,6 @@ class Elisprs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   elisprs-v0.1.16-x86_64-unknown-linux-musl.tar.gz  sha256: 60f0408013ea3825d1b8ead160c453a69d07d075ec47e6ff95af87f5741c5e3b
-  #   elisprs-v0.1.16-aarch64-unknown-linux-musl.tar.gz  sha256: a9b22c31c45d042f587f25f454bb4e1e7e77cb82afadab9013e151f409a72512
+  #   elisprs-v0.1.17-x86_64-unknown-linux-musl.tar.gz  sha256: d66044b3f65ef0cf57256b74beea21c93215a340a3669e4b8c0daa5ee06f4bea
+  #   elisprs-v0.1.17-aarch64-unknown-linux-musl.tar.gz  sha256: ee9b2b0e8e151806cb1674afa93004309d3f649d556fb8835682bf6387b3014c
 end
