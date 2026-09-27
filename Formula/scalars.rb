@@ -2,27 +2,27 @@ class Scalars < Formula
   desc "Compiled Scala runtime on the fusevm bytecode VM + Cranelift JIT (no JVM)"
   homepage "https://github.com/MenkeTechnologies/scalars"
   license "MIT"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/scalars/releases/download/v0.1.5/scalars-v0.1.5-aarch64-apple-darwin.tar.gz"
-      sha256 "f0798ec9299fd7651118cc3245218ddb5a47841063255aeb3001556af805b5c7"
+      url "https://github.com/MenkeTechnologies/scalars/releases/download/v0.1.6/scalars-v0.1.6-aarch64-apple-darwin.tar.gz"
+      sha256 "a0344fe35c96b206a782ec9bb4f387a2a2f0e24104fb4df304e551f93bee15c8"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/scalars/releases/download/v0.1.5/scalars-v0.1.5-x86_64-apple-darwin.tar.gz"
-      sha256 "b19b946e882c01adf332611527ee5dcbab5ebff6abff54efc848388022eb7312"
+      url "https://github.com/MenkeTechnologies/scalars/releases/download/v0.1.6/scalars-v0.1.6-x86_64-apple-darwin.tar.gz"
+      sha256 "d97e82edbdd173040b683d12e18d90155df60c6ac4b837c58377bc13056acfe3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/scalars/releases/download/v0.1.5/scalars-v0.1.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e336255cd77137d382257360c50f9f29ebada3492fb4e7f443ddd885f04686f5"
+      url "https://github.com/MenkeTechnologies/scalars/releases/download/v0.1.6/scalars-v0.1.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "529bd5dfb221759f143e86cecd5db42373e630fefa34fba61dee812491ffc766"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/scalars/releases/download/v0.1.5/scalars-v0.1.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1119c5e8fda61cad675325ef87d721ba9b2cd3925eb116738d42d40d9885b1d2"
+      url "https://github.com/MenkeTechnologies/scalars/releases/download/v0.1.6/scalars-v0.1.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b3499ab83caeb1e22a1da4f82d4fb523103129e7c195a0f672cce2c712696a85"
     end
   end
 
@@ -36,6 +36,6 @@ class Scalars < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   scalars-v0.1.5-x86_64-unknown-linux-musl.tar.gz  sha256: 43df003fdd494dc3bc7b154e59cf9ddef14f83229344140c179ba74f5701efc0
-  #   scalars-v0.1.5-aarch64-unknown-linux-musl.tar.gz  sha256: 73257876e68b318984bf6fdefd825880f6fdbdf594e40124ee7add6476dd071b
+  #   scalars-v0.1.6-x86_64-unknown-linux-musl.tar.gz  sha256: 0deadeb1c7fc347c82872d0e079c50a992987cf0b5ccb8b1d2a9e4b954b74d46
+  #   scalars-v0.1.6-aarch64-unknown-linux-musl.tar.gz  sha256: 224206346a661bb569ef7b4c0b1379b30795e0a4ae4053ac5ce4f25cc13bb76d
 end
