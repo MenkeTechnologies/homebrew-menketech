@@ -2,27 +2,27 @@ class Groovyrs < Formula
   desc "Compiled Groovy runtime on the fusevm bytecode VM + Cranelift JIT (no JVM)"
   homepage "https://github.com/MenkeTechnologies/groovyrs"
   license "MIT"
-  version "0.1.11"
+  version "0.1.12"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/groovyrs/releases/download/v0.1.11/groovyrs-v0.1.11-aarch64-apple-darwin.tar.gz"
-      sha256 "4c93644b30a062c584647227be433779248628da3b16047db954fe1c395738f9"
+      url "https://github.com/MenkeTechnologies/groovyrs/releases/download/v0.1.12/groovyrs-v0.1.12-aarch64-apple-darwin.tar.gz"
+      sha256 "10392205427e17e0e240d4702e4ee7d2854c65bac0c9d4bc18158cad86b68bf1"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/groovyrs/releases/download/v0.1.11/groovyrs-v0.1.11-x86_64-apple-darwin.tar.gz"
-      sha256 "47e8f0e6d641394e1ba9201f9e700bf17cd34d572747803cfc69ee163f7f10b9"
+      url "https://github.com/MenkeTechnologies/groovyrs/releases/download/v0.1.12/groovyrs-v0.1.12-x86_64-apple-darwin.tar.gz"
+      sha256 "bdc15e0cc332e3da102bd7a62117c4ca9a89a31f0d993030ae4e5744efde86dd"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/groovyrs/releases/download/v0.1.11/groovyrs-v0.1.11-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "29b42bb15a68a8b200f6a87d5509a66259014457dcf14e3eb4e87bde2628b887"
+      url "https://github.com/MenkeTechnologies/groovyrs/releases/download/v0.1.12/groovyrs-v0.1.12-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3554b3f4d09792743603d1dbf39636cf6155a1bdfb3691b6627ca419cbe94b82"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/groovyrs/releases/download/v0.1.11/groovyrs-v0.1.11-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "67d38ab6b3853bf5022d66419949981ba9ffc0dd71cb7e288d04043c029e5832"
+      url "https://github.com/MenkeTechnologies/groovyrs/releases/download/v0.1.12/groovyrs-v0.1.12-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7d70db63f1c06ed0138eedf2d6fa08077d8947b627b81c4dcd49bf5f8f1169f4"
     end
   end
 
@@ -36,6 +36,6 @@ class Groovyrs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   groovyrs-v0.1.11-x86_64-unknown-linux-musl.tar.gz  sha256: de3ab49392e987e44c3fdf8cab3c2715922d44df76190449108b93c4d44ffb1d
-  #   groovyrs-v0.1.11-aarch64-unknown-linux-musl.tar.gz  sha256: f07b4255c062723b1df82670ab8bd7a7e9f398de707e0b76f05a80936e1e4f21
+  #   groovyrs-v0.1.12-x86_64-unknown-linux-musl.tar.gz  sha256: 0c85a9fb78deb4f9585187e76bf35dcca80962c1161d1464f9e86717b715b45b
+  #   groovyrs-v0.1.12-aarch64-unknown-linux-musl.tar.gz  sha256: 3086cce4fc976bf4651f4dc5914dcd3af719a7d33ac04629b44c1f7071a04af1
 end
