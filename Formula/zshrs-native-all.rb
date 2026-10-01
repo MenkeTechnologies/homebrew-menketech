@@ -6,27 +6,27 @@ class ZshrsNativeAll < Formula
   conflicts_with "zshrs-all", because: "both install zshrs and zd"
   conflicts_with "zshrs-daemon", because: "both install zshrs-daemon and zd"
   conflicts_with "zshrs-native", because: "both install zshrs"
-  version "0.1.11"
+  version "0.1.12"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.11/zshrs-native-all-v0.1.11-aarch64-apple-darwin.tar.gz"
-      sha256 "e03cd66572bb878f0fa646c0a52b0ad849093d656dd2bf3005a571117d12d506"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.12/zshrs-native-all-v0.1.12-aarch64-apple-darwin.tar.gz"
+      sha256 "d0960f9617929c11971e4d1abb8d1f2c0c446ca84ef56369dcf335be867723fd"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.11/zshrs-native-all-v0.1.11-x86_64-apple-darwin.tar.gz"
-      sha256 "587c39b02917fbe3e46fe4dd439fc341086e8814bf86141949ce44beb97556e9"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.12/zshrs-native-all-v0.1.12-x86_64-apple-darwin.tar.gz"
+      sha256 "c679a7dca24a96e55c7dfe00e18cb67c59443ddd3a43ac98140b07cd6e6e7c57"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.11/zshrs-native-all-v0.1.11-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ae88fff1c6a51533d396549efddd4ddb5ea752c90949bcce1e594ef82517e1a1"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.12/zshrs-native-all-v0.1.12-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ae1f953fab4bbb20edae58d03406ac863a3495d2de5522123e16d98355a8003a"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.11/zshrs-native-all-v0.1.11-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "26b6a26dd73dcd999382e9d190fc58ed78889e6d0bd0e0a21cafcf979291fd75"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.12/zshrs-native-all-v0.1.12-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "4136234bc09340f3489db3aeb63d548efa522363685771eebfe84b294ec3ba72"
     end
   end
 
