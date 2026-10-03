@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.13.4"
+  version "0.13.5"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.4/zshrs-all-v0.13.4-aarch64-apple-darwin.tar.gz"
-      sha256 "9b8e6d3346962581a40fd601bdea9438863275ad2eeb389b8a15f41381de3332"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.5/zshrs-all-v0.13.5-aarch64-apple-darwin.tar.gz"
+      sha256 "6043c53ac1749d683cd0712a7a95af9d97aee4b76e498d66b84c957617ce9fbc"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.4/zshrs-all-v0.13.4-x86_64-apple-darwin.tar.gz"
-      sha256 "dcd798f43a6d6200bcd12ce20a9f178d9b533672eb3dc22f9cf69c8bce9aa81a"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.5/zshrs-all-v0.13.5-x86_64-apple-darwin.tar.gz"
+      sha256 "a5a4fea57f0743b65417c814177b30c3a8723afe1ecd95eb34dcfea946df7fbc"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.4/zshrs-all-v0.13.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5b4237e27306ecb3db25bd4b502531aaa0381ee1f01f4250ec792c3f43b388d5"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.5/zshrs-all-v0.13.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c4684802a12b0f1394afb1d9d007edf5fa5af04b34f204c9f6e64842e35f216c"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.4/zshrs-all-v0.13.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "958d71f490bda8095717505eb92e9b8102241366eb09fc928737a50b64e2ba10"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.5/zshrs-all-v0.13.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "20913b1097709970acbb8d8624ba80e655c54f400292f23a3e379f207e22d783"
     end
   end
 
