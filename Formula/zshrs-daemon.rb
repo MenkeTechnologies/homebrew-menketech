@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.13.0"
+  version "0.13.1"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.0/zshrs-all-v0.13.0-aarch64-apple-darwin.tar.gz"
-      sha256 "fb12f047a2ca45e2fce7d71f21ae9e8160aeece69a92fac83dc11f2c786c20b4"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.1/zshrs-all-v0.13.1-aarch64-apple-darwin.tar.gz"
+      sha256 "ec2145c87a58f9514f9c06bf40067b619f1d7ccb0f8aaa034e7cc15bbd7d36a6"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.0/zshrs-all-v0.13.0-x86_64-apple-darwin.tar.gz"
-      sha256 "db750c448c88c77de5b86c6943023dc9cd8b10d9d87d6b171c992a0691ebfad5"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.1/zshrs-all-v0.13.1-x86_64-apple-darwin.tar.gz"
+      sha256 "94668c4c2d332f8e48818861ff090c5b44d32b42096216ff15837932c7462e17"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.0/zshrs-all-v0.13.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "af6e8998538e517a1e2352016ff316534f0adba81d3f5107cce52c461bf378f0"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.1/zshrs-all-v0.13.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7e06fba26c4de578116aeaaddd134205a29662b170a89a2bbf3f7c7f0b740b38"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.0/zshrs-all-v0.13.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "35eb567fedfbfe60940d17e1733582e900aea39f879bbd4634b52a42dab46411"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.1/zshrs-all-v0.13.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "c967fd4c16b77c93b155d667d78d8eb2df9f070fc1c7d38eadc37548b6b4ab75"
     end
   end
 
