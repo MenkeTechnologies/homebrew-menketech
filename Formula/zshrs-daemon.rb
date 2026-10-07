@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.13.9"
+  version "0.13.10"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.9/zshrs-all-v0.13.9-aarch64-apple-darwin.tar.gz"
-      sha256 "ff612f11ccc51a476ff406ce625ed6a99d696f719fbd10ad5257b4bf445a678b"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.10/zshrs-all-v0.13.10-aarch64-apple-darwin.tar.gz"
+      sha256 "ecec5252d8885e176ab13b972726897a8e1c6d480e8d66e453196da4b04294ef"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.9/zshrs-all-v0.13.9-x86_64-apple-darwin.tar.gz"
-      sha256 "beeb89254df48a14252ef321adfbe1b8d589d24ccd15790f0496aaf8f82e328f"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.10/zshrs-all-v0.13.10-x86_64-apple-darwin.tar.gz"
+      sha256 "b15b592fc8f50552b3b93b9cec1b347badaec63bdf4471e6613c13ebd0375442"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.9/zshrs-all-v0.13.9-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "05898b71904650baa6d5ab99cd218f04c31e2e5142433ae69fc0a36b41359d38"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.10/zshrs-all-v0.13.10-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "bb0c5bb06c6718e3fecc3463228129805972f6c844dfecd15a4b3dbb47ef0313"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.9/zshrs-all-v0.13.9-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "27350bbeb21bb0aa25bc1923dd4c3d167ecb883e45384b66408af22ec64479ff"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.10/zshrs-all-v0.13.10-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "dccdb79a8fd0dd70eb65f246fee02f05de37bb23dd0a9b9b12c27569a590f4e3"
     end
   end
 
