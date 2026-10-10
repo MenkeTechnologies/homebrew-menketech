@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.13.25"
+  version "0.13.27"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.25/zshrs-all-v0.13.25-aarch64-apple-darwin.tar.gz"
-      sha256 "d0b7f97035de51c81f5ca4999e882e7ed8b120aa5290eda22325b7dd9f13382f"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.27/zshrs-all-v0.13.27-aarch64-apple-darwin.tar.gz"
+      sha256 "ceb28fe5977c80bf9303075ba5a169185882f26665d4e2bdf5a2cf300c336f19"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.25/zshrs-all-v0.13.25-x86_64-apple-darwin.tar.gz"
-      sha256 "31009b344927bb8b6437151c88a320a770a16c4dabd9c00ac727d3923f749f35"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.27/zshrs-all-v0.13.27-x86_64-apple-darwin.tar.gz"
+      sha256 "dc5311346224b99f715f66e9c1b48816b01e4467202b8c91c8e7752f172111df"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.25/zshrs-all-v0.13.25-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "734040ad5021877bd94a1f013314029eca85fbb08213c2d08032f6386ce1568a"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.27/zshrs-all-v0.13.27-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6369a70173cbed49a8a9b2d94f3a0c0bea703fcd9429e0a51122185e6488249d"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.25/zshrs-all-v0.13.25-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "54bc122abfa66727c1dc40b1418224f9226dc0ccf03196ee4b8abc81391be830"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.27/zshrs-all-v0.13.27-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8dda496923c66a28693477bb6248babf32a25ad81aeb5babf2873a7574aa3c51"
     end
   end
 
