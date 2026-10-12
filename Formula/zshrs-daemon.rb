@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.13.33"
+  version "0.13.34"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.33/zshrs-all-v0.13.33-aarch64-apple-darwin.tar.gz"
-      sha256 "41aa9bf74effa5bf6d7ee018e4df5e7beb44e6468408c5e6417c9f7c7e3953dc"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.34/zshrs-all-v0.13.34-aarch64-apple-darwin.tar.gz"
+      sha256 "2bd1b25754b4987f66dd86249e5cd547d4769ac11d840bf5cb6fba155be8e76f"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.33/zshrs-all-v0.13.33-x86_64-apple-darwin.tar.gz"
-      sha256 "e44b070f67dace4b6c943babaa13e7e8b3f5314bab8627653bba1c56c27f5bb6"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.34/zshrs-all-v0.13.34-x86_64-apple-darwin.tar.gz"
+      sha256 "acfe357dc1ddb374e19f1e70a5fc3d799982b3dbb379b9398fbf0dc0ce6f3e63"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.33/zshrs-all-v0.13.33-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c51e60f50761f26320950c1f8e7446be6e5b1411b6edae3140368b99beb03f2f"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.34/zshrs-all-v0.13.34-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "4ecd6f5af38a4c03696c578567d4e730f00208a0f572990dc883c0f58eb8960c"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.33/zshrs-all-v0.13.33-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9de057e4ce89a6ef90eee3cf3d2b00363573571aa1cbef7d3029c4fe76ac9dfa"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.34/zshrs-all-v0.13.34-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "59bac25a4ac2f136863f36e1711023e1e222914d2e13bdda47c7d6a4f5bf5134"
     end
   end
 
