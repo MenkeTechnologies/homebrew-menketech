@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.13.42"
+  version "0.13.43"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.42/zshrs-all-v0.13.42-aarch64-apple-darwin.tar.gz"
-      sha256 "ef60e453bc4f7f8d64c4cee8eb1d6a613b15b2f6938e77b9eb4ea62a09633bf9"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.43/zshrs-all-v0.13.43-aarch64-apple-darwin.tar.gz"
+      sha256 "cd18b604c1a5c7836fc9f23888837feee709bf05c0130819b16e7a7899b1f359"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.42/zshrs-all-v0.13.42-x86_64-apple-darwin.tar.gz"
-      sha256 "1a2945bbb03b7b11e5172654f1206c0ce250a58019c7e2b318dff97305fd8002"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.43/zshrs-all-v0.13.43-x86_64-apple-darwin.tar.gz"
+      sha256 "d71bd760e73b78a9f8cad80658c7ae9ce86e8575ddf345ba77ee6f938981725e"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.42/zshrs-all-v0.13.42-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "015f0fd71f5005cc1e39eb16bf0b58516d138064ca675b0da4b2cf95711a3f39"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.43/zshrs-all-v0.13.43-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d73e232b67535c867383f839698888abde4065b7820c25323a6591f2e158c6c4"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.42/zshrs-all-v0.13.42-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "cd6c892ac6544f9938abf2c66086c0221f73d896bea0ec722c0fbf3681697803"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.43/zshrs-all-v0.13.43-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8e5787c90a152f50bff1dc8cc80b4859e586497506bfcf072046330e0ec1e1ea"
     end
   end
 
