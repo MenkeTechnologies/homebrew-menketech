@@ -4,27 +4,27 @@ class ZshrsNative < Formula
   license "MIT"
   conflicts_with "zshrs", because: "both install zshrs"
   conflicts_with "zshrs-all", because: "both install zshrs"
-  version "0.1.51"
+  version "0.1.52"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.51/zshrs-native-v0.1.51-aarch64-apple-darwin.tar.gz"
-      sha256 "803733036628d3d83e34bc485f291dcda6ac3b3a6573cba0a5e02d470904d2de"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.52/zshrs-native-v0.1.52-aarch64-apple-darwin.tar.gz"
+      sha256 "50ac8c8e4c6e6366367841c7fb26ab890fd8c9b0f30d111e49fc55402c60b427"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.51/zshrs-native-v0.1.51-x86_64-apple-darwin.tar.gz"
-      sha256 "14238d14fe5be83d61928d24321af016b0595712235ef82681cc3bfda194a11c"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.52/zshrs-native-v0.1.52-x86_64-apple-darwin.tar.gz"
+      sha256 "f607254c9144e0189d8420fa4a68b3d2b8a19c05998b6e7afec39e0906653bbe"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.51/zshrs-native-v0.1.51-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "04ee97bf346bf76d7a123f793e168ae3ea56e04af006f22412b5b481f2eb8f3e"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.52/zshrs-native-v0.1.52-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "d367a10c90aee835cd745ee725eeba4c6d8be2c8d64f729f234c7b1ab97cef5a"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.51/zshrs-native-v0.1.51-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fe29d2ed6ce27bc814be5c83b25d864229db832a2e6b82d64410b97bb3cb34dc"
+      url "https://github.com/MenkeTechnologies/zshrs-native/releases/download/v0.1.52/zshrs-native-v0.1.52-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "b3f2f1ee68e239649285b0a248ffa56a13adabb2ae7b2d936557f544bab5aedd"
     end
   end
 
@@ -37,6 +37,6 @@ class ZshrsNative < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   zshrs-native-v0.1.51-x86_64-unknown-linux-musl.tar.gz  sha256: c8ff94f627ce1866fa31821d159318d83c9c7ca455983d5b5c0a69ce55950883
-  #   zshrs-native-v0.1.51-aarch64-unknown-linux-musl.tar.gz  sha256: d92c3dd8c254f491a6b32ab5a4d5f74988d70e6f2c48086a2827f8002dc01e88
+  #   zshrs-native-v0.1.52-x86_64-unknown-linux-musl.tar.gz  sha256: 46ae9c33a2ab890c7b991bc5d16ec7d7544003a24645621f5fbf0001bc62e724
+  #   zshrs-native-v0.1.52-aarch64-unknown-linux-musl.tar.gz  sha256: 33c8d039fda84e544cf7da644b1991c5b228b7689df264c1d20f64ba83ea16b8
 end
