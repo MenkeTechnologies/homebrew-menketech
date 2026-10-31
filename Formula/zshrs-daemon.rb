@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.13.57"
+  version "0.13.58"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.57/zshrs-all-v0.13.57-aarch64-apple-darwin.tar.gz"
-      sha256 "d0e72ce1a45f207157a02c4896f9080f9c97e56b54a43e6423f2b579cfa0f5b8"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.58/zshrs-all-v0.13.58-aarch64-apple-darwin.tar.gz"
+      sha256 "a64495565b6447770eb5c90a78c757505d7ced4b4cc1326d152b35d60d98cee7"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.57/zshrs-all-v0.13.57-x86_64-apple-darwin.tar.gz"
-      sha256 "83765d7bc9b61142c938b1934a8a364991479597dec05ad143a5ec94c2cd6bf3"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.58/zshrs-all-v0.13.58-x86_64-apple-darwin.tar.gz"
+      sha256 "1ad5f423b6876642ff4c16ee06a34d338b617a6b3381ee6842dded88e9f38d05"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.57/zshrs-all-v0.13.57-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "80e462ff5b96464da848f09035aa3ea02f0a9c0d72a5a8b699177f85d6cf01a1"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.58/zshrs-all-v0.13.58-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f1830b7c3345fbd784a8237219bd47a9baf12d034011333dc5631298ef0c3649"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.57/zshrs-all-v0.13.57-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "81e47f46f8de1b0ad91104bcc9f25b4ee1169596b2081e6c833bcc12e64d0c3f"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.58/zshrs-all-v0.13.58-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7c56fb3b1e4f0453a8a849c8b4e641ffac5236a6f662ae5aac27a76a74ff7e17"
     end
   end
 
