@@ -2,27 +2,27 @@ class NodeJs < Formula
   desc "Compiled JavaScript runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/node-js"
   license "MIT"
-  version "0.1.14"
+  version "0.1.15"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.14/node-js-v0.1.14-aarch64-apple-darwin.tar.gz"
-      sha256 "f087d1d92598aaeed33d89bb64911829bb26392b9390a58d8d2b33de5d7d63d4"
+      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.15/node-js-v0.1.15-aarch64-apple-darwin.tar.gz"
+      sha256 "c486fd32b8b7fad610acd2d97b84246d7985fd5c6d14d43cd36f8047d90b1de5"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.14/node-js-v0.1.14-x86_64-apple-darwin.tar.gz"
-      sha256 "2dd88368e97f4821591dc907e1c3277504700e95f4ea05a1e6734a8b8ad9964c"
+      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.15/node-js-v0.1.15-x86_64-apple-darwin.tar.gz"
+      sha256 "efc48361af3fa3649d1dbb0658bc3489502b13f1ab98221fcfd50bb7905a0283"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.14/node-js-v0.1.14-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7988331f3f416683b00ae67c71518749318b870d7756b33d2a6e69789e61bdf2"
+      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.15/node-js-v0.1.15-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "5e0b3a8d4e7961eb47a975c41d7b9aec0ec93c9d958bb268ae85b02180382c24"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.14/node-js-v0.1.14-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "71cc53d3ed0b18774ac4cf7567ae8152641fc7fc1c017716ddee997247ba7aa1"
+      url "https://github.com/MenkeTechnologies/node-js/releases/download/v0.1.15/node-js-v0.1.15-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "51d2d43fbdfdbfb4b919cc624d14b1c203db9b07024b3f3180b4ccce723c0d8e"
     end
   end
 
@@ -35,6 +35,6 @@ class NodeJs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   node-js-v0.1.14-x86_64-unknown-linux-musl.tar.gz  sha256: b304f4bbc1c551a8286610196aef3a2a21c4fcfa2a3acb7dbec3e12945f87d5e
-  #   node-js-v0.1.14-aarch64-unknown-linux-musl.tar.gz  sha256: acfcf79f77831d9c5c0f1d36813aa9ab1e04a7a9b590ef46ff5fb270148367f7
+  #   node-js-v0.1.15-x86_64-unknown-linux-musl.tar.gz  sha256: b4a8864befd1531be17c4b8d51d548d7adafd9da4eb084b9ebe9fb4971634fce
+  #   node-js-v0.1.15-aarch64-unknown-linux-musl.tar.gz  sha256: 2dc470263c506b87342f08d394c63ae7f1f1657c18b439ba26e5d1f1bcda9958
 end
