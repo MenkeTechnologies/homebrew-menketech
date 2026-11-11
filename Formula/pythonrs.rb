@@ -2,19 +2,19 @@ class Pythonrs < Formula
   desc "Compiled Python runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/pythonrs"
   license "MIT"
-  version "0.1.14"
+  version "0.1.15"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/pythonrs/releases/download/v0.1.14/pythonrs-v0.1.14-aarch64-apple-darwin-bundled.tar.gz"
-      sha256 "faf1fd0f7ac060ace16ae9da10c44b7ec2f9531b5af59e5d0e7544dd244d5798"
+      url "https://github.com/MenkeTechnologies/pythonrs/releases/download/v0.1.15/pythonrs-v0.1.15-aarch64-apple-darwin-bundled.tar.gz"
+      sha256 "ea71455bf40719d21c2a9550f6dd874604851237953874e18bb109520a23da42"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/pythonrs/releases/download/v0.1.14/pythonrs-v0.1.14-x86_64-unknown-linux-gnu-bundled.tar.gz"
-      sha256 "0fcc0904870bfb4b6f7c4419b6927f1ea9dff7d32aa1aa95ee168387ade105eb"
+      url "https://github.com/MenkeTechnologies/pythonrs/releases/download/v0.1.15/pythonrs-v0.1.15-x86_64-unknown-linux-gnu-bundled.tar.gz"
+      sha256 "a8cf446d423ceffb7569d6de0c517a8581d7dc3286e6c818c955722aac6664be"
     end
   end
 
