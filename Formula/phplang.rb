@@ -2,27 +2,27 @@ class Phplang < Formula
   desc "Compiled PHP runtime on the fusevm bytecode VM + Cranelift JIT"
   homepage "https://github.com/MenkeTechnologies/phplang"
   license "MIT"
-  version "0.2.14"
+  version "0.2.15"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.14/phplang-v0.2.14-aarch64-apple-darwin.tar.gz"
-      sha256 "f6791d2fc0aa18550078456c7915d0ca50c5a50b13c99e1b604e259dce2712bf"
+      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.15/phplang-v0.2.15-aarch64-apple-darwin.tar.gz"
+      sha256 "f272eea39e4829417fde6d05002ff9eef45a1bd75e518afa5d6d8960156e3567"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.14/phplang-v0.2.14-x86_64-apple-darwin.tar.gz"
-      sha256 "f7085d63d41716f51477bd35298d7faa242fd6c235683236876d6f6b4010caed"
+      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.15/phplang-v0.2.15-x86_64-apple-darwin.tar.gz"
+      sha256 "3e4082735bf45e156623dee96fb53f37e17a16bb24d2b2654b99255ef0dd5c50"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.14/phplang-v0.2.14-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "45e7fe40ae32f63526c4f4e4ccd52997e010d187ec8351e90f8755f9be728960"
+      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.15/phplang-v0.2.15-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9d364c045d8bb9d3fa0eb852f03ccb7f2a8027ff2762bd52018f2fcf4327d3bb"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.14/phplang-v0.2.14-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d7173a7832dcf8bbf3f0e5971887386b98040baa44cc0aa757d2639401a3d4c4"
+      url "https://github.com/MenkeTechnologies/phplang/releases/download/v0.2.15/phplang-v0.2.15-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "ed22c8ac0b8e1166712f620b1b9ad4f5bd20d8c8419f49966d05527e0ba24dd6"
     end
   end
 
@@ -35,6 +35,6 @@ class Phplang < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   phplang-v0.2.14-x86_64-unknown-linux-musl.tar.gz  sha256: fc599db8a48de2d0159f79800aa1dea854b5afa5e4bdfc811cbb2c6e922562aa
-  #   phplang-v0.2.14-aarch64-unknown-linux-musl.tar.gz  sha256: 855a27f1efda4f7d8e1130fb3f120933956fd653cef79e0c17f3c73edb6010af
+  #   phplang-v0.2.15-x86_64-unknown-linux-musl.tar.gz  sha256: dfbc224d25081cc2e3d50bf04a143ae7680de54c02955b49864849f09f80095d
+  #   phplang-v0.2.15-aarch64-unknown-linux-musl.tar.gz  sha256: 06ffcc754db58f6be4ca9a94a6a4ba80d23adff9cea801a96d056dd6cf5f559d
 end
