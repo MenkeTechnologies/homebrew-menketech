@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.13.77"
+  version "0.13.78"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.77/zshrs-all-v0.13.77-aarch64-apple-darwin.tar.gz"
-      sha256 "7b14c365789f009fb9094cdc1a18c3ae0734a418d7be5ad99bca1f7a2f7d812a"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.78/zshrs-all-v0.13.78-aarch64-apple-darwin.tar.gz"
+      sha256 "0cdabd1d5778c07f3be01c5485473fbe6c4ab904fc353f4eb98e66f14f9a763e"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.77/zshrs-all-v0.13.77-x86_64-apple-darwin.tar.gz"
-      sha256 "de413108eeb96e7be23bf39b6e598295a421e2947a8947cce6d042a1ad0c8e2a"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.78/zshrs-all-v0.13.78-x86_64-apple-darwin.tar.gz"
+      sha256 "445d9f0a452eea6a18fd687c4fc2f005fdb08cca02957c1478b441aa3878d584"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.77/zshrs-all-v0.13.77-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "7e21a5011d8c97ce9e624add7c81842f321bad60d200e2335c6d50cde44c4404"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.78/zshrs-all-v0.13.78-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "eba17d220541948e086007c4f26482dfab6b212ada3e5981731f94f40a337176"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.77/zshrs-all-v0.13.77-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7ef06f499acfc4bb1177f3fa36e346f07ceacde896156f2106a989fb629bd17b"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.78/zshrs-all-v0.13.78-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5ec4b37ae66ba8afe7c88eb3d1352b4c1c8826933c255fe4ff720adcc3358890"
     end
   end
 
