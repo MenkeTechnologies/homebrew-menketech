@@ -2,27 +2,27 @@ class Zshrs < Formula
   desc "First compiled Unix shell — drop-in zsh with bytecode JIT, AOP, worker pool"
   homepage "https://github.com/MenkeTechnologies/zshrs"
   license "MIT"
-  version "0.13.64"
+  version "0.13.65"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.64/zshrs-v0.13.64-aarch64-apple-darwin.tar.gz"
-      sha256 "7d756ad4d049645ffd7762706bc374ab8500db69914d3991cd544b33dbf2c0a7"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.65/zshrs-v0.13.65-aarch64-apple-darwin.tar.gz"
+      sha256 "45ec6ddaa71dbac1034e22168e67a3724252f43568f2742634a541ae7b5f0bea"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.64/zshrs-v0.13.64-x86_64-apple-darwin.tar.gz"
-      sha256 "8c3dee1296a24f0fe167f715b7e521e19b2cbdae84bf92df65676e382a27ed82"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.65/zshrs-v0.13.65-x86_64-apple-darwin.tar.gz"
+      sha256 "491ba9a9e2772830ee9250a788314f231e7d479ed21f4f24302fc3ce80d76e05"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.64/zshrs-v0.13.64-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "15dff2375c8b1c90139a00c4f737969406902bf5d1302a5ce8e480e9b203ca51"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.65/zshrs-v0.13.65-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "1ba5c81bff7650200525663cc2ae18f5ec9b961edd0524b44a1c788e72c22bf5"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.64/zshrs-v0.13.64-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4d7ed8bf48060b0d8c0f9983db4c656b609526a24d84a343ebd4ba27719c6cb2"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.65/zshrs-v0.13.65-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "24a0e50ff992bb82e0d2f291e2ce1dd0c3df48c69e1244bd32f6cc7c63b6cf7b"
     end
   end
 
@@ -36,5 +36,5 @@ class Zshrs < Formula
   end
 
   # Static musl tarballs also published at this release:
-  #   zshrs-v0.13.64-x86_64-unknown-linux-musl.tar.gz  sha256: ad59597bae2ad4dac042d15d9b0c9e102252717a292bc74efa3124008194008c
+  #   zshrs-v0.13.65-x86_64-unknown-linux-musl.tar.gz  sha256: 6e26ad7b1104e74ac83320f575bab739155c9d826c5da260913d6e9a0adf0377
 end
