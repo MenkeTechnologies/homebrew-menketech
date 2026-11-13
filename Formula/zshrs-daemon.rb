@@ -4,27 +4,27 @@ class ZshrsDaemon < Formula
   license "MIT"
   conflicts_with "zshrs-all", because: "both install zd and zshrs-daemon"
   conflicts_with "zshrs", because: "both install zd"
-  version "0.13.65"
+  version "0.13.66"
 
   on_macos do
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.65/zshrs-all-v0.13.65-aarch64-apple-darwin.tar.gz"
-      sha256 "543d0b1c700938b76f2dcd5a9eeb2c7eeee133696b83b8a9402a2b48f4d5551e"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.66/zshrs-all-v0.13.66-aarch64-apple-darwin.tar.gz"
+      sha256 "1ffe6aa07ff4790137fc8d0305297e425c3c2d5bc7f87d1f0931aa47e86387f9"
     end
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.65/zshrs-all-v0.13.65-x86_64-apple-darwin.tar.gz"
-      sha256 "ab35a4b1a073b0c123014e862c394418d51f64906a3baf5df6444809dc214cc3"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.66/zshrs-all-v0.13.66-x86_64-apple-darwin.tar.gz"
+      sha256 "32bf4c65a4ab8ac5f51e79b29d94e7bab1716bf2876dbf7d9202e6d94318d4af"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.65/zshrs-all-v0.13.65-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "304f8c4f33b7540aade0dc73545d1771d551c19ab262f815265a9fb796830b61"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.66/zshrs-all-v0.13.66-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7068518a3fe5ecdf1d071f2c1746387312f3df7110afb1fdeb56f185b1fe7e7d"
     end
     on_arm do
-      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.65/zshrs-all-v0.13.65-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "23a077f475b32915b28a9e3745b2789470bb642359695be11433b0c9b9839cd3"
+      url "https://github.com/MenkeTechnologies/zshrs/releases/download/v0.13.66/zshrs-all-v0.13.66-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "91c889f77e62c6524d2594f02d0102311244070bba193aac80c2203bbff105fc"
     end
   end
 
